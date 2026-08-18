@@ -1,0 +1,7 @@
+*{box-sizing:border-box}html,body{margin:0;background:#faf6ef}
+body{display:flex;justify-content:center}.screen{position:relative;width:min(100vw,900px);line-height:0}
+.screen img{display:block;width:100%;height:auto}.screen a{position:absolute;display:block;cursor:pointer;border-radius:7px}
+.single{left:5.1%;top:51.45%;width:24.6%;height:2.55%}.journey{left:5.1%;top:63.45%;width:24.6%;height:2.55%}
+.executive{left:36.6%;top:63.45%;width:25.2%;height:2.55%}.workshops{left:68.2%;top:63.45%;width:25.8%;height:2.55%}
+.complimentary{left:36.6%;top:81.05%;width:42.3%;height:2.55%}
+.screen a:focus-visible{outline:3px solid #fff;box-shadow:0 0 0 6px #b47a2d}
