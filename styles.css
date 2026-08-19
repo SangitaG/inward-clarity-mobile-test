@@ -1,190 +1,99 @@
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;background:#faf6ef}
-body{margin:0;background:#faf6ef;display:flex;justify-content:center}
-.homepage{width:min(100vw,900px)}
-.screen{position:relative;width:100%;line-height:0;background:#faf6ef}
-.screen img{display:block;width:100%;height:auto}
-.cta-hit{position:absolute;left:23.55%;top:93.55%;width:52.8%;height:3.55%;display:block;border-radius:8px;cursor:pointer}
-.continue,.begin,.explore,.single,.journey,.executive,.workshops,.complimentary{position:absolute;display:block;cursor:pointer}
-.s3{left:39%;top:91.4%;width:22%;height:6.2%}
-.s4{left:39%;top:92.5%;width:22%;height:6%}
-.s5{left:38%;top:91.3%;width:24%;height:7%}
-.s6{left:38%;top:91.5%;width:24%;height:7%}
-.s7{left:38%;top:91.5%;width:24%;height:7%}
-.s8{left:37%;top:89.5%;width:26%;height:9%}
-.s9{left:38%;top:94%;width:24%;height:5.5%}
-.s10{left:35%;top:83.5%;width:30%;height:10%}
-.s11{left:17.5%;top:86.1%;width:65%;height:4.5%;border-radius:8px}
-.s12-single{left:5.1%;top:51.45%;width:24.6%;height:2.55%;border-radius:7px}
-.s12-journey{left:5.1%;top:63.45%;width:24.6%;height:2.55%;border-radius:7px}
-.s12-executive{left:36.6%;top:63.45%;width:25.2%;height:2.55%;border-radius:7px}
-.s12-workshops{left:68.2%;top:63.45%;width:25.8%;height:2.55%;border-radius:7px}
-.s12-complimentary{left:36.6%;top:81.05%;width:42.3%;height:2.55%;border-radius:7px}
-.cta-hit:focus-visible,.continue:focus-visible,.begin:focus-visible,.explore:focus-visible,.single:focus-visible,.journey:focus-visible,.executive:focus-visible,.workshops:focus-visible,.complimentary:focus-visible{outline:3px solid #fff;box-shadow:0 0 0 6px #b47a2d}
-
-/* Subtle chapter distinction between Screens 8→9 and 9→10.
-   Approved screen artwork remains completely unchanged. */
-.chapter-transition{
-  height:68px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:14px;
-  background:#faf6ef;
-  line-height:1;
+html,body{margin:0;background:#f8f2e9}
+body{display:flex;justify-content:center}
+.screen{
+  position:relative;
+  width:min(100vw,1080px);
+  line-height:0;
 }
-.chapter-transition span{
-  width:92px;
-  height:1px;
-  background:#c99a55;
-  opacity:.58;
-}
-.chapter-transition b{
-  font-family:Georgia,serif;
-  font-size:20px;
-  font-weight:400;
-  color:#b47a2d;
-  transform:rotate(45deg);
-}
-@media (max-width:600px){
-  .chapter-transition{height:52px;gap:11px}
-  .chapter-transition span{width:64px}
-  .chapter-transition b{font-size:17px}
-}
-
-/* Screen 13 — locked supplied artwork */
-.s13-read-more{
+.approved{display:block;width:100%;height:auto}
+.mobile-patch{display:none}
+.cta{
   position:absolute;
-  left:28.5%;
-  top:86.6%;
-  width:43.5%;
-  height:3.2%;
+  left:22.5%;
+  top:89.0%;
+  width:55%;
+  height:4.2%;
   display:block;
-  cursor:pointer;
-}
-.s13-read-more:focus-visible{
-  outline:3px solid #fff;
-  box-shadow:0 0 0 6px #b47a2d;
-}
-
-/* MASTER v15 — approved Screen 13 spacing.
-   Only excess blank bands were cropped; Screen 13 design/content unchanged. */
-.s13-read-more{
-  left:28.5%;
-  top:91.2%;
-  width:43.5%;
-  height:4%;
-}
-
-/* MASTER v16 — approved Screen 14.
-   Exact approved artwork with Welcome-matched outer white spacing. */
-.screen-14 { position: relative; }
-.screen-14 > img { display:block; width:100%; height:auto; }
-.s14-schedule {
-  position:absolute;
-  left:14.2%;
-  top:69.0%;
-  width:33.5%;
-  height:8.2%;
-  display:block;
-  border-radius:10px;
-}
-
-/* MASTER v17 — uniform section rhythm */
-.chapter-transition{display:none !important}
-
-.uniform-section + .uniform-section{
-  margin-top:52px;
 }
 
 @media (max-width:600px){
-  .uniform-section + .uniform-section{
-    margin-top:36px;
+  .mobile-patch{
+    display:block;
+    position:absolute;
+    overflow:hidden;
+    line-height:1.25;
   }
-}
-
-/* MASTER v18 — Welcome spacing correction.
-   Welcome already contains its own designed breathing room, so suppress
-   the additional global v17 gap directly before and after Screen 2. */
-#screen-2.uniform-section{
-  margin-top:0 !important;
-}
-#screen-2.uniform-section + .uniform-section{
-  margin-top:0 !important;
-}
-
-/* MASTER v19 — single uniform visible white band between homepage sections.
-   This supersedes prior per-screen spacing exceptions. */
-.uniform-section{margin-top:0 !important;margin-bottom:0 !important}
-.uniform-section + .uniform-section{
-  margin-top:52px !important;
-}
-@media (max-width:600px){
-  .uniform-section + .uniform-section{
-    margin-top:36px !important;
+  .mobile-patch>img{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
   }
-}
-/* Welcome exception from v18 is intentionally neutralized so all transitions
-   now use the same inter-section band. */
-#screen-2.uniform-section,
-#screen-2.uniform-section + .uniform-section{
-  margin-top:52px !important;
-}
-@media (max-width:600px){
-  #screen-2.uniform-section,
-  #screen-2.uniform-section + .uniform-section{
-    margin-top:36px !important;
-  }
-}
-
-/* MASTER v20 — compensate for whitespace baked into source artwork.
-   Goal: visually uniform section breathing room, not identical raw CSS margins. */
-
-/* Default transitions: screens with no meaningful built-in white edge space. */
-.uniform-section + .uniform-section{
-  margin-top:52px !important;
-}
-
-/* Welcome (Screen 2) already contains ~45px top and ~55px bottom white.
-   Do not stack another full section gap around it. */
-#screen-2.uniform-section{
-  margin-top:7px !important;
-}
-#screen-2.uniform-section + .uniform-section{
-  margin-top:0 !important;
-}
-
-/* Screen 11 has ~62px built into its top edge. */
-#screen-11.uniform-section{
-  margin-top:0 !important;
-}
-
-/* Screen 13 has substantial built-in top white space and a smaller bottom edge. */
-#screen-13.uniform-section{
-  margin-top:0 !important;
-}
-
-/* Screen 14 already has built-in white above and below after approved crop. */
-#screen-14.uniform-section{
-  margin-top:0 !important;
-}
-
-@media (max-width:600px){
-  .uniform-section + .uniform-section{
-    margin-top:36px !important;
+  .copy{
+    position:absolute;
+    inset:0;
+    z-index:2;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:#0c3152;
+    font-family:"Times New Roman", Georgia, serif;
+    padding:0 3%;
   }
 
-  /* On mobile, the baked-in artwork whitespace scales proportionally,
-     so suppress added gaps where it already supplies the visual band. */
-  #screen-2.uniform-section{
-    margin-top:0 !important;
+  /* 1. Transition labels: larger and allowed to wrap naturally into two rows. */
+  .transitions{
+    left:3.2%;
+    top:16.35%;
+    width:93.6%;
+    height:6.15%;
   }
-  #screen-2.uniform-section + .uniform-section{
-    margin-top:0 !important;
+  .transition-copy{
+    display:grid;
+    grid-template-columns:repeat(3,auto);
+    gap:6px 14px;
+    align-content:center;
+    justify-content:center;
+    font-size:15px;
+    line-height:1.2;
   }
-  #screen-11.uniform-section,
-  #screen-13.uniform-section,
-  #screen-14.uniform-section{
-    margin-top:0 !important;
+  .transition-copy span:nth-child(4){grid-column:1 / 2; justify-self:end}
+  .transition-copy span:nth-child(5){grid-column:2 / 4; justify-self:start}
+
+  /* 2. Gold italic supporting line. */
+  .simply{
+    left:21.8%;
+    top:22.45%;
+    width:56.4%;
+    height:4.45%;
+  }
+  .gold{color:#a96820}
+  .italic{font-style:italic;font-size:16px;line-height:1.25}
+
+  /* 3. Internal-friction supporting paragraph. */
+  .friction{
+    left:15.6%;
+    top:35.5%;
+    width:68.8%;
+    height:8.05%;
+  }
+  .body-copy{
+    font-size:15.5px;
+    line-height:1.35;
+  }
+
+  /* 4. Lower supporting paragraph over the mountain mist. */
+  .evolve{
+    left:19.8%;
+    top:71.55%;
+    width:60.4%;
+    height:9.15%;
+  }
+  .evolve .body-copy{
+    font-size:15.5px;
+    line-height:1.35;
   }
 }
