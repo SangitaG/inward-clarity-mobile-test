@@ -21,3 +21,14 @@ SCREEN 1 v10 — RESPONSIVE
 - Headings and transition labels wrap naturally.
 - Gold divider rhythm is preserved.
 - CTA remains touch-friendly.
+
+
+SCREEN 1 v11 — LOCK CANDIDATE
+Only four mobile whitespace bugs were corrected:
+- “changes, often”
+- “longer serve”
+- “by how”
+- “understand how”
+
+Desktop line breaks remain exactly in place.
+No font sizes, spacing, dividers, background, colors, or CTA styling were changed.
