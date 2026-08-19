@@ -59,8 +59,9 @@ body{overflow:hidden}
   }
 }
 
-/* Mobile is intentionally NOT redesigned in this pass.
-   We are locking desktop first, one screen at a time. */
+/* Mobile-only body-copy correction.
+   Desktop remains the exact locked artwork. */
+.mobile-copy-fix{display:none}
 @media (max-width:700px){
   body{overflow:auto}
   .screen{
@@ -73,4 +74,31 @@ body{overflow:hidden}
     max-height:none;
     aspect-ratio:3/2;
   }
+
+  /* Cover ONLY the baked-in small paragraph and redraw it larger.
+     Everything else in the approved artwork remains untouched. */
+  .mobile-copy-fix{
+    display:flex;
+    position:absolute;
+    left:49.5%;
+    top:42.7%;
+    width:47.8%;
+    height:22.2%;
+    align-items:center;
+    justify-content:center;
+    background:#faf6ee;
+    color:#15385d;
+    text-align:center;
+    font-family:Baskerville,Georgia,"Times New Roman",serif;
+    z-index:2;
+  }
+  .mobile-copy-fix p{
+    margin:0;
+    font-size:3.0vw;
+    line-height:1.42;
+    font-weight:400;
+    letter-spacing:-.01em;
+    white-space:nowrap;
+  }
+  .cta-hotspot{z-index:3}
 }
