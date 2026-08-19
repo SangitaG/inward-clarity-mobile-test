@@ -13,3 +13,12 @@ MOBILE ONLY
 - White breathing space is retained above and below the mobile panel.
 
 This is Screen 1 only.
+
+
+v6 MOBILE PORTRAIT CORRECTION
+- Desktop remains unchanged.
+- Replaced only the mobile portrait file with the latest original photo supplied by the user.
+- The real photo is used directly; no AI regeneration, skin-tone alteration, or facial retouching.
+- Mobile crop is centered.
+- CSS masking/fade lets the locked ivory panel color show through around the outer photo background and bottom edge.
+- All copy, type sizes, dividers, name, CTA, and mobile layout remain unchanged from v5.
