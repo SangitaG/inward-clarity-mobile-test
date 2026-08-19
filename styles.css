@@ -1,7 +1,7 @@
 
 :root{
-  /* exact background sampled from the approved reference */
   --breathing:#faf6ee;
+  --navy:#15385d;
 }
 *{box-sizing:border-box}
 html,body{margin:0;background:var(--breathing)}
@@ -17,31 +17,22 @@ body{overflow:hidden}
   overflow:hidden;
 }
 
-/*
-  IMPORTANT:
-  The approved center band itself is NOT rebuilt.
-  It is the exact supplied design image, so portrait, skin tone,
-  typography, gold/navy colors, dividers, spacing and CTA appearance
-  cannot drift.
-
-  Desktop adaptation changes only scale:
-  the band occupies up to 80% of viewport height and up to 96% width.
-  Remaining area becomes the same exact breathing-space color.
-*/
 .band-wrap{
   position:relative;
-  width:min(96vw, 120vh);
+  width:min(96vw,120vh);
   aspect-ratio:3/2;
   max-height:80vh;
 }
-.approved-band{
+picture,.approved-band{
   display:block;
   width:100%;
   height:100%;
-  object-fit:contain;
 }
+.approved-band{object-fit:contain}
 
-/* Transparent clickable layer over the CTA baked into the approved artwork. */
+/* Desktop remains EXACTLY the locked artwork. */
+.mobile-body-copy{display:none}
+
 .cta-hotspot{
   position:absolute;
   left:52.4%;
@@ -51,7 +42,6 @@ body{overflow:hidden}
   border-radius:8px;
 }
 
-/* On smaller desktop/laptop heights, preserve the entire approved band. */
 @media (max-height:700px) and (min-width:701px){
   .band-wrap{
     max-height:84vh;
@@ -59,9 +49,10 @@ body{overflow:hidden}
   }
 }
 
-/* Mobile-only body-copy correction.
-   Desktop remains the exact locked artwork. */
-.mobile-copy-fix{display:none}
+/* MOBILE ONLY:
+   same approved artwork, but its original small paragraph has been removed
+   from a separate mobile image and redrawn larger as live text.
+   Nothing else changes. */
 @media (max-width:700px){
   body{overflow:auto}
   .screen{
@@ -75,30 +66,23 @@ body{overflow:hidden}
     aspect-ratio:3/2;
   }
 
-  /* Cover ONLY the baked-in small paragraph and redraw it larger.
-     Everything else in the approved artwork remains untouched. */
-  .mobile-copy-fix{
-    display:flex;
+  .mobile-body-copy{
+    display:block;
     position:absolute;
-    left:49.5%;
-    top:42.7%;
-    width:47.8%;
-    height:22.2%;
-    align-items:center;
-    justify-content:center;
-    background:#faf6ee;
-    color:#15385d;
+    left:48.3%;
+    top:39.1%;
+    width:49.2%;
+    margin:0;
+    padding:0 1.2%;
+    color:var(--navy);
     text-align:center;
     font-family:Baskerville,Georgia,"Times New Roman",serif;
-    z-index:2;
-  }
-  .mobile-copy-fix p{
-    margin:0;
-    font-size:3.0vw;
-    line-height:1.42;
+    font-size:3.18vw;
+    line-height:1.38;
     font-weight:400;
     letter-spacing:-.01em;
-    white-space:nowrap;
+    white-space:normal;
+    z-index:2;
   }
   .cta-hotspot{z-index:3}
 }

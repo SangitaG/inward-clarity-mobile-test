@@ -9,10 +9,18 @@
 <body>
 <main class="screen">
   <div class="band-wrap">
-    <img class="approved-band" src="assets/welcome-approved-band.png" alt="Welcome to Inward Clarity">
-    <div class="mobile-copy-fix" aria-hidden="true">
-      <p>A place to better understand yourself,<br>intentionally evolve how you meet life,<br>and continually develop the inner capabilities<br>to navigate life’s changing demands well.</p>
-    </div>
+    <picture>
+      <source media="(max-width:700px)" srcset="assets/welcome-approved-band-mobile-clean.png">
+      <img class="approved-band" src="assets/welcome-approved-band.png" alt="Welcome to Inward Clarity">
+    </picture>
+
+    <p class="mobile-body-copy">
+      A place to better understand yourself,<br>
+      intentionally evolve how you meet life,<br>
+      and continually develop the inner capabilities<br>
+      to navigate life’s changing demands well.
+    </p>
+
     <a class="cta-hotspot" href="#" aria-label="Book a complimentary conversation"></a>
   </div>
 </main>
