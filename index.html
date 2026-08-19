@@ -7,22 +7,53 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<main class="screen">
-  <div class="band-wrap">
-    <picture>
-      <source media="(max-width:700px)" srcset="assets/welcome-approved-band-mobile-clean.png">
-      <img class="approved-band" src="assets/welcome-approved-band.png" alt="Welcome to Inward Clarity">
-    </picture>
 
-    <p class="mobile-body-copy">
-      A place to better understand yourself,<br>
-      intentionally evolve how you meet life,<br>
-      and continually develop the inner capabilities<br>
-      to navigate life’s changing demands well.
-    </p>
-
-    <a class="cta-hotspot" href="#" aria-label="Book a complimentary conversation"></a>
+<!-- DESKTOP: locked approved artwork. Do not modify. -->
+<main class="desktop-screen">
+  <div class="desktop-band-wrap">
+    <img class="desktop-approved-band" src="assets/welcome-approved-band.png" alt="Welcome to Inward Clarity">
+    <a class="desktop-cta-hotspot" href="#" aria-label="Book a complimentary conversation"></a>
   </div>
 </main>
+
+<!-- MOBILE ONLY: responsive reflow of the same locked design language. -->
+<main class="mobile-screen">
+  <div class="mobile-breathing top-breathing" aria-hidden="true"></div>
+
+  <section class="mobile-panel">
+    <div class="mobile-portrait">
+      <img src="assets/sangita-original.jpg" alt="Sangita Gupta">
+      <div class="mobile-portrait-fade" aria-hidden="true"></div>
+    </div>
+
+    <div class="mobile-copy">
+      <h1>Welcome to<br>Inward Clarity</h1>
+
+      <div class="mobile-divider" aria-hidden="true">
+        <span></span><b>•</b><span></span>
+      </div>
+
+      <p>
+        A place to better understand yourself,<br>
+        intentionally evolve how you meet life,<br>
+        and continually develop the inner capabilities<br>
+        to navigate life’s changing demands well.
+      </p>
+
+      <div class="mobile-divider" aria-hidden="true">
+        <span></span><b>•</b><span></span>
+      </div>
+
+      <div class="mobile-signature">Sangita Gupta</div>
+
+      <a class="mobile-cta" href="#" aria-label="Book a complimentary conversation">
+        BOOK A COMPLIMENTARY CONVERSATION <span>→</span>
+      </a>
+    </div>
+  </section>
+
+  <div class="mobile-breathing bottom-breathing" aria-hidden="true"></div>
+</main>
+
 </body>
 </html>

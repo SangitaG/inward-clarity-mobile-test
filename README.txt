@@ -1,14 +1,15 @@
-WELCOME SCREEN — RESPONSIVE LOCK CANDIDATE v4
+WELCOME SCREEN 1 — RESPONSIVE LOCK CANDIDATE v5
 
-Desktop:
-- UNCHANGED from the approved exact-desktop v2.
-- Uses the exact approved artwork.
+LOCKED DESKTOP
+- Desktop behavior is based directly on the approved v2 exact-artwork version.
+- No desktop redesign, recoloring, re-cropping, or typography changes.
 
-Mobile:
-- Uses a separate copy of the SAME approved artwork.
-- Only the original small paragraph was removed from that mobile-only copy.
-- That paragraph is redrawn as larger live text.
-- Portrait, title, dividers, name, CTA, colors, spacing, and breathing space are untouched.
-- No duplicated/underlying paragraph remains.
+MOBILE ONLY
+- Separate mobile DOM/CSS; desktop cannot be affected by mobile changes.
+- Portrait stacks above the welcome content.
+- Same ivory/panel/navy/gold color system.
+- Same title, dividers, wording, signature, and CTA.
+- Body copy is intentionally readable at ~4.55vw.
+- White breathing space is retained above and below the mobile panel.
 
-This is a surgical mobile-only correction.
+This is Screen 1 only.
