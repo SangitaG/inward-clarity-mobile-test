@@ -1,282 +1,76 @@
 
 :root{
-  --navy:#153656;
-  --gold:#b27a33;
-  --line:#cba676;
+  /* exact background sampled from the approved reference */
+  --breathing:#faf6ee;
 }
 *{box-sizing:border-box}
-html,body{margin:0;background:#f6f0e8}
-body{display:flex;justify-content:center}
-.frame{
-  width:min(100vw,900px);
-  aspect-ratio:2/3;
+html,body{margin:0;background:var(--breathing)}
+body{overflow:hidden}
+
+.screen{
+  width:100vw;
+  height:100vh;
+  background:var(--breathing);
+  display:flex;
+  align-items:center;
+  justify-content:center;
   overflow:hidden;
 }
-.screen{
+
+/*
+  IMPORTANT:
+  The approved center band itself is NOT rebuilt.
+  It is the exact supplied design image, so portrait, skin tone,
+  typography, gold/navy colors, dividers, spacing and CTA appearance
+  cannot drift.
+
+  Desktop adaptation changes only scale:
+  the band occupies up to 80% of viewport height and up to 96% width.
+  Remaining area becomes the same exact breathing-space color.
+*/
+.band-wrap{
   position:relative;
-  width:900px;
-  height:1350px;
-  transform-origin:top left;
-  font-family:Baskerville, Georgia, "Times New Roman", serif;
-  color:var(--navy);
+  width:min(96vw, 120vh);
+  aspect-ratio:3/2;
+  max-height:80vh;
 }
-.bg{position:absolute;inset:0;width:900px;height:1350px;object-fit:cover}
-.text{position:absolute;left:0;width:900px;text-align:center;white-space:nowrap}
-.title1{
-  top:48px;
-  font-size:48px;
-  line-height:1;
-  font-weight:400;
-  letter-spacing:-1.2px;
+.approved-band{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:contain;
 }
-.title2{
-  top:112px;
-  font-size:57px;
-  line-height:1;
-  font-style:italic;
-  color:var(--gold);
-  letter-spacing:-1.4px;
-}
-.divider{
+
+/* Transparent clickable layer over the CTA baked into the approved artwork. */
+.cta-hotspot{
   position:absolute;
-  left:360px;
-  width:180px;
-  height:18px;
-  display:flex;
-  align-items:center;
-  gap:10px;
-  color:var(--gold);
-}
-.divider span{height:1px;flex:1;background:var(--line)}
-.divider b{font-size:15px;line-height:1;font-weight:400}
-.d1{top:200px}
-.d2{top:356px}
-.d3{top:594px}
-.d4{top:724px}
-.d5{top:846px}
-.d6{top:1092px}
-
-.transition-row{
-  position:absolute;
-  top:238px;
-  left:48px;
-  width:804px;
-  height:44px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:18px;
-  font-size:20px;
-  line-height:1;
-  white-space:nowrap;
-}
-.transition-row i{
-  width:1px;
-  height:43px;
-  background:var(--line);
-  flex:none;
-}
-.simply{
-  top:302px;
-  font-size:24px;
-  line-height:1;
-  font-style:italic;
-  color:var(--gold);
-}
-.statement{
-  font-size:36px;
-  line-height:1.12;
-  font-weight:400;
-  letter-spacing:-0.7px;
-}
-.reality{top:392px}
-.small{
-  font-size:22px;
-  line-height:1.35;
-  font-weight:400;
-  letter-spacing:-0.1px;
-}
-.friction{top:486px}
-.once{top:632px}
-.shaped{top:754px}
-.inward{top:878px}
-.inward em{
-  color:var(--gold);
-  font-style:normal;
-}
-.evolve{top:962px}
-.begin{
-  top:1148px;
-  font-size:34px;
-}
-.cta{
-  position:absolute;
-  left:214px;
-  top:1201px;
-  width:472px;
-  height:52px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:10px;
-  border-radius:7px;
-  background:linear-gradient(#c88e3d,#b87926);
-  color:white;
-  text-decoration:none;
-  font-family:Arial,Helvetica,sans-serif;
-  font-size:17px;
-  letter-spacing:.6px;
-}
-.cta span{font-size:19px}
-
-/* Scale the exact 900×1350 reference canvas as one unit.
-   This pass is only for desktop visual matching; mobile enlargement comes later. */
-@media (max-width:899px){
-  .screen{transform:scale(calc(100vw / 900))}
+  left:52.4%;
+  top:81.7%;
+  width:38.6%;
+  height:9.2%;
+  border-radius:8px;
 }
 
+/* On smaller desktop/laptop heights, preserve the entire approved band. */
+@media (max-height:700px) and (min-width:701px){
+  .band-wrap{
+    max-height:84vh;
+    width:min(96vw,126vh);
+  }
+}
 
-/* =========================================================
-   v10 RESPONSIVE LAYER
-   Desktop v9 remains unchanged.
-   Mobile becomes a true flowing layout while preserving the same design.
-   ========================================================= */
+/* Mobile is intentionally NOT redesigned in this pass.
+   We are locking desktop first, one screen at a time. */
 @media (max-width:700px){
-  html,body{background:#f6f0e8}
-  .frame{width:100%;aspect-ratio:auto;overflow:visible}
+  body{overflow:auto}
   .screen{
-    width:100%;
+    min-height:100svh;
     height:auto;
-    min-height:100vh;
-    transform:none !important;
-    overflow:hidden;
-    padding:7vw 5.5vw 7.5vw;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
+    padding:10svh 0;
   }
-  .bg{
-    position:absolute;
-    inset:0;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    object-position:center bottom;
-    z-index:0;
+  .band-wrap{
+    width:100vw;
+    max-height:none;
+    aspect-ratio:3/2;
   }
-
-  .text,.divider,.transition-row,.cta{
-    position:relative !important;
-    top:auto !important;
-    left:auto !important;
-    width:auto !important;
-    height:auto !important;
-    z-index:1;
-    transform:none !important;
-  }
-  .text{white-space:normal;width:100% !important}
-
-  .title1{
-    order:1;
-    font-size:8.6vw;
-    line-height:1.05;
-    letter-spacing:-.035em;
-  }
-  .title2{
-    order:2;
-    margin-top:1.6vw;
-    font-size:9.5vw;
-    line-height:1.03;
-    letter-spacing:-.03em;
-  }
-
-  .d1{order:3;margin-top:6.5vw}
-
-  .transition-row{
-    order:4;
-    margin-top:5vw;
-    width:100% !important;
-    padding:0 1vw;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:2.2vw 3vw;
-    font-size:4.25vw;
-    line-height:1.25;
-    white-space:normal;
-  }
-  .transition-row i{display:none}
-
-  .simply{
-    order:5;
-    margin-top:5vw;
-    font-size:4.8vw;
-    line-height:1.3;
-    padding:0 5vw;
-  }
-
-  .d2{order:6;margin-top:6vw}
-  .reality{order:7;margin-top:4.8vw}
-  .friction{order:8;margin-top:3.2vw}
-  .d3{order:9;margin-top:6vw}
-  .once{order:10;margin-top:4.8vw}
-  .d4{order:11;margin-top:6vw}
-  .shaped{order:12;margin-top:4.8vw}
-  .d5{order:13;margin-top:6vw}
-  .inward{order:14;margin-top:4.8vw}
-  .evolve{order:15;margin-top:3.2vw}
-  .d6{order:16;margin-top:6vw}
-  .begin{
-    order:17;
-    margin-top:4.8vw;
-    font-size:7vw;
-    line-height:1.12;
-  }
-
-  .cta{
-    order:18;
-    margin-top:4vw;
-    width:min(88%,430px) !important;
-    min-height:13vw;
-    padding:3.2vw 5vw;
-    border-radius:8px;
-    font-size:3.65vw;
-    line-height:1.15;
-    text-align:center;
-  }
-
-  .divider{
-    width:34vw !important;
-    display:flex;
-    align-items:center;
-    gap:2.2vw;
-  }
-  .divider b{font-size:3.3vw}
-
-  .statement{
-    font-size:7.1vw;
-    line-height:1.14;
-    letter-spacing:-.025em;
-  }
-  .small{
-    font-size:4.5vw;
-    line-height:1.42;
-    letter-spacing:0;
-    padding:0 2vw;
-  }
-
-  /* Let narrow screens wrap naturally instead of shrinking text. */
-  .reality br,.once br,.shaped br,.inward br,.friction br,.evolve br{
-    display:none;
-  }
-}
-
-@media (max-width:390px){
-  .title1{font-size:8.9vw}
-  .title2{font-size:9.8vw}
-  .statement{font-size:7.25vw}
-  .small{font-size:4.65vw}
-  .transition-row{font-size:4.35vw}
-  .simply{font-size:4.9vw}
-  .cta{font-size:3.8vw}
 }

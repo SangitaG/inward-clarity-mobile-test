@@ -1,34 +1,20 @@
-SCREEN 1 v9 — NORMALIZED DIVIDER SPACING
+WELCOME SCREEN — DESKTOP EXACT v2
 
-Changed only the vertical position of the metallic gold divider lines/flowers.
-The dividers are now placed more consistently between adjacent text groups,
-following the visual rhythm of the supplied v17 reference.
+This version deliberately does NOT reconstruct the approved design.
 
-Unchanged:
-- typography and font sizes
-- wording
-- background image
-- colors
-- text positions
-- CTA
-- desktop canvas dimensions
+It uses the exact center band from the supplied approved reference image.
+Therefore:
+- portrait is exact
+- skin tone is exact
+- background/panel color is exact
+- typography is exact
+- gold/navy colors are exact
+- dividers and spacing are exact
+- CTA appearance is exact
 
+Only the desktop scaling/container behavior is HTML/CSS.
+The breathing-space background is sampled from the approved screen: #FAF6EE.
 
-SCREEN 1 v10 — RESPONSIVE
-- Desktop v9 is locked and unchanged.
-- At 700px and below, the same Screen 1 becomes a flowing responsive layout.
-- Supporting text remains readable instead of shrinking with the full canvas.
-- Headings and transition labels wrap naturally.
-- Gold divider rhythm is preserved.
-- CTA remains touch-friendly.
+The CTA remains clickable through a transparent link hotspot.
 
-
-SCREEN 1 v11 — LOCK CANDIDATE
-Only four mobile whitespace bugs were corrected:
-- “changes, often”
-- “longer serve”
-- “by how”
-- “understand how”
-
-Desktop line breaks remain exactly in place.
-No font sizes, spacing, dividers, background, colors, or CTA styling were changed.
+Desktop is the only thing to approve in this pass.
