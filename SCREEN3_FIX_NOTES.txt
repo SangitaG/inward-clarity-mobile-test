@@ -1,0 +1,9 @@
+ONLY CHANGE MADE
+Screen 3 desktop: central content-layer backgrounds are forced transparent so the already-approved full-width scenery continues behind the centered content.
+
+UNCHANGED
+- Screen 1
+- Screen 2
+- Screen 4
+- Screen 5
+- Screen 3 content, typography, icons, cards, dividers, spacing, dimensions, and mobile behavior

@@ -1,0 +1,20 @@
+ONLY CHANGE MADE
+Screens 2 and 3 desktop atmospheric scenery now extends edge-to-edge across the browser viewport.
+
+LOCKED / UNCHANGED
+- Screen 1
+- Screens 4 and 5
+- All Screen 2 and Screen 3 content
+- Typography
+- Font sizes
+- Text wrapping
+- Icons
+- Dividers
+- Cards
+- CTA
+- Internal spacing and positioning
+- Mobile behavior
+
+Permanent build rule:
+Atmospheric scenery is a full-width background layer on desktop; content remains centered/constrained.
+Never modify a locked screen beyond the specifically approved change without consulting Sangita first.

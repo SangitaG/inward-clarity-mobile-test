@@ -1,0 +1,11 @@
+ONLY CHANGE MADE
+Desktop Screen 3: .friction-screen background changed from opaque ivory to transparent via one appended desktop-only CSS rule.
+
+NO OTHER CHANGES
+- No HTML changes
+- No typography changes
+- No spacing changes
+- No icon/card/divider changes
+- No image positioning changes
+- No mobile changes
+- Screens 1, 2, 4, and 5 untouched

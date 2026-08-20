@@ -1714,3 +1714,70 @@ body{overflow-x:hidden;overflow-y:auto}
   .screen5-intro,.screen5-space-copy,.screen5-close{font-size:17px}
   .screen5-flow-step{font-size:22px}
 }
+
+
+/* =========================================================
+   LOCKED CORRECTION — SCREENS 2 & 3 DESKTOP SCENERY ONLY
+   Rule: atmospheric scenery spans the full browser width while
+   all existing content/layout/typography/spacing remains locked.
+   Mobile behavior is unchanged.
+   ========================================================= */
+@media (min-width: 901px){
+  .life-module{
+    background-image:url("assets/screen1-clean-bg.jpg");
+    background-repeat:no-repeat;
+    background-position:center top;
+    background-size:100% 100%;
+  }
+  .life-module .bg{
+    visibility:hidden;
+  }
+
+  .friction-module{
+    background-image:
+      linear-gradient(to bottom,
+        rgba(255,252,239,.98) 0%,
+        rgba(255,252,239,.96) 47%,
+        rgba(255,252,239,.88) 61%,
+        rgba(255,252,239,.42) 82%,
+        rgba(255,252,239,.06) 100%),
+      url("assets/screen1-clean-bg.jpg");
+    background-repeat:no-repeat,no-repeat;
+    background-position:center top,center top;
+    background-size:100% 100%,100% 100%;
+  }
+  .friction-module .friction-bg,
+  .friction-module .friction-wash{
+    visibility:hidden;
+  }
+}
+
+/* =========================================================
+   SCREEN 3 DESKTOP — APPROVED BACKGROUND-LAYER FIX ONLY
+   The full-width scenery already exists. This patch removes
+   the opaque central Screen 3 surface so that scenery remains
+   continuous behind the locked content. No layout/content/
+   typography/mobile changes.
+   ========================================================= */
+@media (min-width: 901px){
+  .friction-module .friction-inner,
+  .friction-module .friction-content,
+  .friction-module .friction-stage,
+  .friction-module .friction-panel,
+  .friction-module .friction-shell{
+    background:transparent !important;
+  }
+}
+
+/* =========================================================
+   SCREEN 3 DESKTOP — EXACT APPROVED FIX
+   Only change: remove the opaque background from the real
+   .friction-screen canvas so existing full-width scenery
+   remains continuous behind the locked content.
+   ========================================================= */
+@media (min-width: 901px){
+  .friction-screen{
+    background:transparent !important;
+  }
+}
+
