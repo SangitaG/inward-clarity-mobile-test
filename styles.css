@@ -22,6 +22,7 @@ body{overflow-x:hidden;overflow-y:auto}
    ========================================================= */
 .welcome-module{width:100%;background:var(--shared-ivory)}
 .desktop-screen{
+  position:relative;
   width:100vw;
   height:100vh;
   background:var(--breathing);
@@ -29,6 +30,19 @@ body{overflow-x:hidden;overflow-y:auto}
   align-items:center;
   justify-content:center;
   overflow:hidden;
+}
+/* Approved section breathing treatment: use existing Welcome breathing room,
+   without adding height or moving either locked screen. 48px is carried from
+   the v6 source's existing breathing minimum rather than introducing a new value. */
+.desktop-screen::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  height:20px;
+  background:#fff;
+  pointer-events:none;
 }
 .desktop-band-wrap{
   position:relative;
@@ -207,8 +221,20 @@ body{overflow-x:hidden;overflow-y:auto}
   }
 
   .bottom-breathing{
+    position:relative;
     height:8svh;
     min-height:48px;
+    background:var(--breathing);
+  }
+  .bottom-breathing::after{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    height:20px;
+    background:#fff;
+    pointer-events:none;
   }
 }
 

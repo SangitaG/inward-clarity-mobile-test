@@ -31,3 +31,9 @@ INTEGRATION CHANGES
 MERGE CANDIDATE v2 INTEGRATION FIX:
 - Outer shared ivory is #fffcef, derived from the actual v11 screen1-clean-bg.jpg edge pixels (median RGB 255,252,239), not guessed.
 - Locked Screen 1 and Screen 2 internal composition/assets remain unchanged.
+
+
+v4 boundary refinement:
+- Only the visible white separator was reduced to 20px.
+- No locked screen content or asset was changed.
+- Mobile retains its original 8svh/min-48px breathing region; only the bottom 20px is white.
