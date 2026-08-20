@@ -37,3 +37,20 @@ v4 boundary refinement:
 - Only the visible white separator was reduced to 20px.
 - No locked screen content or asset was changed.
 - Mobile retains its original 8svh/min-48px breathing region; only the bottom 20px is white.
+
+
+Screen 3 fidelity pass v2:
+- Intro gold divider explicitly anchored beneath the main question.
+- Replaced all seven friction symbols with custom inline SVG line icons matching the approved reference categories.
+- Screens 1-2 and existing assets unchanged.
+
+
+v3 icon-only refinement:
+- Replaced only Stress, Overwhelm, and Feeling stuck SVGs in Screen 3.
+- No layout, dimensions, typography, spacing, colors, or other icons changed.
+- Screens 1–2 untouched.
+
+
+v4 two-icon-only refinement:
+- Replaced only Stress and Feeling stuck SVG drawings in Screen 3.
+- Everything else is unchanged from v3.
