@@ -63,3 +63,13 @@ v5 mobile reflow:
 - Mobile GAP diagram stacks vertically.
 - Mobile friction indicators use a deliberate grid.
 - Removed desktop-forced line breaks on mobile to prevent words running together.
+
+
+v6 mobile-only correction:
+- Centered both GAP cards.
+- Centered the Internal Friction circle on the same vertical axis.
+- Kept the dotted side arrows outside the dashed circle.
+- Restored the complete gold divider under the top question.
+- No desktop changes.
+- No other Screen 3 changes.
+- Screens 1-2 unchanged.

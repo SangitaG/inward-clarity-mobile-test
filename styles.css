@@ -977,3 +977,111 @@ body{overflow-x:hidden;overflow-y:auto}
     margin-bottom: 28px;
   }
 }
+
+
+/* =========================================================
+   SCREEN 3 — MOBILE GAP ALIGNMENT / ARROWS / TOP DIVIDER ONLY
+   ========================================================= */
+@media (max-width:700px){
+
+  /* Full gold divider directly beneath the top question */
+  .friction-module .intro-divider{
+    width:46vw !important;
+    max-width:210px !important;
+    min-width:170px !important;
+    display:flex !important;
+    align-items:center !important;
+    gap:10px !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+  }
+  .friction-module .intro-divider span{
+    display:block !important;
+    flex:1 1 auto !important;
+    min-width:58px !important;
+    height:1px !important;
+    background:#cba676 !important;
+  }
+
+  /* One centered vertical axis for THE GAP sequence */
+  .friction-module .gap-diagram{
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:center !important;
+    justify-content:flex-start !important;
+    gap:26px !important;
+    width:100% !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+  }
+
+  .friction-module .gap-card{
+    position:relative !important;
+    left:auto !important;
+    right:auto !important;
+    top:auto !important;
+    width:min(84vw, 360px) !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+    box-sizing:border-box !important;
+  }
+
+  .friction-module .gap-center{
+    position:relative !important;
+    left:auto !important;
+    right:auto !important;
+    top:auto !important;
+    width:100% !important;
+    height:34vw !important;
+    min-height:145px !important;
+    max-height:180px !important;
+    margin:0 auto !important;
+    display:block !important;
+  }
+
+  .friction-module .friction-circle{
+    position:absolute !important;
+    left:50% !important;
+    top:50% !important;
+    transform:translate(-50%,-50%) !important;
+    width:29vw !important;
+    height:29vw !important;
+    max-width:150px !important;
+    max-height:150px !important;
+    min-width:125px !important;
+    min-height:125px !important;
+    margin:0 !important;
+  }
+
+  /* Keep the two dotted arrows outside the dashed circle */
+  .friction-module .gap-arrows{
+    top:50% !important;
+    transform:translateY(-50%) !important;
+    width:22vw !important;
+    max-width:105px !important;
+    min-width:72px !important;
+    display:flex !important;
+    align-items:center !important;
+  }
+
+  .friction-module .left-arrow{
+    left:7vw !important;
+    right:auto !important;
+  }
+
+  .friction-module .right-arrow{
+    right:7vw !important;
+    left:auto !important;
+  }
+
+  .friction-module .gap-arrows span{
+    flex:1 1 auto !important;
+    border-top:3px dotted #b27a33 !important;
+  }
+
+  .friction-module .gap-arrows i{
+    flex:0 0 auto !important;
+    font-size:15px !important;
+    line-height:1 !important;
+  }
+}
