@@ -1,0 +1,10 @@
+INWARD CLARITY — LOCKED SCREENS 1–4 MERGE v2 CORRECTED
+
+Sources:
+- Screens 1–3: locked v8 master, copied verbatim.
+- Screen 4: locked v7 Subtle Scenery markup/assets, copied verbatim.
+
+Correction from broken merge v1:
+- Screen 4 HTML classes are NOT renamed.
+- Screen 4 CSS selectors are scoped under .screen4 instead.
+- This preserves exact Screen 4 typography, SVG stroke/fill rules, layout, and mobile behavior while preventing leakage to Screens 1–3.

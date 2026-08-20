@@ -1,9 +1,75 @@
-INWARD CLARITY — SCREEN 4 GITHUB PAGES v7
+INWARD CLARITY — LOCKED SCREENS 1–2 MERGE CANDIDATE
 
-Based on v6 Real Scenery.
-Changes in v7:
-- Scenery muted further on desktop and mobile so it functions as subtle atmosphere behind content.
-- Desktop right-column text now reads cleanly as: 'The meaning we create' / 'shapes how we respond.'
-- Mobile layout remains unchanged.
-- Desktop interpretation text fix remains unchanged.
-- All copy, icons, dividers, and content structure otherwise unchanged.
+SOURCE OF TRUTH
+- Screen 1 / Welcome: Inward_Clarity_Welcome_Screen1_Responsive_LOCK_CANDIDATE_v6
+- Screen 2 / Life Doesn't Stand Still: Inward_Clarity_Screen1_Responsive_v11_LOCK_CANDIDATE
+
+PROTOCOL CLASSIFICATION
+LOCKED
+- Welcome desktop composition
+- Welcome mobile responsive composition
+- Welcome portrait asset and all internal styling/content
+- Screen 2 typography, wording, dividers, mountain/background artwork, CTA, internal spacing
+- Screen 2 mobile responsive behavior
+
+ALLOWED TO CHANGE
+- Screen 2 integration/container/background behavior on desktop
+- Welcome OUTER wrapper/breathing background only, to match Screen 2 exact ivory
+
+DO NOT TOUCH
+- Locked screen internals listed above
+
+INTEGRATION CHANGES
+1. Structurally merged into one HTML/CSS project; no iframes.
+2. Shared OUTER ivory is #f6f0e8, taken directly from the v11 Screen 2 CSS.
+3. Welcome's internal locked panel remains #fbf7ef. Only its outer breathing wrapper uses #f6f0e8.
+4. Welcome's existing desktop 100vh composition and mobile 8svh breathing bands are retained; no new inter-screen pixel spacing was invented.
+5. Screen 2 desktop remains the exact 900×1350 internal composition and is allowed to occupy its full natural height; no viewport-height clipping wrapper was added.
+6. Screen 2 outer section continues #f6f0e8 across the full browser width, eliminating a differently colored side canvas.
+7. Screen 2 v11 mobile CSS values and behavior are preserved under a scoped selector.
+
+MERGE CANDIDATE v2 INTEGRATION FIX:
+- Outer shared ivory is #fffcef, derived from the actual v11 screen1-clean-bg.jpg edge pixels (median RGB 255,252,239), not guessed.
+- Locked Screen 1 and Screen 2 internal composition/assets remain unchanged.
+
+
+v4 boundary refinement:
+- Only the visible white separator was reduced to 20px.
+- No locked screen content or asset was changed.
+- Mobile retains its original 8svh/min-48px breathing region; only the bottom 20px is white.
+
+
+Screen 3 fidelity pass v2:
+- Intro gold divider explicitly anchored beneath the main question.
+- Replaced all seven friction symbols with custom inline SVG line icons matching the approved reference categories.
+- Screens 1-2 and existing assets unchanged.
+
+
+v3 icon-only refinement:
+- Replaced only Stress, Overwhelm, and Feeling stuck SVGs in Screen 3.
+- No layout, dimensions, typography, spacing, colors, or other icons changed.
+- Screens 1–2 untouched.
+
+
+v4 two-icon-only refinement:
+- Replaced only Stress and Feeling stuck SVG drawings in Screen 3.
+- Everything else is unchanged from v3.
+
+
+v5 mobile reflow:
+- Screen 3 mobile only.
+- Desktop Screen 3 unchanged.
+- Screens 1-2 unchanged.
+- Mobile GAP diagram stacks vertically.
+- Mobile friction indicators use a deliberate grid.
+- Removed desktop-forced line breaks on mobile to prevent words running together.
+
+
+v6 mobile-only correction:
+- Centered both GAP cards.
+- Centered the Internal Friction circle on the same vertical axis.
+- Kept the dotted side arrows outside the dashed circle.
+- Restored the complete gold divider under the top question.
+- No desktop changes.
+- No other Screen 3 changes.
+- Screens 1-2 unchanged.
