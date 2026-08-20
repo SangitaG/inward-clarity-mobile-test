@@ -1,6 +1,9 @@
-
 :root{
-  --breathing:#faf6ee;
+  /* Exact outer ivory is taken from Screen 2 v11 source CSS. */
+  --shared-ivory:#fffcef;
+
+  /* Welcome v6 locked internal design tokens. */
+  --breathing:var(--shared-ivory);
   --panel:#fbf7ef;
   --navy:#15385d;
   --gold:#b67825;
@@ -9,13 +12,15 @@
   --cta-bottom:#b8751e;
 }
 *{box-sizing:border-box}
-html,body{margin:0;background:var(--breathing)}
-body{overflow:hidden}
+html,body{margin:0;background:var(--shared-ivory)}
+body{overflow-x:hidden;overflow-y:auto}
 
 /* =========================================================
-   DESKTOP — LOCKED
-   This is the exact approved v2 artwork behavior.
+   SCREEN 1 — WELCOME v6
+   LOCKED INTERNAL COMPOSITION.
+   Only --breathing resolves to Screen 2's exact source ivory.
    ========================================================= */
+.welcome-module{width:100%;background:var(--shared-ivory)}
 .desktop-screen{
   width:100vw;
   height:100vh;
@@ -51,17 +56,9 @@ body{overflow:hidden}
     width:min(96vw,126vh);
   }
 }
-
-/* Mobile is hidden on desktop. */
 .mobile-screen{display:none}
 
-/* =========================================================
-   MOBILE ONLY — true responsive reflow.
-   Desktop above is untouched.
-   ========================================================= */
 @media (max-width:700px){
-  body{overflow:auto}
-
   .desktop-screen{display:none}
   .mobile-screen{
     display:block;
@@ -96,11 +93,6 @@ body{overflow:hidden}
     height:100%;
     object-fit:cover;
     object-position:50% 20%;
-    /*
-      Use the REAL portrait pixels. No recoloring or retouching.
-      The mask simply lets the locked ivory panel show through around
-      the outer background and lower edge, while the face stays untouched.
-    */
     -webkit-mask-image:
       linear-gradient(to bottom,
         #000 0%,
@@ -224,4 +216,282 @@ body{overflow:hidden}
   .mobile-copy p{font-size:4.7vw}
   .mobile-copy h1{font-size:9.8vw}
   .mobile-cta{font-size:3.7vw}
+}
+
+/* =========================================================
+   SCREEN 2 — v11 LOCK CANDIDATE
+   Internal v11 styles are unchanged. Integration changes:
+   1) full-width outer section uses the ivory sampled from the actual v11 background asset edge (#fffcef)
+   2) no viewport-height wrapper/clipping is introduced
+   3) the exact 900×1350 desktop composition remains centered and complete
+   ========================================================= */
+.life-module{
+  width:100%;
+  background:var(--shared-ivory);
+  display:flex;
+  justify-content:center;
+}
+.life-module .frame{
+  width:min(100vw,900px);
+  aspect-ratio:2/3;
+  overflow:hidden;
+}
+.life-module .screen{
+  position:relative;
+  width:900px;
+  height:1350px;
+  transform-origin:top left;
+  font-family:Baskerville, Georgia, "Times New Roman", serif;
+  color:#153656;
+}
+.life-module .bg{position:absolute;inset:0;width:900px;height:1350px;object-fit:cover}
+.life-module .text{position:absolute;left:0;width:900px;text-align:center;white-space:nowrap}
+.life-module .title1{
+  top:48px;
+  font-size:48px;
+  line-height:1;
+  font-weight:400;
+  letter-spacing:-1.2px;
+}
+.life-module .title2{
+  top:112px;
+  font-size:57px;
+  line-height:1;
+  font-style:italic;
+  color:#b27a33;
+  letter-spacing:-1.4px;
+}
+.life-module .divider{
+  position:absolute;
+  left:360px;
+  width:180px;
+  height:18px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:#b27a33;
+}
+.life-module .divider span{height:1px;flex:1;background:#cba676}
+.life-module .divider b{font-size:15px;line-height:1;font-weight:400}
+.life-module .d1{top:200px}
+.life-module .d2{top:356px}
+.life-module .d3{top:594px}
+.life-module .d4{top:724px}
+.life-module .d5{top:846px}
+.life-module .d6{top:1092px}
+
+.life-module .transition-row{
+  position:absolute;
+  top:238px;
+  left:48px;
+  width:804px;
+  height:44px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:18px;
+  font-size:20px;
+  line-height:1;
+  white-space:nowrap;
+}
+.life-module .transition-row i{
+  width:1px;
+  height:43px;
+  background:#cba676;
+  flex:none;
+}
+.life-module .simply{
+  top:302px;
+  font-size:24px;
+  line-height:1;
+  font-style:italic;
+  color:#b27a33;
+}
+.life-module .statement{
+  font-size:36px;
+  line-height:1.12;
+  font-weight:400;
+  letter-spacing:-0.7px;
+}
+.life-module .reality{top:392px}
+.life-module .small{
+  font-size:22px;
+  line-height:1.35;
+  font-weight:400;
+  letter-spacing:-0.1px;
+}
+.life-module .friction{top:486px}
+.life-module .once{top:632px}
+.life-module .shaped{top:754px}
+.life-module .inward{top:878px}
+.life-module .inward em{
+  color:#b27a33;
+  font-style:normal;
+}
+.life-module .evolve{top:962px}
+.life-module .begin{
+  top:1148px;
+  font-size:34px;
+}
+.life-module .cta{
+  position:absolute;
+  left:214px;
+  top:1201px;
+  width:472px;
+  height:52px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  border-radius:7px;
+  background:linear-gradient(#c88e3d,#b87926);
+  color:white;
+  text-decoration:none;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:17px;
+  letter-spacing:.6px;
+}
+.life-module .cta span{font-size:19px}
+
+@media (max-width:899px){
+  .life-module .screen{transform:scale(calc(100vw / 900))}
+}
+
+@media (max-width:700px){
+  .life-module{background:var(--shared-ivory)}
+  .life-module .frame{width:100%;aspect-ratio:auto;overflow:visible}
+  .life-module .screen{
+    width:100%;
+    height:auto;
+    min-height:100vh;
+    transform:none !important;
+    overflow:hidden;
+    padding:7vw 5.5vw 7.5vw;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+  .life-module .bg{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center bottom;
+    z-index:0;
+  }
+
+  .life-module .text,.life-module .divider,.life-module .transition-row,.life-module .cta{
+    position:relative !important;
+    top:auto !important;
+    left:auto !important;
+    width:auto !important;
+    height:auto !important;
+    z-index:1;
+    transform:none !important;
+  }
+  .life-module .text{white-space:normal;width:100% !important}
+
+  .life-module .title1{
+    order:1;
+    font-size:8.6vw;
+    line-height:1.05;
+    letter-spacing:-.035em;
+  }
+  .life-module .title2{
+    order:2;
+    margin-top:1.6vw;
+    font-size:9.5vw;
+    line-height:1.03;
+    letter-spacing:-.03em;
+  }
+
+  .life-module .d1{order:3;margin-top:6.5vw}
+
+  .life-module .transition-row{
+    order:4;
+    margin-top:5vw;
+    width:100% !important;
+    padding:0 1vw;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:2.2vw 3vw;
+    font-size:4.25vw;
+    line-height:1.25;
+    white-space:normal;
+  }
+  .life-module .transition-row i{display:none}
+
+  .life-module .simply{
+    order:5;
+    margin-top:5vw;
+    font-size:4.8vw;
+    line-height:1.3;
+    padding:0 5vw;
+  }
+
+  .life-module .d2{order:6;margin-top:6vw}
+  .life-module .reality{order:7;margin-top:4.8vw}
+  .life-module .friction{order:8;margin-top:3.2vw}
+  .life-module .d3{order:9;margin-top:6vw}
+  .life-module .once{order:10;margin-top:4.8vw}
+  .life-module .d4{order:11;margin-top:6vw}
+  .life-module .shaped{order:12;margin-top:4.8vw}
+  .life-module .d5{order:13;margin-top:6vw}
+  .life-module .inward{order:14;margin-top:4.8vw}
+  .life-module .evolve{order:15;margin-top:3.2vw}
+  .life-module .d6{order:16;margin-top:6vw}
+  .life-module .begin{
+    order:17;
+    margin-top:4.8vw;
+    font-size:7vw;
+    line-height:1.12;
+  }
+
+  .life-module .cta{
+    order:18;
+    margin-top:4vw;
+    width:min(88%,430px) !important;
+    min-height:13vw;
+    padding:3.2vw 5vw;
+    border-radius:8px;
+    font-size:3.65vw;
+    line-height:1.15;
+    text-align:center;
+  }
+
+  .life-module .divider{
+    width:34vw !important;
+    display:flex;
+    align-items:center;
+    gap:2.2vw;
+  }
+  .life-module .divider b{font-size:3.3vw}
+
+  .life-module .statement{
+    font-size:7.1vw;
+    line-height:1.14;
+    letter-spacing:-.025em;
+  }
+  .life-module .small{
+    font-size:4.5vw;
+    line-height:1.42;
+    letter-spacing:0;
+    padding:0 2vw;
+  }
+
+  .life-module .reality br,.life-module .once br,.life-module .shaped br,.life-module .inward br,.life-module .friction br,.life-module .evolve br{
+    display:none;
+  }
+}
+
+@media (max-width:390px){
+  .life-module .title1{font-size:8.9vw}
+  .life-module .title2{font-size:9.8vw}
+  .life-module .statement{font-size:7.25vw}
+  .life-module .small{font-size:4.65vw}
+  .life-module .transition-row{font-size:4.35vw}
+  .life-module .simply{font-size:4.9vw}
+  .life-module .cta{font-size:3.8vw}
 }

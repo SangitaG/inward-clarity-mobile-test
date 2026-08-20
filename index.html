@@ -3,57 +3,125 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Inward Clarity — Welcome</title>
+<title>Inward Clarity</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- DESKTOP: locked approved artwork. Do not modify. -->
-<main class="desktop-screen">
-  <div class="desktop-band-wrap">
-    <img class="desktop-approved-band" src="assets/welcome-approved-band.png" alt="Welcome to Inward Clarity">
-    <a class="desktop-cta-hotspot" href="#" aria-label="Book a complimentary conversation"></a>
-  </div>
-</main>
-
-<!-- MOBILE ONLY: responsive reflow of the same locked design language. -->
-<main class="mobile-screen">
-  <div class="mobile-breathing top-breathing" aria-hidden="true"></div>
-
-  <section class="mobile-panel">
-    <div class="mobile-portrait">
-      <img src="assets/sangita-original.jpg" alt="Sangita Gupta">
-      <div class="mobile-portrait-fade" aria-hidden="true"></div>
+<!-- =========================================================
+     SCREEN 1 — WELCOME
+     LOCKED SOURCE: Inward_Clarity_Welcome_Screen1_Responsive_LOCK_CANDIDATE_v6
+     Internal composition is unchanged. Only the OUTER breathing color is
+     integrated to Screen 2's source ivory (#f6f0e8), per handoff.
+     ========================================================= -->
+<section id="welcome" class="welcome-module" aria-label="Welcome to Inward Clarity">
+  <!-- DESKTOP: locked approved artwork. Do not modify. -->
+  <main class="desktop-screen">
+    <div class="desktop-band-wrap">
+      <img class="desktop-approved-band" src="assets/welcome-approved-band.png" alt="Welcome to Inward Clarity">
+      <a class="desktop-cta-hotspot" href="#" aria-label="Book a complimentary conversation"></a>
     </div>
+  </main>
 
-    <div class="mobile-copy">
-      <h1>Welcome to<br>Inward Clarity</h1>
+  <!-- MOBILE ONLY: locked responsive composition. -->
+  <main class="mobile-screen">
+    <div class="mobile-breathing top-breathing" aria-hidden="true"></div>
 
-      <div class="mobile-divider" aria-hidden="true">
-        <span></span><b>•</b><span></span>
+    <section class="mobile-panel">
+      <div class="mobile-portrait">
+        <img src="assets/sangita-original.jpg" alt="Sangita Gupta">
+        <div class="mobile-portrait-fade" aria-hidden="true"></div>
       </div>
 
-      <p>
-        A place to better understand yourself,<br>
-        intentionally evolve how you meet life,<br>
-        and continually develop the inner capabilities<br>
-        to navigate life’s changing demands well.
-      </p>
+      <div class="mobile-copy">
+        <h1>Welcome to<br>Inward Clarity</h1>
 
-      <div class="mobile-divider" aria-hidden="true">
-        <span></span><b>•</b><span></span>
+        <div class="mobile-divider" aria-hidden="true">
+          <span></span><b>•</b><span></span>
+        </div>
+
+        <p>
+          A place to better understand yourself,<br>
+          intentionally evolve how you meet life,<br>
+          and continually develop the inner capabilities<br>
+          to navigate life’s changing demands well.
+        </p>
+
+        <div class="mobile-divider" aria-hidden="true">
+          <span></span><b>•</b><span></span>
+        </div>
+
+        <div class="mobile-signature">Sangita Gupta</div>
+
+        <a class="mobile-cta" href="#" aria-label="Book a complimentary conversation">
+          BOOK A COMPLIMENTARY CONVERSATION <span>→</span>
+        </a>
+      </div>
+    </section>
+
+    <div class="mobile-breathing bottom-breathing" aria-hidden="true"></div>
+  </main>
+</section>
+
+<!-- =========================================================
+     SCREEN 2 — LIFE DOESN'T STAND STILL
+     LOCKED SOURCE: Inward_Clarity_Screen1_Responsive_v11_LOCK_CANDIDATE
+     Typography/content/dividers/artwork/CTA/internal spacing unchanged.
+     Only integration/container/background behavior is adjusted.
+     ========================================================= -->
+<section id="screen2" class="life-module" aria-label="Life Doesn't Stand Still">
+  <div class="frame">
+    <main class="screen">
+      <img class="bg" src="assets/screen1-clean-bg.jpg" alt="">
+
+      <div class="text title1">Life Doesn’t Stand Still.</div>
+      <div class="text title2">It Changes. It Transitions.</div>
+
+      <div class="divider d1"><span></span><b>✿</b><span></span></div>
+
+      <div class="transition-row">
+        <span>Career shifts.</span><i></i>
+        <span>Changing priorities.</span><i></i>
+        <span>Changing relationships.</span><i></i>
+        <span>Loss.</span><i></i>
+        <span>Identity shifts.</span>
       </div>
 
-      <div class="mobile-signature">Sangita Gupta</div>
+      <div class="text simply">Or simply something inside feels different.</div>
 
-      <a class="mobile-cta" href="#" aria-label="Book a complimentary conversation">
-        BOOK A COMPLIMENTARY CONVERSATION <span>→</span>
+      <div class="divider d2"><span></span><b>✿</b><span></span></div>
+
+      <div class="text statement reality">When our reality changes,<br> often how we operate doesn’t.</div>
+      <div class="text small friction">As a result, we experience internal friction,<br>
+      which can show up as stress, overwhelm, unhappiness,<br>
+      burnout, uncertainty, or a feeling of being stuck.</div>
+
+      <div class="divider d3"><span></span><b>✿</b><span></span></div>
+
+      <div class="text statement once">What once served us may no longer<br> serve the life we are living today.</div>
+
+      <div class="divider d4"><span></span><b>✿</b><span></span></div>
+
+      <div class="text statement shaped">Our experience of life is shaped by<br> how we have learned to perceive and respond.</div>
+
+      <div class="divider d5"><span></span><b>✿</b><span></span></div>
+
+      <div class="text statement inward"><em>Inward Clarity</em> helps us understand<br> how we are experiencing our lives</div>
+      <div class="text small evolve">so we can intentionally evolve how we operate<br>
+      and continually meet life’s changing demands<br>
+      with greater clarity, self-leadership,<br>
+      and intentional choice.</div>
+
+      <div class="divider d6"><span></span><b>✿</b><span></span></div>
+
+      <div class="text statement begin">Begin Your Inward Clarity Experience</div>
+
+      <a class="cta" href="#" aria-label="Book a complimentary conversation">
+      BOOK A COMPLIMENTARY CONVERSATION <span>→</span>
       </a>
-    </div>
-  </section>
-
-  <div class="mobile-breathing bottom-breathing" aria-hidden="true"></div>
-</main>
+    </main>
+  </div>
+</section>
 
 </body>
 </html>
