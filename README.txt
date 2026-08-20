@@ -1,6 +1,5 @@
-INWARD CLARITY — SCREEN 4 GITHUB PAGES TEST
+INWARD CLARITY — SCREEN 4 GITHUB PAGES v2
 
 Upload the CONTENTS of this folder to the GitHub Pages publishing location.
-The important file is index.html.
-Do not rename index.html to index.htm.
-This Screen 4 test is self-contained and does not require an assets folder.
+Use index.html exactly as named.
+Only change from v1: the mobile 'Together, how we perceive and respond...' statement is center-aligned with controlled two-line wrapping.
