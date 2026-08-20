@@ -54,3 +54,12 @@ v3 icon-only refinement:
 v4 two-icon-only refinement:
 - Replaced only Stress and Feeling stuck SVG drawings in Screen 3.
 - Everything else is unchanged from v3.
+
+
+v5 mobile reflow:
+- Screen 3 mobile only.
+- Desktop Screen 3 unchanged.
+- Screens 1-2 unchanged.
+- Mobile GAP diagram stacks vertically.
+- Mobile friction indicators use a deliberate grid.
+- Removed desktop-forced line breaks on mobile to prevent words running together.
