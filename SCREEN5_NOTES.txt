@@ -1,0 +1,8 @@
+SCREEN 5 — AWARENESS
+Added to the locked Screens 1–4 master.
+
+LOCK RULE FOLLOWED:
+- Existing Screens 1–4 HTML was not edited.
+- Existing Screens 1–4 CSS was not edited.
+- Screen 5 uses isolated .screen5* selectors only.
+- Approved muted scenery is stored at assets/screen5/screen5-awareness-scenery.png.
