@@ -1,0 +1,14 @@
+SCREENS 1–8 CANDIDATE v1
+
+LOCKED BASE:
+- Screens 1–7 copied from approved Candidate v2 master.
+- Existing HTML preserved; Screen 8 markup appended only.
+- Existing CSS preserved; Screen 8 CSS appended only.
+- Existing assets hash-verified unchanged.
+
+SCREEN 8:
+- Uses approved muted path scenery as a real image asset.
+- Desktop scenery spans edge-to-edge.
+- Content remains centered to the 900px design canvas.
+- Screen 8 uses isolated selectors and mobile rules.
+- No shared/global selectors were modified.

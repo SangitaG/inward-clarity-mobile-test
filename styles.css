@@ -2355,3 +2355,458 @@ body{overflow-x:hidden;overflow-y:auto}
   .screen7-cap-bottom-left{left:27px}
 }
 
+/* =========================================================
+   SCREEN 8 — MEETING LIFE WELL
+   Isolated addition. Locked Screens 1–7 unchanged.
+   Desktop scenery is full-width; content remains centered.
+   ========================================================= */
+.screen8-merge-breathing{
+  width:100%;
+  height:20px;
+  background:#fff;
+}
+
+.screen8{
+  --s8-navy:#15385d;
+  --s8-gold:#a56d22;
+  --s8-ivory:#fffaf1;
+  position:relative;
+  width:100%;
+  min-height:1350px;
+  overflow:hidden;
+  color:var(--s8-navy);
+  font-family:Georgia,"Times New Roman",serif;
+  text-align:center;
+  background-color:var(--s8-ivory);
+  background-image:
+    linear-gradient(to bottom,
+      rgba(255,250,241,.42) 0%,
+      rgba(255,250,241,.28) 33%,
+      rgba(255,250,241,.17) 54%,
+      rgba(255,250,241,.29) 73%,
+      rgba(255,250,241,.72) 100%),
+    url("assets/screen8/screen8-meeting-life-well-scenery.png");
+  background-repeat:no-repeat,no-repeat;
+  background-position:center top,center bottom;
+  background-size:100% 100%,100% 100%;
+}
+
+.screen8-inner{
+  width:min(900px,100%);
+  min-height:1350px;
+  margin:0 auto;
+  padding:48px 34px 30px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.screen8-eyebrow{
+  color:var(--s8-gold);
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:20px;
+  line-height:1;
+  letter-spacing:.13em;
+  font-weight:500;
+  margin-bottom:16px;
+}
+
+.screen8-lotus-rule{
+  width:545px;
+  max-width:78%;
+  display:grid;
+  grid-template-columns:1fr 46px 1fr;
+  gap:12px;
+  align-items:center;
+  margin-bottom:27px;
+}
+.screen8-lotus-rule span{
+  height:1px;
+  background:rgba(165,109,34,.47);
+}
+.screen8-lotus-rule svg{
+  width:42px;
+  height:42px;
+  fill:none;
+  stroke:var(--s8-gold);
+  stroke-width:1.7;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+
+.screen8-title{
+  margin:0 0 55px;
+  font-size:83px;
+  line-height:.98;
+  font-weight:400;
+  letter-spacing:-.025em;
+}
+.screen8-title span{
+  color:var(--s8-gold);
+}
+
+.screen8-seasons{
+  position:relative;
+  width:720px;
+  max-width:100%;
+  margin-bottom:54px;
+  padding-left:65px;
+}
+.screen8-season-row{
+  display:grid;
+  grid-template-columns:70px 1fr;
+  gap:22px;
+  align-items:center;
+  text-align:left;
+  min-height:78px;
+}
+.screen8-season-icon{
+  width:58px;
+  height:58px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--s8-gold);
+}
+.screen8-season-icon svg{
+  width:52px;
+  height:52px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.8;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+.screen8-season-row p{
+  margin:0;
+  font-size:25px;
+  line-height:1.15;
+}
+.screen8-season-line{
+  position:absolute;
+  left:111px;
+  top:39px;
+  bottom:39px;
+  width:1px;
+  background:rgba(165,109,34,.72);
+}
+.screen8-season-line b{
+  position:absolute;
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:var(--s8-gold);
+  left:50%;
+  bottom:-2px;
+  transform:translateX(-50%);
+}
+
+.screen8-statement-wrap{
+  position:relative;
+  width:675px;
+  max-width:90%;
+  margin:0 auto 30px;
+}
+.screen8-statement{
+  border:1.6px solid var(--s8-gold);
+  border-radius:16px;
+  background:rgba(255,250,241,.74);
+  padding:45px 48px 40px;
+}
+.screen8-statement p{
+  margin:0;
+  font-size:29px;
+  line-height:1.39;
+}
+.screen8-statement em{
+  color:var(--s8-gold);
+  font-style:italic;
+}
+.screen8-card-lotus{
+  position:absolute;
+  left:50%;
+  top:-27px;
+  transform:translateX(-50%);
+  width:70px;
+  height:54px;
+  background:rgba(255,250,241,.94);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:2;
+}
+.screen8-card-lotus svg{
+  width:53px;
+  height:53px;
+  fill:none;
+  stroke:var(--s8-gold);
+  stroke-width:1.8;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+
+.screen8-spark-rule{
+  width:220px;
+  display:grid;
+  grid-template-columns:1fr 24px 1fr;
+  gap:8px;
+  align-items:center;
+  color:var(--s8-gold);
+  margin:0 auto 14px;
+}
+.screen8-spark-rule span{
+  height:1px;
+  background:rgba(165,109,34,.45);
+}
+.screen8-spark-rule b{
+  font-size:25px;
+  line-height:1;
+  font-weight:400;
+}
+
+.screen8-lower{
+  width:610px;
+  max-width:100%;
+}
+.screen8-lower-row{
+  display:grid;
+  grid-template-columns:72px 1fr;
+  align-items:center;
+  gap:19px;
+  text-align:left;
+  min-height:78px;
+}
+.screen8-lower-icon{
+  width:64px;
+  height:64px;
+  border:1.5px solid rgba(165,109,34,.85);
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--s8-gold);
+  background:rgba(255,250,241,.52);
+}
+.screen8-lower-icon svg{
+  width:43px;
+  height:43px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.8;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+.screen8-lower-row p{
+  margin:0;
+  font-size:23px;
+  line-height:1.2;
+}
+.screen8-lower-strong p{
+  font-weight:700;
+}
+
+.screen8-bottom-rule{
+  width:420px;
+  max-width:70%;
+  display:grid;
+  grid-template-columns:1fr 37px 1fr;
+  gap:10px;
+  align-items:center;
+  margin:17px auto 25px;
+}
+.screen8-bottom-rule span{
+  height:1px;
+  background:rgba(165,109,34,.45);
+}
+.screen8-bottom-rule svg{
+  width:32px;
+  height:32px;
+  fill:none;
+  stroke:var(--s8-gold);
+  stroke-width:1.8;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+
+.screen8-continue{
+  display:inline-flex;
+  flex-direction:column;
+  align-items:center;
+  text-decoration:none;
+  color:var(--s8-navy);
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:17px;
+  letter-spacing:.18em;
+  font-weight:500;
+}
+.screen8-continue-circle{
+  width:58px;
+  height:58px;
+  border:1.5px solid var(--s8-gold);
+  border-radius:50%;
+  color:var(--s8-gold);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:39px;
+  line-height:1;
+  margin-bottom:13px;
+}
+.screen8-continue b{
+  font-weight:500;
+}
+
+@media (min-width:901px){
+  .screen8{
+    background-size:100% 100%,100% 100%;
+  }
+}
+
+/* Mobile: Screen 8 only. Locked earlier screens are not touched. */
+@media (max-width:700px){
+  .screen8-merge-breathing{height:20px}
+
+  .screen8{
+    min-height:0;
+    background-image:
+      linear-gradient(to bottom,
+        rgba(255,250,241,.52) 0%,
+        rgba(255,250,241,.34) 33%,
+        rgba(255,250,241,.21) 56%,
+        rgba(255,250,241,.40) 76%,
+        rgba(255,250,241,.78) 100%),
+      url("assets/screen8/screen8-meeting-life-well-scenery.png");
+    background-position:center top,center bottom;
+    background-size:100% 100%,auto 100%;
+  }
+
+  .screen8-inner{
+    width:100%;
+    min-height:100svh;
+    padding:40px 19px 32px;
+  }
+
+  .screen8-eyebrow{
+    font-size:15px;
+    line-height:1.25;
+    letter-spacing:.11em;
+    margin-bottom:14px;
+  }
+
+  .screen8-lotus-rule{
+    width:82%;
+    max-width:350px;
+    grid-template-columns:1fr 39px 1fr;
+    gap:8px;
+    margin-bottom:20px;
+  }
+  .screen8-lotus-rule svg{
+    width:36px;height:36px;
+  }
+
+  .screen8-title{
+    font-size:57px;
+    line-height:1;
+    margin-bottom:39px;
+  }
+
+  .screen8-seasons{
+    width:100%;
+    max-width:420px;
+    padding-left:23px;
+    margin-bottom:43px;
+  }
+  .screen8-season-row{
+    grid-template-columns:58px 1fr;
+    gap:17px;
+    min-height:72px;
+  }
+  .screen8-season-icon{
+    width:50px;height:50px;
+  }
+  .screen8-season-icon svg{
+    width:45px;height:45px;
+  }
+  .screen8-season-row p{
+    font-size:20px;
+    line-height:1.18;
+  }
+  .screen8-season-line{
+    left:82px;
+    top:36px;
+    bottom:36px;
+  }
+
+  .screen8-statement-wrap{
+    width:100%;
+    max-width:430px;
+    margin-bottom:27px;
+  }
+  .screen8-statement{
+    border-radius:14px;
+    padding:42px 24px 32px;
+  }
+  .screen8-statement p{
+    font-size:22px;
+    line-height:1.4;
+  }
+  .screen8-card-lotus{
+    width:62px;height:49px;top:-25px;
+  }
+  .screen8-card-lotus svg{
+    width:47px;height:47px;
+  }
+
+  .screen8-spark-rule{
+    width:180px;
+    margin-bottom:12px;
+  }
+
+  .screen8-lower{
+    width:100%;
+    max-width:430px;
+  }
+  .screen8-lower-row{
+    grid-template-columns:60px 1fr;
+    gap:14px;
+    min-height:76px;
+  }
+  .screen8-lower-icon{
+    width:54px;height:54px;
+  }
+  .screen8-lower-icon svg{
+    width:37px;height:37px;
+  }
+  .screen8-lower-row p{
+    font-size:19px;
+    line-height:1.24;
+  }
+
+  .screen8-bottom-rule{
+    width:72%;
+    max-width:310px;
+    margin-top:18px;
+    margin-bottom:23px;
+  }
+
+  .screen8-continue{
+    font-size:16px;
+  }
+  .screen8-continue-circle{
+    width:54px;height:54px;font-size:36px;
+  }
+}
+
+@media (max-width:390px){
+  .screen8-inner{
+    padding-left:15px;
+    padding-right:15px;
+  }
+  .screen8-eyebrow{font-size:14px}
+  .screen8-title{font-size:51px}
+  .screen8-season-row p{font-size:18px}
+  .screen8-statement p{font-size:20px}
+  .screen8-lower-row p{font-size:18px}
+}
+
