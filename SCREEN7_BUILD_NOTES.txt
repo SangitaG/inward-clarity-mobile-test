@@ -1,0 +1,10 @@
+SCREENS 1–7 CANDIDATE v1
+
+Locked Screens 1–6 preserved.
+Only approved locked-screen correction: Screen 5 Awareness desktop scenery width cap removed via one appended CSS override.
+No Awareness content, typography, spacing, image, mobile, or other style changed.
+
+Screen 7 added with isolated markup/CSS.
+Approved Screen 7 scenery used as a real asset.
+Bottom scenery muted slightly through Screen 7 overlay only.
+Desktop scenery spans edge-to-edge; content remains centered.

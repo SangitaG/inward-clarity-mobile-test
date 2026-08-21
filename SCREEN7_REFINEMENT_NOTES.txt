@@ -1,0 +1,13 @@
+SCREEN 7 CANDIDATE v2 — ONLY APPROVED CHANGES
+
+1. The two gold separator dots between Awareness, Self-leadership, and Repeated intentional choice are centered.
+2. Added more breathing room between the capability diagram and the paragraph beginning 'These capabilities don’t belong to one challenge...'.
+
+UNCHANGED
+- Screens 1–6
+- Awareness full-width scenery correction
+- Screen 7 scenery
+- Screen 7 typography
+- Screen 7 diagram size/position
+- Screen 7 icons
+- All other spacing and responsive behavior
