@@ -3202,3 +3202,17 @@ body{overflow-x:hidden;overflow-y:auto}
   background:#fff;
 }
 
+/* =========================================================
+   FINAL SURGICAL FIX — UNSEEN PROCESS MOBILE HEADLINE ONLY
+   ========================================================= */
+@media (max-width:700px){
+  .screen4 .eyebrow{
+    width:calc(100% - 20px) !important;
+    max-width:none !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+    font-size:clamp(39px,9.8vw,50px) !important;
+    line-height:1.04 !important;
+  }
+}
+

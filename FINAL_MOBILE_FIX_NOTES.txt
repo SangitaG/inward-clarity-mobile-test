@@ -1,0 +1,3 @@
+ONLY CHANGE FROM PRIOR FINAL BUILD:
+The Unseen Process mobile main headline width/font sizing was adjusted so 'We all experience life' stays together above 'in a unique way.'
+No other styling, content, screen, scenery, spacing, or desktop behavior changed.
