@@ -3193,3 +3193,12 @@ body{overflow-x:hidden;overflow-y:auto}
   }
 }
 
+/* =========================================================
+   FINAL BUILD — WHITE SPACE BETWEEN SCREEN 8 AND SCREEN 9 ONLY
+   ========================================================= */
+.screen9-merge-breathing{
+  width:100%;
+  height:20px;
+  background:#fff;
+}
+
