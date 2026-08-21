@@ -1,0 +1,16 @@
+SCREEN 8 CANDIDATE v2 — ONLY APPROVED REFINEMENTS
+
+Mobile:
+- Boxed Inward Clarity message now ignores desktop line breaks and wraps naturally.
+- Lower two icon/text rows rebalanced for cleaner spacing and line flow.
+
+Icons refined:
+- Some changes we choose.
+- We can’t always control the flow of life.
+- We can develop the inner capabilities to meet it well.
+
+UNCHANGED:
+- Screens 1–7
+- Screen 8 scenery
+- Screen 8 desktop layout
+- All other Screen 8 typography/content/spacing
