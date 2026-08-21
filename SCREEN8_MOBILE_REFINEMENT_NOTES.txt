@@ -1,0 +1,13 @@
+SCREEN 8 CANDIDATE v3 — MOBILE REFINEMENT ONLY
+
+LOCKED / UNCHANGED:
+- Screens 1–7
+- Entire Screen 8 desktop layout and styling
+- Screen 8 scenery
+- Screen 8 boxed statement
+- Screen 8 icons
+- Screen 8 divider and Continue treatment
+
+MOBILE-ONLY CHANGES:
+- Shifted the two lower icon/text groups slightly inward.
+- Increased usable width in the lower text column for cleaner wrapping.

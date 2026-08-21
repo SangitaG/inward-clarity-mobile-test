@@ -2895,3 +2895,59 @@ body{overflow-x:hidden;overflow-y:auto}
   }
 }
 
+/* =========================================================
+   SCREEN 8 — MOBILE-ONLY REFINEMENT v3
+   Desktop remains locked and unchanged.
+   Only:
+   1) move lower icon/text groups slightly inward
+   2) give lower text column more usable width for cleaner wrapping
+   ========================================================= */
+@media (max-width:700px){
+  .screen8-lower{
+    width:100%;
+    max-width:460px;
+    padding:0 10px;
+  }
+
+  .screen8-lower-row{
+    grid-template-columns:58px minmax(0,1fr);
+    gap:14px;
+    padding-left:8px;
+    padding-right:2px;
+  }
+
+  .screen8-lower-icon{
+    width:54px;
+    height:54px;
+  }
+
+  .screen8-lower-row p{
+    font-size:18px;
+    line-height:1.22;
+  }
+
+  .screen8-lower-strong p{
+    font-size:18.5px;
+    line-height:1.22;
+  }
+}
+
+@media (max-width:390px){
+  .screen8-lower{
+    padding-left:6px;
+    padding-right:6px;
+  }
+
+  .screen8-lower-row{
+    grid-template-columns:56px minmax(0,1fr);
+    gap:12px;
+    padding-left:6px;
+  }
+
+  .screen8-lower-row p,
+  .screen8-lower-strong p{
+    font-size:17px;
+    line-height:1.22;
+  }
+}
+
