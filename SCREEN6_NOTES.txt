@@ -1,0 +1,14 @@
+SCREEN 6 — SELF-LEADERSHIP CANDIDATE v1
+
+LOCKED SOURCE:
+- Screens 1–5 copied from Inward_Clarity_Locked_Screens_1-5_Screen3_FullWidthFix_v3.
+- Existing Screen 1–5 markup was preserved; Screen 6 markup was appended before </body>.
+- Existing Screen 1–5 CSS was preserved; isolated Screen 6 CSS was appended after it.
+- All existing assets were hash-verified unchanged.
+
+SCREEN 6:
+- Uses approved muted 2:3 pathway scenery.
+- Desktop scenery spans full browser width.
+- Content remains centered to a 900px design canvas.
+- Mobile uses Screen 6-only responsive rules.
+- No shared/global selectors were added.
