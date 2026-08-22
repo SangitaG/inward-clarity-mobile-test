@@ -1,0 +1,5 @@
+ONLY CHANGES FROM CANDIDATE v2:
+1. Screen 11 One-to-One Coaching icon refined to match the approved design.
+2. Gold divider above 'Different doorways.' changed to line-dot-line.
+
+Everything else remains exactly unchanged.

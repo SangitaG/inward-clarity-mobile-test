@@ -1,0 +1,19 @@
+SCREENS 10–11 CANDIDATE v1
+
+LOCKED:
+- Screens 1–9 copied from the latest approved master.
+- Existing HTML/CSS preserved; Screens 10–11 appended only.
+
+SCREEN 10:
+- Uses the approved muted valley scenery.
+- Full-width desktop scenery; centered 900px content.
+- Mobile layout is isolated to Screen 10.
+
+SCREEN 11:
+- Uses the approved muted lake/mountain scenery.
+- Trees are pastel/desaturated, not green-dominant.
+- Full-width desktop scenery; centered content.
+- Mobile layout is isolated to Screen 11.
+
+WHITE SPACE:
+- 20px white breathing space before each new screen.

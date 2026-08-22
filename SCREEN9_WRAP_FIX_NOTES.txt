@@ -1,0 +1,5 @@
+ONLY CHANGE FROM CANDIDATE v3:
+- Screen 9 ('Why I Founded Inward Clarity') desktop narrative text measure narrowed slightly so the first displayed line wraps sooner and looks more balanced.
+- Exact wording unchanged.
+- Mobile unchanged.
+- All other screens and styling unchanged.

@@ -1,0 +1,17 @@
+ONLY APPROVED CORRECTIONS
+
+SCREEN 9:
+- Ivory normalized to the established site ivory (#fffaf1).
+- No layout, text, scenery, typography, or mobile behavior changed.
+
+SCREEN 10:
+- Ivory normalized to the established site ivory (#fffaf1).
+- No other Screen 10 change.
+
+SCREEN 11:
+- Ivory normalized to #fffaf1.
+- Recreated all three coaching card icons as clean thin-line SVGs matching the approved design.
+- Replaced the incorrect ornament above 'Different doorways.' with a proper gold botanical sprig and horizontal rules.
+- Scenery, sizing, cards, text, spacing, desktop/mobile layout otherwise unchanged.
+
+SCREENS 1–8 remain unchanged.

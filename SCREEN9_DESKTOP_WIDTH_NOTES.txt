@@ -1,0 +1,1 @@
+Only change: Screen 9's four centered narrative paragraphs are 800px wide on desktop only. Mobile and every other element remain unchanged.

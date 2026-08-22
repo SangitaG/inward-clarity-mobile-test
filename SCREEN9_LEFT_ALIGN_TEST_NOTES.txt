@@ -1,0 +1,7 @@
+TEST BUILD — ONLY CHANGE:
+- The four narrative paragraphs on Screen 9 / Why I Founded Inward Clarity are left-aligned on desktop.
+- Heading and featured opening statement remain centered.
+- Paragraph wording, width, font, and spacing remain unchanged.
+- Lower insight statements and final box remain unchanged.
+- Mobile remains unchanged.
+- All other screens remain unchanged.

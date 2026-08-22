@@ -1,0 +1,3 @@
+ONLY CHANGE:
+- Screen 9 featured sentence beginning 'I learned through my own life...' is narrowed on desktop by targeting the correct .screen9-lead element.
+- Wording, font size, mobile, narrative paragraphs, scenery, and all other screens remain unchanged.
