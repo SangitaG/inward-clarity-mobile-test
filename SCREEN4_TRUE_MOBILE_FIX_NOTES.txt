@@ -1,0 +1,1 @@
+ONE CHANGE ONLY: the exact element containing 'We all experience life in a unique way.' received a unique class and a mobile-only width/font adjustment. Everything else is unchanged.

@@ -3203,15 +3203,17 @@ body{overflow-x:hidden;overflow-y:auto}
 }
 
 /* =========================================================
-   FINAL SURGICAL FIX — UNSEEN PROCESS MOBILE HEADLINE ONLY
+   FINAL TRUE FIX — SCREEN 4 MOBILE MAIN HEADLINE ONLY
    ========================================================= */
 @media (max-width:700px){
-  .screen4 .eyebrow{
-    width:calc(100% - 20px) !important;
+  .screen4-mobile-title-fix{
+    width:100% !important;
     max-width:none !important;
     margin-left:auto !important;
     margin-right:auto !important;
-    font-size:clamp(39px,9.8vw,50px) !important;
+    padding-left:0 !important;
+    padding-right:0 !important;
+    font-size:clamp(38px,9.4vw,48px) !important;
     line-height:1.04 !important;
   }
 }
