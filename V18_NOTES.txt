@@ -1,0 +1,4 @@
+V18 — TWO MOBILE-ONLY FIXES
+1. Begin Where You Are: mobile scenery now spans full width at the bottom instead of appearing as a narrow centered strip.
+2. Work With Me: mobile BOOK links retain the intended gold, non-underlined styling instead of Safari default blue/underline.
+No other content, layout, scenery asset, desktop styling, spacing, typography, colors, icons, buttons, or screens changed.
