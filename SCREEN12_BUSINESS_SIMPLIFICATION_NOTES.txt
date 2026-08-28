@@ -1,0 +1,10 @@
+SCREEN 12 ONLY — BUSINESS SIMPLIFICATION
+
+- Removed 'Ways we can work together.'
+- Removed 'Choose the way that feels right for you.'
+- WORK WITH ME is now the sole heading.
+- Removed bottom scenery/design; Screen 12 is clean site ivory.
+- Removed icon beside complimentary conversation.
+- Removed final two-line closing statement and its ornament.
+- Aligned the final CTA buttons across all three service cards.
+- Screens 1–11 unchanged.

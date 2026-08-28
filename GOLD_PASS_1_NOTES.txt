@@ -1,0 +1,20 @@
+GOLD COLOR SYMMETRY — FIRST PASS
+
+MASTER GOLD:
+- #B87918
+
+NORMALIZATION PRINCIPLE:
+- Solid gold text, labels, dots, decorative identity and accents use one master gold.
+- Fine rules use the same gold at reduced opacity.
+- CTA buttons use a restrained tonal treatment derived from the same master gold.
+- Screen 9 is explicitly brought into the same overall navy/ivory/gold identity.
+
+LOCKED / UNCHANGED:
+- Ivory #FFFCEF
+- Navy #15385D
+- Scenery and photography
+- Layout and spacing
+- Typography sizing
+- Content
+- CTA-only Work With Me behavior
+- Mobile structure

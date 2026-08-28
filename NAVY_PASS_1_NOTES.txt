@@ -1,0 +1,20 @@
+NAVY COLOR SYMMETRY — FIRST PASS
+
+MASTER SOURCE:
+- Welcome-screen navy: #15385D
+
+NORMALIZED:
+- Primary headings and body copy
+- Card headings/copy
+- Standard primary navy identity across Screens 2–14
+- Screen 9 multiple primary blue values visually normalized to the master navy
+
+INTENTIONALLY UNCHANGED:
+- Master ivory #FFFCEF from Ivory Pass 1
+- Gold accents
+- Scenery and photography
+- Translucent borders/shadows
+- White button text
+- Layout, spacing, typography sizing, content
+- CTA-only Work With Me behavior
+- Mobile structure

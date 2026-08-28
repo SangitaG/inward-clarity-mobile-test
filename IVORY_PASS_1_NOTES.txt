@@ -1,0 +1,21 @@
+IVORY COLOR SYMMETRY — FIRST PASS
+
+MASTER SOURCE:
+- Welcome-screen ivory: #FFFCEF
+
+NORMALIZED BASE CANVAS:
+- Screens 4–14 now resolve their underlying page background color to #FFFCEF.
+- Screens 1–3 already used the Welcome/shared ivory and were not altered.
+
+INTENTIONALLY UNCHANGED:
+- Every scenery image
+- Every scenery tint / translucent gradient overlay
+- Card and box fills
+- White breathing gaps
+- Navy / gold values
+- Typography
+- Spacing / layout
+- CTA links and hidden Work With Me behavior
+- All content
+
+This is intentionally a base-canvas-only first pass so visual differences caused by artwork can be evaluated separately.

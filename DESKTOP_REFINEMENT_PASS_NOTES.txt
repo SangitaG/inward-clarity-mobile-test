@@ -1,0 +1,43 @@
+APPROVED DESKTOP REFINEMENT PASS
+
+SCENERY
+- Screen 1: unchanged
+- Screen 2: softened; same asset, quieter and more bottom-weighted
+- Screen 3: very light bottom softening only
+- Screen 4: unchanged
+- Screen 5: unchanged
+- Screen 6: softened and made more bottom-weighted
+- Screen 7: unchanged
+- Screen 8: slightly softened
+- Screen 9: mountains removed; existing branches retained; master ivory dominates
+- Screen 10: unchanged
+- Screen 11: unchanged
+- Client Experiences: unchanged
+- Work With Me: no scenery
+- Complimentary Conversation: exact photo unchanged
+
+WORK WITH ME
+- One-to-One Single Clarity Session button -> BOOK
+- One-to-One 4-Session Journey button -> BOOK
+- Executive Coaching -> BOOK A CONVERSATION
+- Workshops & Speaking -> BOOK A CONVERSATION
+- All final service-card CTAs aligned on one baseline
+- Service CTAs compact/content-width
+- Removed redundant sentence below 'Not sure where to begin?'
+- Bottom invitation centered
+- Complimentary-conversation CTA compact/content-width
+- Work With Me remains CTA-only / hidden from normal scroll
+
+FINAL CONVERSATION SCREEN
+- Eyebrow changed to BEGIN HERE
+- Exact supplied cup/vase/notebook photo remains unchanged
+- Description remains 'This is a conversation to explore...'
+- BOOK A COMPLIMENTARY CONVERSATION retained, made content-width
+
+LOCKED / UNCHANGED
+- Master ivory #FFFCEF
+- Master navy #15385D
+- Master gold #B87918
+- All KEEP-AS-IS scenery screens
+- Typography/content/layout except explicitly listed changes
+- Mobile-specific refinement deferred to final mobile pass

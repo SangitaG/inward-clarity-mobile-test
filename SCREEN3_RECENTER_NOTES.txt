@@ -1,0 +1,5 @@
+ONLY CHANGE FROM CANDIDATE v9:
+- Screen 3 / Internal Friction: body copy in both paired cards returned to centered alignment.
+- Prior 18px body-text inset is neutralized.
+- Card titles remain centered.
+- Everything else remains exactly unchanged.

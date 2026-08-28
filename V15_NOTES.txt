@@ -1,0 +1,8 @@
+V15 — SCREEN 2 DESKTOP FLOW RECONSTRUCTION ONLY
+
+- Screen 2 content unchanged.
+- Screen 2 scenery unchanged from v14.
+- Screen 2 colors/typography unchanged.
+- Removed the effect of old desktop top/left coordinates by overriding them with normal flow.
+- Rebuilt vertical rhythm with controlled margins so all content remains inside the 900x1350 composition.
+- No other screen changed.

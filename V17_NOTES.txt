@@ -1,0 +1,3 @@
+V17 — ONE CHANGE ONLY
+- What is it like to work together?: legacy ivory values normalized to master ivory.
+- No other CSS/content/assets changed.

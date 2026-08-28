@@ -1,0 +1,31 @@
+FULL SCREEN-BY-SCREEN BOX/CARD ALIGNMENT PASS
+
+RULE APPLIED:
+All explanatory text inside actual bordered/card-style containers is left-aligned.
+
+SCREEN 3:
+- WHAT LIFE NOW DEMANDS card text left-aligned.
+- HOW WE ARE OPERATING card text left-aligned.
+- Final 'what does how we operate mean?' box text left-aligned.
+
+SCREEN 8:
+- Bordered Inward Clarity explanatory statement left-aligned.
+
+SCREEN 9:
+- Final bordered 'Today, I help people...' statement left-aligned.
+- Existing left-aligned four-paragraph story remains intact.
+
+SCREEN 11:
+- All coaching-card headings, subtitles, and explanatory copy left-aligned.
+- Removed all three decorative dots inside the coaching cards.
+
+SCREENS 1, 2, 4, 5, 6, 7, 10:
+- No comparable explanatory bordered/card container required a text-alignment change.
+
+NO OTHER CHANGES:
+- No wording changes.
+- No scenery changes.
+- No typography sizing changes.
+- No section spacing changes.
+- No icon changes.
+- No desktop/mobile structural changes beyond text alignment inside the listed boxes/cards.

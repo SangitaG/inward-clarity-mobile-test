@@ -1,0 +1,4 @@
+ONLY CHANGE FROM CANDIDATE v8:
+- Screen 3 / Internal Friction: added an equal 18px horizontal inset to the left-aligned body copy in both paired cards.
+- Card titles remain centered.
+- Everything else remains unchanged.

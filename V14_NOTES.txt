@@ -1,0 +1,17 @@
+V14 — ONLY TWO CHANGES
+
+SCREEN 2
+- Current scenery asset preserved.
+- Removed full-screen cover behavior.
+- Scenery now bottom-anchored and limited to the lower portion.
+- Master ivory dominates the upper/middle content area.
+- Long feathered transition prevents a visible scenery boundary.
+- Screen 2 content/layout/typography untouched.
+
+WORK WITH ME
+- Executive and Workshops BEGIN buttons restored to margin-top:auto.
+- Both buttons now align on the same bottom baseline.
+- Compact card height retained.
+
+EVERYTHING ELSE
+- Unchanged from v13.

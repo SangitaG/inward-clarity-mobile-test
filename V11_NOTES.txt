@@ -1,0 +1,6 @@
+Screen 2: content only restored from supplied reference; no Screen 2 CSS changed.
+Removed icons above A SPACE TO PAUSE / SEE / CHOOSE.
+Begin Where You Are icons synchronized with Work With Me.
+Work With Me Executive icon corrected to person with directional arrows.
+Work With Me card height/dead space reduced.
+Everything else unchanged from v10.

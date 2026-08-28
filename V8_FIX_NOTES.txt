@@ -1,0 +1,4 @@
+Screen 2: removed faulty mask/card effect; restored full-width scenery with gentle ivory overlay.
+Self-Leadership: replaced abrupt scenery boundary with a continuous gradient.
+Begin Where You Are: removed explanatory service paragraphs; kept title + italic descriptor only.
+Everything else unchanged from v7.

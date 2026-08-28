@@ -1,0 +1,1 @@
+Added normal-flow Client Experiences then Complimentary Conversation after Screen 11. Existing Work With Me remains CTA-only and hidden from normal scroll. Screens 1–12 otherwise unchanged. Paperbell URL not invented; booking link remains a placeholder.

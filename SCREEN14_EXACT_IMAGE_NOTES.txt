@@ -1,0 +1,6 @@
+SCREEN 14 ONLY:
+- Uses the exact cup/vase/notebook photo cropped from the user's supplied reference image.
+- No image generation or redesign used.
+- Keeps the agreed description: 'This is a conversation to explore...'.
+- Keeps the button wording as previously approved.
+- Everything else remains unchanged from Candidate v2.

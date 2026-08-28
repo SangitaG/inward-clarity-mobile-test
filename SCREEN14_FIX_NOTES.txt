@@ -1,0 +1,6 @@
+Screen 14 only:
+- Removed the word 'complimentary' from the descriptive sentence before the booking button.
+- Kept BOOK A COMPLIMENTARY CONVERSATION button wording.
+- Replaced the incorrect mountain visual with the warm cup/notebook/greenery visual.
+- Existing CTA-only Work With Me behavior remains unchanged.
+- All other screens unchanged.

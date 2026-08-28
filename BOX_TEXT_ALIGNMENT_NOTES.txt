@@ -1,0 +1,7 @@
+DESIGN RULE APPLIED:
+- Multi-line explanatory copy inside service/cards is left-aligned.
+- Short standalone statements/conclusions remain centered.
+- Screen 11 service card copy is explicitly left-aligned.
+- Screen 9 final concluding box remains centered because it functions as a statement, not explanatory card copy.
+- The approved Screen 9 left-aligned narrative test is retained.
+- No scenery, sizing, wording, typography, mobile structure, or other screen styling changed.

@@ -1,0 +1,15 @@
+V10 — WORK WITH ME ONLY
+
+- Plain master ivory background; no scenery.
+- One-to-One icon replaced with subtle conversation icon.
+- Executive icon replaced with subtle direction/choice icon.
+- All service icons reduced in size.
+- Single Clarity Session: BOOK moved beside package title.
+- 4-Session Inward Clarity Journey: BOOK moved beside package title.
+- Executive Coaching CTA: BEGIN, outlined gold.
+- Workshops & Speaking CTA: BEGIN, outlined gold.
+- Executive bullet changed to 'Stronger alignment of values, priorities, and action'.
+- Workshops bullet changed to 'Speaking engagements'.
+- Bottom 'Not sure where to begin?' box reduced in width and height.
+- Bottom box remains centered with BOOK A COMPLIMENTARY CONVERSATION.
+- Everything outside Work With Me unchanged from v9.

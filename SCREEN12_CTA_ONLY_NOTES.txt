@@ -1,0 +1,5 @@
+ONLY CHANGE FROM CANDIDATE v2:
+- Screen 12 / Work With Me is hidden from the normal vertical scroll.
+- It becomes visible only when the Screen 11 'EXPLORE WAYS TO WORK TOGETHER' CTA is clicked.
+- Clicking the CTA reveals Screen 12 and scrolls smoothly to it.
+- Screens 1–11 and Screen 12 content/design remain otherwise unchanged.

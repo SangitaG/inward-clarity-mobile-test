@@ -1,0 +1,20 @@
+V12 APPROVED PASS
+
+SCREEN 2
+- Removed only the accidental duplicate insertions from v11.
+- Restored the complete intended reference content sequence.
+- NO Screen 2 CSS, scenery, layout, spacing, typography, sizing, or positioning changed.
+
+EXECUTIVE COACHING ICON
+- Replaced on Begin Where You Are and Work With Me.
+- New icon is a simpler decision/leadership path symbol.
+- Kept subtle and small.
+
+WHAT IS IT LIKE TO WORK TOGETHER?
+- Icons remain removed.
+- Removed forced 315px desktop column height.
+- Tightened padding and spacing so columns fit their actual content.
+- No copy changes.
+
+EVERYTHING ELSE
+- Unchanged from v11.

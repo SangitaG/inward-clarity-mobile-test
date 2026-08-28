@@ -1,0 +1,13 @@
+V13
+
+SCREEN 2
+- Replaced the entire Screen 2 inner HTML with the exact content/order from the supplied reference.
+- Preserved all existing Screen 2 class names.
+- styles.css was not changed.
+- Current site palette and current Screen 2 scenery remain unchanged.
+
+WORK WITH ME
+- Removed only: 'Custom experiences for your team or audience.'
+
+EVERYTHING ELSE
+- Unchanged from v12.

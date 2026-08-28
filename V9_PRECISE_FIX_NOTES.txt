@@ -1,0 +1,20 @@
+V9 PRECISE FIX — ONLY TWO SCREENS
+
+SCREEN 2
+- Scenic background lives on the full-width .life-module.
+- Inner .screen is transparent.
+- Inner .bg remains hidden on desktop.
+- A single full-width ivory veil softens the scenery.
+- No center card/panel effect.
+
+SELF-LEADERSHIP
+- Full scenery runs continuously beneath the entire screen.
+- A separate full-height ivory veil fades gradually to transparent.
+- No distinct scenery band/start point.
+
+UNCHANGED
+- Screen 9
+- Begin Where You Are
+- All other screens
+- Locked ivory/navy/gold
+- Layout/content/typography elsewhere

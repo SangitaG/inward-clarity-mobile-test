@@ -1,0 +1,3 @@
+V16
+- Why I Founded Inward Clarity: changed 'engineering and data science' to 'engineering'.
+- No other content, layout, scenery, spacing, typography, color, icon, or screen changed.

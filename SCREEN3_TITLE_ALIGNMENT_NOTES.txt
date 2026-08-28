@@ -1,0 +1,5 @@
+ONLY CHANGE FROM CANDIDATE v7:
+- Screen 3 / Internal Friction: centered the titles in the two paired GAP cards.
+- Their explanatory body text remains left-aligned.
+- Welcome screen remains exactly unchanged and centered.
+- All other screens, scenery, typography, spacing, icons, and mobile/desktop behavior remain unchanged.

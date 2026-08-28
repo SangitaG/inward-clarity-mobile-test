@@ -3251,13 +3251,13 @@ body{overflow-x:hidden;overflow-y:auto}
   text-align:center;
   background:
     linear-gradient(to bottom,
-      rgba(255,250,241,.98) 0%,
-      rgba(255,250,241,.98) 42%,
-      rgba(255,250,241,.88) 57%,
-      rgba(255,250,241,.58) 72%,
-      rgba(255,250,241,.30) 100%),
+      rgba(255,252,239,.98) 0%,
+      rgba(255,252,239,.98) 42%,
+      rgba(255,252,239,.88) 57%,
+      rgba(255,252,239,.58) 72%,
+      rgba(255,252,239,.30) 100%),
     url("assets/screen10/screen10-work-together-scenery.jpg") center bottom/100% 61% no-repeat,
-    #fffaf1;
+    #FFFCEF;
 }
 .screen10-inner{
   width:min(900px,100%);
@@ -3655,12 +3655,12 @@ body{overflow-x:hidden;overflow-y:auto}
   .screen10{
     background:
       linear-gradient(to bottom,
-        rgba(255,250,241,.99) 0%,
-        rgba(255,250,241,.98) 44%,
-        rgba(255,250,241,.87) 61%,
-        rgba(255,250,241,.46) 100%),
+        rgba(255,252,239,.99) 0%,
+        rgba(255,252,239,.98) 44%,
+        rgba(255,252,239,.87) 61%,
+        rgba(255,252,239,.46) 100%),
       url("assets/screen10/screen10-work-together-scenery.jpg") center bottom/auto 50% no-repeat,
-      #fffaf1;
+      #FFFCEF;
   }
   .screen10-inner{
     width:100%;
@@ -3916,6 +3916,1148 @@ body{overflow-x:hidden;overflow-y:auto}
   }
   .screen9-story-copy p{
     text-align:left;
+  }
+}
+
+/* =========================================================
+   BOX / CARD TEXT ALIGNMENT REFINEMENT
+   Design rule: center the message; left-align the explanation.
+   ========================================================= */
+
+/* Screen 11 service cards: explanatory card copy remains/readably left aligned. */
+.screen11-card-copy,
+.screen11-card-copy p{
+  text-align:left;
+}
+
+/* Screen 9 final boxed statement is a short concluding message, so it stays centered. */
+.screen9-today-card,
+.screen9-today-card p{
+  text-align:center;
+}
+
+/* Preserve all short statement / quote-style boxes elsewhere as originally designed. */
+
+/* =========================================================
+   SITE-WIDE BOX / CARD TEXT ALIGNMENT RULE
+   Approved rule: explanatory text inside boxes/cards is left-aligned.
+   No non-box content is changed.
+   ========================================================= */
+
+/* SCREEN 3 — the two GAP cards */
+.friction-module .gap-card{
+  text-align:left !important;
+}
+.friction-module .gap-card h3,
+.friction-module .gap-card p{
+  text-align:left !important;
+}
+/* Keep the decorative icon itself centered; only text alignment changes. */
+.friction-module .gap-card .card-icon{
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/* SCREEN 3 — final "what does how we operate mean?" box */
+.friction-module .meaning-box{
+  text-align:left !important;
+}
+.friction-module .meaning-box > div:last-child{
+  text-align:left !important;
+}
+
+/* SCREEN 8 — bordered Inward Clarity explanatory statement */
+.screen8-statement,
+.screen8-statement p{
+  text-align:left !important;
+}
+
+/* SCREEN 9 — final bordered explanatory statement */
+.screen9-today-card,
+.screen9-today-card p{
+  text-align:left !important;
+}
+
+/* SCREEN 11 — all three coaching cards */
+.screen11-card-copy,
+.screen11-card-copy h3,
+.screen11-card-copy p,
+.screen11-card-copy .screen11-sub{
+  text-align:left !important;
+}
+
+/* Card dots have been removed from Screen 11 HTML. */
+.screen11-card-dot{
+  display:none !important;
+}
+
+/* =========================================================
+   SCREEN 3 — INTERNAL FRICTION CARD TITLES ONLY
+   Titles centered; explanatory body copy remains left-aligned.
+   ========================================================= */
+.friction-module .gap-card h3{
+  text-align:center !important;
+}
+
+/* =========================================================
+   SCREEN 3 — INTERNAL FRICTION BODY TEXT INSET ONLY
+   Equal 18px inset; titles remain centered.
+   ========================================================= */
+.friction-module .gap-card p{
+  padding-left:18px !important;
+  padding-right:18px !important;
+  box-sizing:border-box;
+}
+
+/* =========================================================
+   SCREEN 3 — INTERNAL FRICTION CARDS RECENTERED
+   Titles and body copy centered. No other changes.
+   ========================================================= */
+.friction-module .gap-card p{
+  text-align:center !important;
+  padding-left:0 !important;
+  padding-right:0 !important;
+}
+
+.screen12-merge-breathing{width:100%;height:20px;background:#fff}
+.screen12{
+  --navy:#10355f;--gold:#a96e19;--ivory:#fffaf1;
+  width:100%;min-height:1350px;overflow:hidden;color:var(--navy);
+  font-family:Georgia,"Times New Roman",serif;text-align:center;
+  background:
+    linear-gradient(to bottom,rgba(255,250,241,.99) 0%,rgba(255,250,241,.99) 72%,rgba(255,250,241,.88) 82%,rgba(255,250,241,.55) 100%),
+    url("assets/screen12/screen12-work-with-me-scenery.jpg") center bottom/100% 22% no-repeat,
+    var(--ivory);
+}
+.screen12-inner{width:min(1120px,100%);min-height:1350px;margin:auto;padding:36px 24px 0}
+.screen12-top-rule,.screen12-bottom-rule{width:180px;margin:0 auto 14px;display:grid;grid-template-columns:1fr 36px 1fr;align-items:center;gap:8px;color:var(--gold)}
+.screen12-top-rule span,.screen12-bottom-rule span{height:1px;background:rgba(169,110,25,.45)}
+.screen12-top-rule b,.screen12-bottom-rule b{font:26px/1 Georgia,serif;font-weight:400}
+.screen12-kicker{margin:0 0 8px;color:var(--gold);font:500 17px Arial,sans-serif;letter-spacing:.12em}
+.screen12-title{margin:0;font-size:57px;line-height:1.02;font-weight:400}
+.screen12-dot-rule{width:145px;margin:19px auto 17px;display:grid;grid-template-columns:1fr 8px 1fr;gap:8px;align-items:center}
+.screen12-dot-rule span{height:1px;background:rgba(169,110,25,.45)}
+.screen12-dot-rule b{width:7px;height:7px;border-radius:50%;background:var(--gold)}
+.screen12-subtitle{margin:0 0 28px;font-size:22px}
+.screen12-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.screen12-card{min-height:655px;padding:25px 24px 22px;text-align:left;background:rgba(255,252,247,.80);border:1px solid rgba(16,53,95,.08);border-radius:10px;box-shadow:0 5px 18px rgba(75,56,33,.09);display:flex;flex-direction:column}
+.screen12-card-icon{width:96px;height:96px;margin:0 auto 13px}
+.screen12-card-icon svg{width:100%;height:100%;fill:none;stroke:var(--navy);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.screen12-card-icon svg>circle:first-child{stroke:#b77920}
+.screen12-card h3{text-align:center;margin:0;font-size:21px;font-weight:400}
+.screen12-card-sub{text-align:center;margin:7px 0 18px;color:var(--gold);font-size:16px;font-style:italic}
+.screen12-card-copy{margin:0;font:14.5px/1.55 Arial,sans-serif}
+.screen12-card hr{border:0;border-top:1px solid rgba(16,53,95,.12);margin:22px 0 20px}
+.screen12-offer{display:grid;grid-template-columns:24px 1fr;gap:8px}
+.screen12-offer>span{width:18px;height:18px;border:1.5px solid #b77920;border-radius:50%;display:grid;place-items:center;color:#b77920;font:12px Arial,sans-serif}
+.screen12-offer strong,.screen12-offer em,.screen12-offer b{display:block}
+.screen12-offer strong{font:600 14px/1.25 Arial,sans-serif}
+.screen12-offer em{color:var(--gold);font-size:14px;margin-top:3px}
+.screen12-offer b{font:400 14px Arial,sans-serif;margin-top:4px}
+.screen12-btn{display:block;text-align:center;text-decoration:none;color:#fff;background:linear-gradient(180deg,#bd852f,#a66b17);border-radius:4px;padding:10px 9px 9px;font:12px Arial,sans-serif;letter-spacing:.04em;box-shadow:0 3px 8px rgba(84,55,16,.16);margin-top:14px}
+.screen12-bottom-btn{margin-top:auto}
+.screen12-benefits{list-style:none;margin:0;padding:0}
+.screen12-benefits li{position:relative;padding-left:29px;margin-bottom:17px;font:14px/1.35 Arial,sans-serif}
+.screen12-benefits li:before{content:"✓";position:absolute;left:0;top:0;width:18px;height:18px;border:1.5px solid #b77920;border-radius:50%;display:grid;place-items:center;color:#b77920;font-size:11px}
+.screen12-conversation{margin-top:24px;display:grid;grid-template-columns:250px 1fr;background:rgba(255,252,247,.80);border:1px solid rgba(16,53,95,.08);border-radius:10px;box-shadow:0 5px 18px rgba(75,56,33,.08);overflow:hidden}
+.screen12-conversation-icon{display:grid;place-items:center;border-right:1px solid rgba(169,110,25,.28);font-size:82px;color:var(--gold)}
+.screen12-conversation-copy{text-align:left;padding:24px 34px}
+.screen12-conversation-copy h3{margin:0;font-size:28px;font-weight:400}
+.screen12-conversation-sub{margin:7px 0 0;color:var(--gold);font-size:17px;font-style:italic}
+.screen12-small-rule{width:90px;margin:12px 0 14px}
+.screen12-conversation-copy>p:not(.screen12-conversation-sub):not(.screen12-note){margin:0;font:14.5px/1.5 Arial,sans-serif}
+.screen12-conversation-btn{width:max-content;max-width:100%;padding-left:18px;padding-right:18px}
+.screen12-note{margin:8px 0 0;color:var(--gold);font-size:14px;font-style:italic}
+.screen12-bottom-rule{margin-top:20px}
+.screen12-closing{padding-bottom:72px}
+.screen12-closing p{margin:0;font-size:21px;line-height:1.35}
+.screen12-closing p:last-child{color:var(--gold);font-style:italic;margin-top:3px}
+
+@media(max-width:700px){
+  .screen12{min-height:0;background:
+    linear-gradient(to bottom,rgba(255,250,241,.99) 0%,rgba(255,250,241,.99) 84%,rgba(255,250,241,.82) 92%,rgba(255,250,241,.48) 100%),
+    url("assets/screen12/screen12-work-with-me-scenery.jpg") center bottom/auto 16% no-repeat,
+    var(--ivory)}
+  .screen12-inner{width:100%;min-height:100svh;padding:34px 16px 0}
+  .screen12-title{font-size:44px}
+  .screen12-subtitle{font-size:19px}
+  .screen12-cards{grid-template-columns:1fr;max-width:450px;margin:auto}
+  .screen12-card{min-height:0;padding:24px 20px 20px}
+  .screen12-card-copy{font-size:15px}
+  .screen12-conversation{max-width:450px;margin:20px auto 0;grid-template-columns:1fr}
+  .screen12-conversation-icon{min-height:130px;border-right:0;border-bottom:1px solid rgba(169,110,25,.25)}
+  .screen12-conversation-copy{padding:22px 20px}
+  .screen12-conversation-btn{width:100%}
+  .screen12-closing p{font-size:19px}
+}
+
+/* =========================================================
+   SCREEN 12 — SIMPLIFIED BUSINESS VERSION
+   Only Screen 12 changed.
+   ========================================================= */
+
+/* No scenic/footer treatment: clean ivory business screen. */
+.screen12{
+  min-height:auto !important;
+  background:#fffaf1 !important;
+}
+
+.screen12-inner{
+  min-height:0 !important;
+  padding-bottom:52px !important;
+}
+
+/* WORK WITH ME is now the sole heading. */
+.screen12-kicker{
+  margin-bottom:0 !important;
+  font-size:20px !important;
+  letter-spacing:.14em !important;
+}
+
+/* Divider sits directly under WORK WITH ME. */
+.screen12-dot-rule{
+  margin-top:18px !important;
+  margin-bottom:30px !important;
+}
+
+/* Remove any leftover space from deleted title/subtitle. */
+.screen12-title,
+.screen12-subtitle{
+  display:none !important;
+}
+
+/* Keep all three service cards visually equal. */
+.screen12-cards{
+  align-items:stretch;
+}
+.screen12-card{
+  height:100%;
+}
+
+/* Align each card's final CTA on the same baseline. */
+.screen12-bottom-btn{
+  margin-top:auto !important;
+}
+
+/* Complimentary conversation becomes a clean business panel. */
+.screen12-conversation{
+  grid-template-columns:1fr !important;
+  margin-top:26px !important;
+}
+.screen12-conversation-copy{
+  padding:30px 40px 32px !important;
+}
+.screen12-conversation-copy h3,
+.screen12-conversation-copy p{
+  text-align:left;
+}
+.screen12-conversation-icon{
+  display:none !important;
+}
+
+/* Removed bottom ornament and closing lines. */
+.screen12-bottom-rule,
+.screen12-closing{
+  display:none !important;
+}
+
+@media(max-width:700px){
+  .screen12{
+    background:#fffaf1 !important;
+  }
+  .screen12-inner{
+    padding-bottom:36px !important;
+  }
+  .screen12-kicker{
+    font-size:17px !important;
+  }
+  .screen12-conversation{
+    grid-template-columns:1fr !important;
+  }
+  .screen12-conversation-copy{
+    padding:24px 20px 26px !important;
+  }
+}
+
+/* =========================================================
+   SCREEN 12 — CTA-ONLY DESTINATION
+   Hidden from normal page flow until Screen 11 CTA is clicked.
+   ========================================================= */
+.screen12-merge-breathing,
+.screen12{
+  display:none;
+}
+
+body.screen12-open .screen12-merge-breathing{
+  display:block;
+}
+
+body.screen12-open .screen12{
+  display:block;
+}
+
+
+
+/* Screens 13–14 only */
+.s13gap,.s14gap{height:20px;background:#fff}
+.s13,.s14{--n:#10355f;--g:#a96e19;background:#fffaf1;color:var(--n);font-family:Georgia,"Times New Roman",serif}
+.s13in{max-width:1050px;margin:auto;padding:58px 70px 55px}
+.eyebrow{text-align:center;color:var(--g);font:500 18px Arial,sans-serif;letter-spacing:.18em;margin:0}
+.rule{width:190px;margin:24px auto 12px;display:grid;grid-template-columns:1fr 7px 1fr;gap:10px;align-items:center}.rule i{height:1px;background:#d7bd93}.rule b{width:7px;height:7px;background:var(--g);border-radius:50%}
+.s13 h2{text-align:center;font-size:66px;line-height:1;margin:0 0 52px;font-weight:400}
+.quotes article{position:relative;padding:27px 20px 28px 118px;border-bottom:1px solid #dfc9a6}.quotes article:first-child{padding-top:0}.quotes article:last-child{border:0}
+.quotes article:before{content:"“";position:absolute;left:12px;top:18px;color:#e5d3b8;font-size:92px;line-height:.7}.quotes article:first-child:before{top:-8px}
+.quotes q{display:block;quotes:none;font-size:22px;line-height:1.45}.quotes strong{display:block;color:var(--g);font:500 16px Arial,sans-serif;margin-top:17px}
+.readmore{display:block;width:max-content;margin:8px auto 0;color:var(--n);text-decoration:none;border-bottom:1px solid #d4ad70;padding-bottom:5px;font:500 16px Arial,sans-serif;letter-spacing:.12em}
+.s14in{max-width:1120px;margin:auto;padding:55px 55px 60px}.s14grid{display:grid;grid-template-columns:1.08fr .92fr;gap:48px;align-items:center;margin-top:30px}.s14copy{text-align:left}.s14 h2{font-size:58px;line-height:1.04;font-weight:400;margin:0}.lead{font-size:20px;line-height:1.45;margin:28px 0}
+.callout{padding:25px 28px;background:#fffaf4;border:1px solid #eadcc8;border-radius:12px}.callout p{font-size:17px;line-height:1.45;margin:0}.callout a{display:block;margin-top:20px;padding:14px 16px;background:linear-gradient(#bd852f,#a66b17);color:#fff;text-decoration:none;text-align:center;border-radius:5px;font:500 13px Arial,sans-serif;letter-spacing:.07em}.conf{font-size:16px;margin:18px 0 0 18px;color:var(--n)}
+.s14visual{min-height:570px;border-radius:20px;background:linear-gradient(rgba(255,250,241,.15),rgba(255,250,241,.2)),url("assets/screen14/screen14-exact-reference-photo.jpg") center/cover no-repeat;filter:saturate(.58) sepia(.08) brightness(1.07)}
+@media(max-width:700px){.s13in{padding:44px 24px}.eyebrow{font-size:15px}.s13 h2{font-size:47px;margin-bottom:34px}.quotes article{padding:24px 0 25px 48px}.quotes article:before{left:0;font-size:58px}.quotes q{font-size:18px}.quotes strong{font-size:14px}.readmore{font-size:12px;letter-spacing:.08em;text-align:center}.s14in{padding:42px 20px}.s14grid{grid-template-columns:1fr;gap:28px}.s14 h2{font-size:44px}.lead{font-size:18px}.callout p{font-size:16px}.s14visual{min-height:390px;order:-1}}
+
+/* =========================================================
+   SITE COLOR SYMMETRY — IVORY PASS 1
+   Source of truth: Welcome-screen ivory #FFFCEF
+   Base page canvas only; scenery and overlays remain untouched.
+   ========================================================= */
+:root{
+  --site-ivory:#fffcef;
+}
+
+.screen4,
+.screen5,
+.screen6,
+.screen7,
+.screen8,
+.screen9,
+.screen10,
+.screen11,
+.screen12,
+.s13,
+.s14{
+  background-color:var(--site-ivory) !important;
+}
+
+/* =========================================================
+   SITE COLOR SYMMETRY — NAVY PASS 1
+   Source of truth: Welcome-screen navy #15385D
+   Primary navy identity only.
+   ========================================================= */
+:root{
+  --site-navy:#15385d;
+}
+
+/* Screen 2–3 primary text */
+.screen2,
+.screen3,
+.friction-module{
+  color:var(--site-navy) !important;
+}
+.screen2 h1,.screen2 h2,.screen2 h3,.screen2 p,
+.screen3 h1,.screen3 h2,.screen3 h3,.screen3 p,
+.friction-module h1,.friction-module h2,.friction-module h3,.friction-module p{
+  color:var(--site-navy) !important;
+}
+
+/* Screen 4 primary identity */
+.screen4,
+.screen4 h1,.screen4 h2,.screen4 h3,.screen4 p{
+  color:var(--site-navy) !important;
+}
+
+/* Screens 5–8 already use the master navy; reinforce primary identity only. */
+.screen5,.screen6,.screen7,.screen8{
+  color:var(--site-navy) !important;
+}
+
+/* Screen 9 — main outlier: normalize its multiple primary blues. */
+.screen9,
+.screen9 h1,.screen9 h2,.screen9 h3,.screen9 h4,
+.screen9 p,.screen9 li,.screen9 a,
+.screen9-story,.screen9-story-copy,.screen9-lead,
+.screen9-today-card{
+  color:var(--site-navy) !important;
+}
+
+/* Screens 10–12 primary text/navy identity */
+.screen10,.screen11,.screen12{
+  color:var(--site-navy) !important;
+}
+.screen10 h1,.screen10 h2,.screen10 h3,.screen10 p,.screen10 li,.screen10 a,
+.screen11 h1,.screen11 h2,.screen11 h3,.screen11 p,.screen11 li,
+.screen12 h1,.screen12 h2,.screen12 h3,.screen12 p,.screen12 li{
+  color:var(--site-navy) !important;
+}
+
+/* Preserve white text on gold buttons in Work With Me. */
+.screen12 .screen12-btn,
+.screen12 .screen12-card-btn,
+.screen12 .screen12-conversation-btn{
+  color:#fff !important;
+}
+
+/* Screens 13–14 primary navy identity */
+.s13,.s14{
+  --n:var(--site-navy) !important;
+  color:var(--site-navy) !important;
+}
+.s13 h1,.s13 h2,.s13 h3,.s13 q,
+.s14 h1,.s14 h2,.s14 h3,.s14 p{
+  color:var(--site-navy) !important;
+}
+
+/* Preserve intentional gold testimonial names and white booking-button text. */
+.s13 .quotes strong{
+  color:var(--g) !important;
+}
+.s14 .callout a{
+  color:#fff !important;
+}
+
+/* =========================================================
+   SITE COLOR SYMMETRY — GOLD PASS 1
+   One master gold across solid gold identity.
+   Ivory/navy/scenery/layout/content remain untouched.
+   ========================================================= */
+:root{
+  --site-gold:#b87918;
+}
+
+/* Standard gold text / eyebrow labels / emphasized phrases */
+.screen1 .gold,.screen2 .gold,.screen3 .gold,.screen4 .gold,
+.screen5 .gold,.screen6 .gold,.screen7 .gold,.screen8 .gold,
+.screen9 .gold,.screen10 .gold,.screen11 .gold,.screen12 .gold,
+.screen9 .eyebrow,.screen10 .eyebrow,.screen11 .eyebrow,.screen12 .eyebrow,
+.s13 .eyebrow,.s14 .eyebrow,
+.screen13-name,.screen12-kicker{
+  color:var(--site-gold) !important;
+}
+
+/* Newer screens use local --g; point it to the master gold. */
+.s13,.s14{
+  --g:var(--site-gold) !important;
+}
+
+/* Common solid decorative gold: rules, dots, borders and icon strokes. */
+.screen9 .dot,.screen10 .dot,.screen11 .dot,.screen12 .dot,
+.rule b,.screen13-dot-rule b,.screen14-dot-rule b{
+  background-color:var(--site-gold) !important;
+}
+
+/* Preserve subtle rules as the same gold family through opacity. */
+.rule i,.screen13-dot-rule span,.screen14-dot-rule span{
+  background-color:rgba(184,121,24,.38) !important;
+}
+
+/* Work With Me and conversation buttons:
+   same master-gold family, restrained tonal depth only. */
+.screen12 .screen12-btn,
+.screen12 .screen12-card-btn,
+.screen12 .screen12-conversation-btn,
+.s14 .callout a{
+  background:linear-gradient(180deg,#c88a2d 0%,var(--site-gold) 58%,#a86914 100%) !important;
+  color:#fff !important;
+}
+
+/* Screen 9: explicitly pull solid decorative accents into the master family. */
+.screen9 [style*="#0B315D"],
+.screen9 [style*="#082D5D"],
+.screen9 [style*="#102F58"]{
+  color:inherit;
+}
+
+/* =========================================================
+   APPROVED DESKTOP REFINEMENT PASS
+   - scenery audit decisions
+   - Screen 9 clean editorial treatment
+   - Work With Me CTA cleanup
+   - final Conversation CTA refinement
+   Locked master colors remain unchanged:
+     Ivory #FFFCEF | Navy #15385D | Gold #B87918
+   ========================================================= */
+
+@media (min-width:701px){
+
+  /* -------------------------------------------------------
+     SCREEN 2 — SOFTEN
+     Same approved scenery; quieter and more bottom-weighted.
+     ------------------------------------------------------- */
+  .life-module .screen{
+    background:var(--site-ivory);
+  }
+  .life-module .bg{
+    opacity:.76;
+    filter:saturate(.82) contrast(.90) brightness(1.04);
+    -webkit-mask-image:linear-gradient(
+      to bottom,
+      rgba(0,0,0,.22) 0%,
+      rgba(0,0,0,.38) 38%,
+      rgba(0,0,0,.72) 67%,
+      #000 100%
+    );
+    mask-image:linear-gradient(
+      to bottom,
+      rgba(0,0,0,.22) 0%,
+      rgba(0,0,0,.38) 38%,
+      rgba(0,0,0,.72) 67%,
+      #000 100%
+    );
+  }
+
+  /* -------------------------------------------------------
+     SCREEN 3 — VERY LIGHT SOFTEN AT BOTTOM ONLY
+     ------------------------------------------------------- */
+  .friction-wash{
+    background:linear-gradient(to bottom,
+      rgba(255,252,239,.98) 0%,
+      rgba(255,252,239,.96) 47%,
+      rgba(255,252,239,.88) 61%,
+      rgba(255,252,239,.46) 82%,
+      rgba(255,252,239,.16) 100%);
+  }
+
+  /* -------------------------------------------------------
+     SCREEN 6 — SOFTEN / MORE BOTTOM-WEIGHTED
+     Same scenery asset, no regeneration.
+     ------------------------------------------------------- */
+  .screen6{
+    background-image:
+      linear-gradient(to bottom,
+        rgba(255,252,239,.66) 0%,
+        rgba(255,252,239,.56) 30%,
+        rgba(255,252,239,.40) 58%,
+        rgba(255,252,239,.22) 100%),
+      url("assets/screen6/screen6-self-leadership-scenery.png");
+    background-repeat:no-repeat,no-repeat;
+    background-position:center top,center bottom;
+    background-size:100% 100%,100% 84%;
+  }
+
+  /* -------------------------------------------------------
+     SCREEN 8 — SOFTEN SLIGHTLY
+     ------------------------------------------------------- */
+  .screen8{
+    background-image:
+      linear-gradient(to bottom,
+        rgba(255,252,239,.52) 0%,
+        rgba(255,252,239,.36) 33%,
+        rgba(255,252,239,.25) 54%,
+        rgba(255,252,239,.36) 73%,
+        rgba(255,252,239,.78) 100%),
+      url("assets/screen8/screen8-meeting-life-well-scenery.png");
+  }
+
+  /* -------------------------------------------------------
+     SCREEN 9 — SIMPLIFY / CLEAN
+     Mountains removed. Existing branches retained as a subtle
+     right-edge decorative element over master ivory.
+     ------------------------------------------------------- */
+  .screen9{
+    background:var(--site-ivory) !important;
+  }
+  .screen9-bg{
+    background:none !important;
+  }
+  .screen9-bg::before{
+    content:"";
+    position:absolute;
+    top:16%;
+    right:0;
+    width:min(330px,29vw);
+    height:62%;
+    background:url("assets/screen9/screen9-branches-only.png") right center/contain no-repeat;
+    opacity:.62;
+  }
+  .screen9-bg::after{
+    background:none !important;
+  }
+
+  /* -------------------------------------------------------
+     WORK WITH ME — compact CTA system + aligned bottom row
+     ------------------------------------------------------- */
+  .screen12-card{
+    display:flex !important;
+    flex-direction:column !important;
+  }
+
+  /* All buttons are content-width rather than gold bars. */
+  .screen12 .screen12-btn{
+    width:max-content !important;
+    min-width:0 !important;
+    max-width:90% !important;
+    align-self:center !important;
+    padding:10px 22px 9px !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+    white-space:nowrap;
+  }
+
+  /* The final CTA in each service card shares one baseline. */
+  .screen12 .screen12-bottom-btn{
+    margin-top:auto !important;
+  }
+
+  /* Bottom invitation is intentionally minimal + centered. */
+  .screen12-conversation-copy{
+    text-align:center !important;
+    padding:34px 40px 36px !important;
+  }
+  .screen12-conversation-copy h3,
+  .screen12-conversation-copy p{
+    text-align:center !important;
+  }
+  .screen12-conversation-copy .screen12-small-rule{
+    margin-left:auto !important;
+    margin-right:auto !important;
+  }
+  .screen12-conversation-btn{
+    display:inline-block !important;
+    width:auto !important;
+    max-width:90% !important;
+    margin:20px auto 0 !important;
+    padding:11px 22px 10px !important;
+  }
+
+  /* -------------------------------------------------------
+     FINAL COMPLIMENTARY CONVERSATION SCREEN
+     Exact approved photo remains untouched.
+     Compact CTA; layout stays intact.
+     ------------------------------------------------------- */
+  .s14 .callout a{
+    display:inline-block !important;
+    width:auto !important;
+    max-width:100% !important;
+    padding:14px 22px !important;
+  }
+}
+
+/* =========================================================
+   APPROVED FIX PASS — Screen 2 / Self-Leadership / Begin
+   ========================================================= */
+@media (min-width:701px){
+
+  /* Screen 2: full-width scenery, softened only by ivory overlay. */
+  .life-module .screen{
+    background:var(--site-ivory) !important;
+  }
+  .life-module .bg{
+    opacity:1 !important;
+    filter:none !important;
+    -webkit-mask-image:none !important;
+    mask-image:none !important;
+    background-size:cover !important;
+    background-position:center center !important;
+  }
+  .life-module .screen::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    background:linear-gradient(
+      to bottom,
+      rgba(255,252,239,.72) 0%,
+      rgba(255,252,239,.60) 36%,
+      rgba(255,252,239,.42) 62%,
+      rgba(255,252,239,.18) 100%
+    );
+    z-index:1;
+  }
+  .life-module .screen > *:not(.bg){
+    position:relative;
+    z-index:2;
+  }
+
+  /* Self-Leadership: no abrupt band; one seamless long fade. */
+  .screen6{
+    background:
+      linear-gradient(
+        to bottom,
+        rgba(255,252,239,.96) 0%,
+        rgba(255,252,239,.90) 26%,
+        rgba(255,252,239,.76) 48%,
+        rgba(255,252,239,.52) 68%,
+        rgba(255,252,239,.24) 85%,
+        rgba(255,252,239,0) 100%
+      ),
+      url("assets/screen6/screen6-self-leadership-scenery.png") center bottom/cover no-repeat !important;
+  }
+
+  /* Begin Where You Are: orientation-only service cards. */
+  .screen11-card{
+    min-height:170px !important;
+    grid-template-columns:175px 1fr !important;
+  }
+  .screen11-card-icon-wrap{
+    min-height:170px !important;
+  }
+  .screen11-card-copy{
+    display:flex !important;
+    flex-direction:column !important;
+    justify-content:center !important;
+    padding:26px 30px !important;
+  }
+  .screen11-card-copy h3{
+    margin:0 0 8px !important;
+  }
+  .screen11-card-copy .screen11-sub{
+    margin:0 !important;
+  }
+}
+
+/* =========================================================
+   V9 — PRECISE TWO-LAYER CORRECTION
+   Screen 2 full-width module background
+   Self-Leadership separate scenery + ivory veil
+   ========================================================= */
+
+@media (min-width:901px){
+
+  /* -------------------------------------------------------
+     SCREEN 2
+     Use the outer full-width module as the scenic layer.
+     The inner screen stays transparent so it cannot read as a card.
+     ------------------------------------------------------- */
+  .life-module{
+    position:relative !important;
+    background:
+      url("assets/screen1-clean-bg.jpg") center center/cover no-repeat !important;
+  }
+
+  .life-module::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    background:linear-gradient(
+      to bottom,
+      rgba(255,252,239,.56) 0%,
+      rgba(255,252,239,.48) 36%,
+      rgba(255,252,239,.30) 68%,
+      rgba(255,252,239,.12) 100%
+    );
+    z-index:0;
+  }
+
+  .life-module .screen{
+    background:transparent !important;
+    position:relative;
+    z-index:1;
+  }
+
+  .life-module .bg{
+    visibility:hidden !important;
+    opacity:0 !important;
+  }
+
+  .life-module .screen::after{
+    display:none !important;
+  }
+
+  .life-module .screen > *:not(.bg){
+    position:relative;
+    z-index:2;
+  }
+
+  /* -------------------------------------------------------
+     SELF-LEADERSHIP
+     Keep full scenery continuously underneath.
+     Fade a separate ivory veil away over the entire screen.
+     ------------------------------------------------------- */
+  .screen6{
+    position:relative !important;
+    background:
+      url("assets/screen6/screen6-self-leadership-scenery.png")
+      center bottom/cover no-repeat !important;
+  }
+
+  .screen6::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    background:linear-gradient(
+      to bottom,
+      rgba(255,252,239,.98) 0%,
+      rgba(255,252,239,.94) 18%,
+      rgba(255,252,239,.86) 35%,
+      rgba(255,252,239,.72) 52%,
+      rgba(255,252,239,.52) 68%,
+      rgba(255,252,239,.28) 83%,
+      rgba(255,252,239,.08) 94%,
+      rgba(255,252,239,0) 100%
+    );
+    z-index:0;
+  }
+
+  .screen6 > *{
+    position:relative;
+    z-index:1;
+  }
+}
+
+/* =========================================================
+   V10 — WORK WITH ME REFINEMENT ONLY
+   Plain ivory, subtle icons, compact BOOK + outlined BEGIN,
+   smaller centered bottom invitation.
+   ========================================================= */
+
+.screen12{
+  background:#fffcef !important;
+}
+
+@media (min-width:701px){
+
+  /* Cards stay clean and businesslike. */
+  .screen12-cards{
+    align-items:stretch !important;
+  }
+
+  .screen12-card{
+    display:flex !important;
+    flex-direction:column !important;
+    min-height:620px !important;
+  }
+
+  /* Smaller, subtler icons. */
+  .screen12-card-icon{
+    width:66px !important;
+    height:66px !important;
+    margin:0 auto 14px !important;
+  }
+
+  .screen12-card-icon svg{
+    stroke-width:1.45 !important;
+  }
+
+  /* One-to-One offer rows with compact BOOK beside the title. */
+  .screen12-offer-with-book{
+    display:grid !important;
+    grid-template-columns:24px 1fr !important;
+    gap:9px !important;
+    align-items:start !important;
+  }
+
+  .screen12-offer-main{
+    width:100% !important;
+  }
+
+  .screen12-offer-title-row{
+    display:flex !important;
+    align-items:flex-start !important;
+    justify-content:space-between !important;
+    gap:14px !important;
+  }
+
+  .screen12-mini-book{
+    flex:0 0 auto !important;
+    display:inline-block !important;
+    padding:8px 17px 7px !important;
+    border-radius:4px !important;
+    text-decoration:none !important;
+    color:#fff !important;
+    background:linear-gradient(180deg,#c88a2d 0%,#b87918 58%,#a86914 100%) !important;
+    font:600 12px Arial,Helvetica,sans-serif !important;
+    letter-spacing:.05em !important;
+    box-shadow:0 2px 6px rgba(84,55,16,.14) !important;
+    white-space:nowrap !important;
+  }
+
+  /* Executive + Workshops BEGIN buttons: subtle outlined style. */
+  .screen12 .screen12-bottom-btn{
+    margin-top:auto !important;
+    align-self:center !important;
+    width:auto !important;
+    min-width:120px !important;
+    padding:10px 22px 9px !important;
+    color:#b87918 !important;
+    background:transparent !important;
+    border:1px solid #b87918 !important;
+    box-shadow:none !important;
+    white-space:nowrap !important;
+  }
+
+  .screen12 .screen12-bottom-btn:hover{
+    background:rgba(184,121,24,.06) !important;
+  }
+
+  /* Bottom invitation: smaller, lighter, centered. */
+  .screen12-conversation{
+    width:min(650px,68%) !important;
+    margin:24px auto 0 !important;
+    grid-template-columns:1fr !important;
+    box-shadow:none !important;
+    border:1px solid rgba(184,121,24,.42) !important;
+    background:rgba(255,252,239,.56) !important;
+  }
+
+  .screen12-conversation-copy{
+    padding:22px 26px 24px !important;
+    text-align:center !important;
+  }
+
+  .screen12-conversation-copy h3{
+    text-align:center !important;
+    margin:0 0 14px !important;
+    font-size:24px !important;
+  }
+
+  .screen12-conversation-copy p{
+    text-align:center !important;
+  }
+
+  .screen12-conversation-btn{
+    display:inline-block !important;
+    width:auto !important;
+    max-width:100% !important;
+    margin:0 auto !important;
+    padding:10px 20px 9px !important;
+  }
+
+  /* No visual icon block in the bottom invitation. */
+  .screen12-conversation-icon{
+    display:none !important;
+  }
+}
+
+/* V11: icon/card-height refinements only. Screen 2 CSS intentionally untouched. */
+@media (min-width:701px){
+  .screen12-card{
+    min-height:0 !important;
+    height:auto !important;
+    padding-bottom:18px !important;
+  }
+  .screen12-card-icon,
+  .screen11-card-icon{
+    width:58px !important;
+    height:58px !important;
+  }
+  .screen12-card-icon svg,
+  .screen11-card-icon svg{
+    stroke-width:1.35 !important;
+  }
+  .screen12-card:nth-child(2) .screen12-bottom-btn,
+  .screen12-card:nth-child(3) .screen12-bottom-btn{
+    margin-top:22px !important;
+  }
+}
+
+/* =========================================================
+   V12 — APPROVED CLEANUP PASS
+   Screen 2 content cleanup only; Executive icon refinement;
+   Work Together columns tightened.
+   ========================================================= */
+
+@media (min-width:701px){
+
+  /* What is it like to work together?
+     No icons; let each column fit its actual content. */
+  .screen10-columns{
+    align-items:start !important;
+  }
+
+  .screen10-column{
+    min-height:0 !important;
+    padding:0 25px 10px !important;
+  }
+
+  .screen10-column h3{
+    margin-top:0 !important;
+  }
+
+  .screen10-mini-rule{
+    margin-top:11px !important;
+    margin-bottom:13px !important;
+  }
+
+  .screen10-quote-rule{
+    margin-top:20px !important;
+  }
+
+  /* Executive icons stay deliberately subtle. */
+  .screen11-card-icon svg,
+  .screen12-card-icon svg{
+    stroke-width:1.3 !important;
+  }
+}
+
+/* =========================================================
+   V14 — PRECISE SCREEN 2 SCENERY + BEGIN ALIGNMENT
+   Only these two approved corrections.
+   ========================================================= */
+
+@media (min-width:901px){
+
+  /* -------------------------------------------------------
+     SCREEN 2
+     Keep current scenery asset, but stop full-screen cover behavior.
+     Bottom-anchor the scenery and let master ivory dominate above.
+     ------------------------------------------------------- */
+  .life-module{
+    position:relative !important;
+    background:
+      linear-gradient(
+        to bottom,
+        #fffcef 0%,
+        #fffcef 53%,
+        rgba(255,252,239,.98) 60%,
+        rgba(255,252,239,.90) 68%,
+        rgba(255,252,239,.70) 78%,
+        rgba(255,252,239,.38) 88%,
+        rgba(255,252,239,.10) 96%,
+        rgba(255,252,239,0) 100%
+      ),
+      url("assets/screen1-clean-bg.jpg") center bottom/100% 58% no-repeat !important;
+  }
+
+  .life-module::after{
+    display:none !important;
+  }
+
+  .life-module .screen{
+    background:transparent !important;
+  }
+
+  .life-module .bg{
+    visibility:hidden !important;
+    opacity:0 !important;
+  }
+
+  .life-module .screen::after{
+    display:none !important;
+  }
+
+  /* -------------------------------------------------------
+     WORK WITH ME
+     Keep compact cards but pin the two BEGIN buttons to the
+     same bottom baseline.
+     ------------------------------------------------------- */
+  .screen12-card:nth-child(2),
+  .screen12-card:nth-child(3){
+    display:flex !important;
+    flex-direction:column !important;
+  }
+
+  .screen12-card:nth-child(2) .screen12-bottom-btn,
+  .screen12-card:nth-child(3) .screen12-bottom-btn{
+    margin-top:auto !important;
+  }
+}
+
+/* =========================================================
+   V15 — SCREEN 2 DESKTOP FLOW RECONSTRUCTION ONLY
+   Replaces brittle absolute vertical positioning with controlled
+   normal flow. Current Screen 2 scenery/palette/content remain unchanged.
+   ========================================================= */
+@media (min-width:901px){
+
+  .life-module .screen{
+    position:relative !important;
+    width:900px !important;
+    height:1350px !important;
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:center !important;
+    justify-content:flex-start !important;
+    padding-top:48px !important;
+    box-sizing:border-box !important;
+    overflow:hidden !important;
+  }
+
+  /* Reset old hard-coded slide coordinates for Screen 2 content only. */
+  .life-module .screen > .text,
+  .life-module .screen > .divider,
+  .life-module .screen > .transition-row,
+  .life-module .screen > .cta{
+    position:relative !important;
+    top:auto !important;
+    left:auto !important;
+    right:auto !important;
+    bottom:auto !important;
+    transform:none !important;
+  }
+
+  .life-module .text{
+    width:900px !important;
+    white-space:nowrap !important;
+  }
+
+  /* Title block */
+  .life-module .title1{
+    margin:0 !important;
+  }
+  .life-module .title2{
+    margin-top:17px !important;
+  }
+
+  /* First divider + transition row */
+  .life-module .d1{
+    margin-top:28px !important;
+  }
+  .life-module .transition-row{
+    width:804px !important;
+    height:44px !important;
+    margin-top:20px !important;
+  }
+  .life-module .simply{
+    margin-top:18px !important;
+  }
+
+  /* Reality / internal friction */
+  .life-module .d2{
+    margin-top:28px !important;
+  }
+  .life-module .reality{
+    margin-top:20px !important;
+  }
+  .life-module .friction{
+    margin-top:18px !important;
+  }
+
+  /* What once served us */
+  .life-module .d3{
+    margin-top:26px !important;
+  }
+  .life-module .once{
+    margin-top:20px !important;
+  }
+
+  /* Perception / response */
+  .life-module .d4{
+    margin-top:24px !important;
+  }
+  .life-module .shaped{
+    margin-top:20px !important;
+  }
+
+  /* Inward Clarity */
+  .life-module .d5{
+    margin-top:24px !important;
+  }
+  .life-module .inward{
+    margin-top:20px !important;
+  }
+  .life-module .evolve{
+    margin-top:12px !important;
+  }
+
+  /* Final CTA */
+  .life-module .d6{
+    margin-top:22px !important;
+  }
+  .life-module .begin{
+    margin-top:22px !important;
+  }
+  .life-module .cta{
+    width:472px !important;
+    height:52px !important;
+    margin-top:18px !important;
+    flex:none !important;
+  }
+
+  /* Preserve divider sizing while allowing flow. */
+  .life-module .divider{
+    width:180px !important;
+    height:18px !important;
+    flex:none !important;
   }
 }
 
