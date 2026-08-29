@@ -1,0 +1,4 @@
+V24 — UNSEEN PROCESS TYPOGRAPHY REFINEMENT ONLY
+- Lead line made lighter to visually match the preceding Internal Friction heading while preserving placement.
+- Four process labels increased moderately from v23 while retaining all caps and existing layout.
+- No text, layout, structure, arrows, spacing, scenery, colors, mobile styling, or other screens changed.

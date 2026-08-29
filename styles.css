@@ -5127,3 +5127,82 @@ body.screen12-open .screen12{
     padding-right:18px !important;
   }
 }
+
+
+/* ===== V20: exactly two approved corrections ===== */
+
+/* 1) Begin Where You Are — desktop only: shorten section now that scenery is removed */
+@media (min-width:901px){
+  .screen11{
+    min-height:0 !important;
+    height:auto !important;
+    padding-bottom:56px !important;
+  }
+}
+
+/* 2) Work With Me — mobile BOOK links: restore compact gold CTA buttons with white text */
+@media (max-width:900px){
+  .screen12 .screen12-mini-book,
+  .screen12 a.screen12-mini-book{
+    display:inline-flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    width:auto !important;
+    min-width:0 !important;
+    max-width:max-content !important;
+    padding:10px 18px !important;
+    background:#B87918 !important;
+    color:#FFFFFF !important;
+    border-radius:8px !important;
+    text-decoration:none !important;
+    -webkit-text-decoration:none !important;
+    line-height:1 !important;
+  }
+}
+
+
+/* ===== V21: approved Screen 11 desktop height correction only ===== */
+@media (min-width:901px){
+  .screen11-inner{
+    min-height:0 !important;
+    height:auto !important;
+  }
+}
+
+
+/* ===== V22: approved desktop height corrections for Screen 5 and Screen 10 only ===== */
+@media (min-width:901px){
+  .screen5,
+  .screen5-inner,
+  .screen10,
+  .screen10-inner{
+    min-height:0 !important;
+    height:auto !important;
+  }
+}
+
+
+/* ===== V23: approved Unseen Process typography-intensity adjustment only ===== */
+@media (min-width:901px){
+  .screen4 h1.screen4-mobile-title-fix{
+    font-size:42px !important;
+    font-weight:600 !important;
+  }
+  .screen4 .process-step{
+    font-size:0.86em !important;
+    font-weight:600 !important;
+  }
+}
+
+
+/* ===== V24: approved Unseen Process typography refinement only ===== */
+@media (min-width:901px){
+  .screen4 h1.screen4-mobile-title-fix{
+    font-size:42px !important;
+    font-weight:400 !important;
+  }
+  .screen4 .process-step{
+    font-size:1em !important;
+    font-weight:600 !important;
+  }
+}

@@ -1,0 +1,4 @@
+V22 — TWO APPROVED DESKTOP HEIGHT CORRECTIONS ONLY
+1. Awareness (Screen 5): removed fixed 1350px minimum heights from outer and inner wrappers.
+2. What is it like to work together? (Screen 10): removed fixed 1350px minimum heights from outer and inner wrappers.
+All existing padding, scenery, content, typography, spacing, colors, and mobile rules remain unchanged.

@@ -1,0 +1,3 @@
+V21 — ONE APPROVED CHANGE ONLY
+- Begin Where You Are — desktop only: removed the inner wrapper's 1350px minimum height so the section can end naturally after the CTA.
+- Everything else remains unchanged from v20.

@@ -1,0 +1,4 @@
+V23 — ONE TYPOGRAPHY SCOPE ONLY
+- Unseen Process lead heading matched to preceding Internal Friction heading size/intensity.
+- Four process labels reduced in size/weight only; wording/all caps preserved.
+- No layout, text, structure, spacing, icons, scenery, colors, mobile styling, or other screens changed.
