@@ -1,0 +1,5 @@
+V19 — EXACTLY THREE APPROVED CHANGES
+1. Begin Where You Are — desktop only: scenery removed; mobile left unchanged.
+2. Work With Me — mobile: BOOK links use intended gold, non-underlined styling via .screen12-mini-book.
+3. Work With Me — mobile: both BEGIN buttons use compact/content width and remain centered.
+Everything else remains unchanged from v18.

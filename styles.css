@@ -5091,3 +5091,39 @@ body.screen12-open .screen12{
     -webkit-text-decoration:none !important;
   }
 }
+
+
+/* ===== V19: exactly three approved changes ===== */
+
+/* 1) Begin Where You Are — desktop only: remove scenery, preserve current mobile */
+@media (min-width:901px){
+  .screen11{
+    background:#FFFCEF !important;
+  }
+  .screen11::before,
+  .screen11::after{
+    background:none !important;
+  }
+}
+
+/* 2) Work With Me — mobile BOOK links: use intended gold styling */
+@media (max-width:900px){
+  .screen12 .screen12-mini-book,
+  .screen12 a.screen12-mini-book{
+    color:#B87918 !important;
+    text-decoration:none !important;
+    -webkit-text-decoration:none !important;
+  }
+
+  /* 3) Work With Me — mobile BEGIN buttons: compact/content-width */
+  .screen12-card:nth-child(2) .screen12-bottom-btn,
+  .screen12-card:nth-child(3) .screen12-bottom-btn{
+    width:auto !important;
+    min-width:0 !important;
+    max-width:max-content !important;
+    display:inline-flex !important;
+    align-self:center !important;
+    padding-left:18px !important;
+    padding-right:18px !important;
+  }
+}
