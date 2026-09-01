@@ -1,0 +1,9 @@
+CHANGES FROM PRIOR NETLIFY TEST
+
+1. Screen 11 “EXPLORE WAYS TO WORK TOGETHER” now opens work-with-me.html in the same tab.
+2. Work With Me was removed from the bottom of the main homepage and placed on its own page.
+3. The separate Work With Me page preserves the approved Screen 12 content/design.
+4. Executive Coaching and Workshops & Speaking BEGIN buttons currently route to the complimentary Paperbell conversation.
+5. The Work With Me bottom complimentary-conversation CTA routes directly to the same Paperbell package.
+6. conversation-confirmed.html no longer auto-redirects or times out. It stays on the confirmation page until the visitor clicks the gold “BACK TO INWARD CLARITY →” CTA.
+7. v24 source/master was not overwritten.

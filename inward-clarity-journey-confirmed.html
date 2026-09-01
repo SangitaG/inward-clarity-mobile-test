@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Inward Clarity Journey Is Confirmed | Inward Clarity</title>
+  <style>
+    :root{
+      --ivory:#FFFCEF;
+      --navy:#15385D;
+      --gold:#B87918;
+      --white:#FFFFFF;
+    }
+    *{box-sizing:border-box;}
+    html,body{margin:0;min-height:100%;background:var(--ivory);color:var(--navy);}
+    body{font-family:Arial,Helvetica,sans-serif;}
+    .page{
+      min-height:100vh;min-height:100svh;
+      display:flex;align-items:center;justify-content:center;
+      padding:48px 24px;background:var(--ivory);
+    }
+    .content{width:min(760px,100%);text-align:center;margin:0 auto;}
+    .eyebrow{
+      margin:0 0 18px;font-size:12px;line-height:1.2;letter-spacing:.14em;
+      font-weight:700;color:var(--gold);text-transform:uppercase;
+    }
+    .rule{
+      width:88px;height:1px;background:var(--gold);margin:0 auto 30px;position:relative;
+    }
+    .rule::after{
+      content:"";width:7px;height:7px;border-radius:50%;background:var(--gold);
+      position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+    }
+    h1{
+      margin:0 auto;max-width:720px;font-family:Georgia,"Times New Roman",serif;
+      font-weight:400;font-size:clamp(38px,6vw,66px);line-height:1.08;letter-spacing:-.02em;
+      color:var(--navy);
+    }
+    .lead{
+      margin:28px auto 0;max-width:560px;font-family:Georgia,"Times New Roman",serif;
+      font-size:clamp(20px,2.8vw,27px);line-height:1.45;color:var(--navy);
+    }
+    .detail{
+      margin:20px auto 0;max-width:560px;font-size:16px;line-height:1.65;color:var(--navy);
+    }
+    .return-note{margin:36px auto 0;font-size:13px;line-height:1.5;color:var(--navy);opacity:.78;}
+    .cta{
+      display:inline-flex;align-items:center;justify-content:center;margin-top:18px;
+      padding:13px 22px;min-height:44px;border-radius:8px;background:var(--gold);
+      color:var(--white);text-decoration:none;font-size:12px;line-height:1;
+      letter-spacing:.06em;font-weight:700;text-transform:uppercase;
+    }
+    .cta:focus-visible{outline:3px solid var(--navy);outline-offset:4px;}
+    @media (max-width:600px){
+      .page{padding:36px 22px;}
+      .eyebrow{margin-bottom:16px;}
+      .rule{margin-bottom:26px;}
+      .lead{margin-top:24px;}
+      .detail{font-size:15px;}
+      .return-note{margin-top:30px;}
+    }
+  </style>
+</head>
+<body>
+  <main class="page" aria-labelledby="confirmation-title">
+    <section class="content">
+      <p class="eyebrow">Journey Confirmed</p>
+      <div class="rule" aria-hidden="true"></div>
+      <h1 id="confirmation-title">Your Inward Clarity Journey is confirmed.</h1>
+      <p class="lead">Thank you for taking this step.</p>
+      <p class="detail">
+        You’ll receive an email shortly with your appointment date, time, and Zoom details.
+        I look forward to working together.
+      </p>
+      
+      <a class="cta" href="/">Back to Inward Clarity →</a>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,10 @@
+Inward Clarity Local Header/Footer Preview v10
+
+Changes from v9 only:
+- Header THE WORK now goes to Screen 3: Why do we experience internal friction?
+- Header WORK WITH ME now goes to Begin Where You Are on the main page.
+- Footer changed from master ivory to a warm sand/parchment contrast treatment.
+- Footer email and Privacy Policy / Terms of Use labels use restrained gold emphasis.
+- Confirmation/thank-you pages remain unchanged.
+
+This is a local preview build. Do not deploy to Netlify solely for visual review.

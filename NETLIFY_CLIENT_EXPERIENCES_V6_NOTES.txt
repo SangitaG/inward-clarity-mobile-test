@@ -1,0 +1,7 @@
+Client Experiences v6 candidate
+- Added dedicated client-experiences.html Rolodex page.
+- All 9 supplied reviews are included in full.
+- Long reviews scroll inside a fixed-height card; client name remains visible.
+- Added arrows, 9 dots, and gold Back to Inward Clarity CTA.
+- Main page Read More Client Experiences CTA now opens the new page in the same tab.
+- No other main-page content changed.

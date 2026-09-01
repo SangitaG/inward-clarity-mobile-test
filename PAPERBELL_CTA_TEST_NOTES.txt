@@ -1,0 +1,8 @@
+Paperbell CTA test build
+
+Source: v24 master
+Change made: Screen 14 BOOK A COMPLIMENTARY CONVERSATION CTA only.
+Destination: https://app.paperbell.com/checkout/bookings/new?package_id=143138
+Behavior: opens in the same browser tab.
+No visual, copy, CSS, layout, asset, responsive, or other CTA changes were made.
+The v24 master was not modified.

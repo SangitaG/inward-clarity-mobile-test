@@ -1,0 +1,11 @@
+INWARD CLARITY — NETLIFY CLARITY SESSION TEST v3
+
+Changes from v2 only:
+1. Work With Me > Single Clarity Session > BOOK now opens the Paperbell schedule link for package 142945.
+2. Added clarity-session-confirmed.html using the approved Inward Clarity confirmation-page design.
+3. The Clarity Session confirmation page does NOT auto-redirect. It pauses until the visitor clicks the gold “Back to Inward Clarity” CTA.
+4. Existing complimentary-conversation flow and all other visual/content behavior are unchanged.
+5. v24 master remains untouched.
+
+After deploying to the existing Netlify project, set this Paperbell package's Thank You Page URL to:
+https://glistening-longma-79890b.netlify.app/clarity-session-confirmed.html

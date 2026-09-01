@@ -1,0 +1,7 @@
+Completion candidate v5
+- Welcome desktop/mobile complimentary conversation CTA -> Paperbell package 143138.
+- Screen 2 complimentary conversation CTA -> Paperbell package 143138.
+- Work With Me bottom complimentary conversation CTA remains -> Paperbell package 143138.
+- Screen 9 MY STORY arrow -> dedicated my-story.html.
+- my-story.html uses approved ivory/navy/gold botanical design and supplied story text.
+- Existing Paperbell package links and confirmation pages preserved.

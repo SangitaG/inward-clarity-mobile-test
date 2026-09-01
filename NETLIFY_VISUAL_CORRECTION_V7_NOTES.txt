@@ -1,0 +1,8 @@
+Inward Clarity v7 visual correction candidate
+
+Changes only:
+- Rebuilt my-story.html to follow the approved My Story visual reference more closely.
+- Rebuilt client-experiences.html to follow the approved Rolodex visual reference more closely.
+- Preserved all 9 full client reviews and scrolling card behavior.
+- Preserved existing site links and all Paperbell/confirmation pages from v6.
+- No changes to main-page approved screens or transaction flows.
