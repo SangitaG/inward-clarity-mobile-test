@@ -5206,3 +5206,17 @@ body.screen12-open .screen12{
     font-weight:600 !important;
   }
 }
+
+/* v14 — approved surgical refinement: Human Capability bridge alignment, desktop only */
+@media (min-width:901px){
+  .screen7-bridge{
+    transform:translateX(24px);
+  }
+}
+
+/* v15 — approved surgical refinement: hide Human Capability bridge dots on desktop only */
+@media (min-width:901px){
+  .screen7-bridge-dot{
+    display:none !important;
+  }
+}
