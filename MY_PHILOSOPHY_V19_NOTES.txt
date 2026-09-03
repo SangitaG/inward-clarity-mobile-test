@@ -1,0 +1,6 @@
+MY PHILOSOPHY v19 — two approved corrections only
+
+1. Removed the manual line break in the Inward Clarity definition and increased the desktop definition slightly so it reads as one line.
+2. Added an ivory atmospheric overlay over the lower-center scenery to mask residual ghost text embedded in the scenery asset while preserving the locked landscape at the edges.
+
+No other website content, navigation, layout, CTA, or screen changes were intentionally made.

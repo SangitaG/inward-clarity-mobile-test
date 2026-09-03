@@ -1,0 +1,8 @@
+V28 — Internal Breathing-Space Correction Only
+
+Built from V27.
+
+Approved scope:
+- My Philosophy: remove artificial outer height/top-bottom padding expansion from V27 and redistribute breathing room between the existing content groups.
+- Meeting Life Well: remove artificial outer height expansion from V26 while retaining/refining breathing room between the existing content groups.
+- No copy, color, scenery, imagery, typography, navigation, or other-screen changes.

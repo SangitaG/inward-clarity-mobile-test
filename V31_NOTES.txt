@@ -1,0 +1,8 @@
+V31 — Welcome embedded CTA cleanup only
+
+Built from v30.
+Change:
+- Removed the old baked-in CTA/button rectangle and shadow from assets/welcome-approved-band.png.
+- Preserved the existing Welcome artwork, portrait, copy, colors, rules, name, layout, and the live compact CTA implementation from v30.
+
+No HTML or CSS changes in this build.

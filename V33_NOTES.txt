@@ -1,0 +1,7 @@
+V33 — Three approved refinements only
+
+Built from v32.
+1. Meeting Life Well: key thought beneath title retains existing font size; receives slightly stronger weight and modest internal breathing room. Existing gold emphasis on “freedom” and “well” retained.
+2. Work With Me: Executive Coaching and Workshops & Speaking BOOK A CONVERSATION buttons retain visible gold background and white text on hover.
+3. Begin Where You Are: EXPLORE WAYS TO WORK TOGETHER CTA made more compact around its existing text on desktop.
+No other intentional changes.

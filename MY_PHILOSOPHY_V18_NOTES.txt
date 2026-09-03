@@ -1,0 +1,8 @@
+MY PHILOSOPHY v18 — full-screen implementation
+- Replaced the single flattened My Philosophy image with live HTML/CSS.
+- Added a 20px white breathing band before My Philosophy.
+- My Philosophy now fills the viewport width and at least the viewport height below the site header.
+- Created a scenery-only background asset from the locked approved design.
+- Created five separate human illustration assets from the locked approved design.
+- All approved wording is live text layered over the scenery.
+- No other queued CTA/arrow refinements were applied in this candidate.

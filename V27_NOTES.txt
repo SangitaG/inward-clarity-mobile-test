@@ -1,0 +1,8 @@
+V27 — My Philosophy breathing space only
+Base: V26
+
+Approved scope:
+- Added more vertical breathing room to the My Philosophy section only.
+- Increased separation between heading/premise, premise/journey, stage imagery/text, journey/Inward Clarity definition, and section ending.
+- No copy changes.
+- No imagery, arrows, colors, typography, navigation, or other-screen changes.

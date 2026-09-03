@@ -1,0 +1,9 @@
+V26 — Meeting Life Well breathing-space refinement
+Built from v25.
+
+Approved scope:
+- Added breathing room between the existing Meeting Life Well elements.
+- Increased desktop section height moderately to accommodate the restored spacing.
+- Preserved all v25 copy exactly.
+- Preserved the existing scenery and all colors exactly; no color harmonization was applied in this pass.
+- No other screens, assets, navigation, or content changed.

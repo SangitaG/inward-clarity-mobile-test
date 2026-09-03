@@ -1,0 +1,17 @@
+V30 — Descriptor System + Welcome CTA Cleanup
+Base: V29 Desktop Refinements
+
+Approved desktop-only changes:
+- Standardized these six section descriptors to master gold #B87918,
+  Arial, 18px, weight 500, .18em tracking:
+  MY PHILOSOPHY
+  WHAT DOES ALL OF THIS MAKE POSSIBLE?
+  WHY I FOUNDED
+  THERE ISN’T ONE RIGHT WAY TO BEGIN.
+  CLIENT EXPERIENCES
+  BEGIN HERE
+- Kept the approved compact Welcome BOOK A CONVERSATION button dimensions.
+- Softened/feathered the legacy embedded CTA cover so the old larger
+  rectangular treatment does not read as a hard box around the live CTA.
+- Mobile intentionally unchanged pending user testing.
+- No copy, scenery, navigation, card content, or other screen changes.

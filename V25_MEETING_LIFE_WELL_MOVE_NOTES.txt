@@ -1,0 +1,8 @@
+CANDIDATE v25 — Meeting Life Well copy move only
+
+Changes from v24:
+1. Removed these two closing lines from My Philosophy:
+   “We all experience life in a unique way.”
+   “When we see what has been operating automatically within us, we gain freedom to choose intentionally and meet life’s changing demands well.”
+2. Replaced the copy immediately beneath “Meeting Life Well.” with those exact lines.
+3. No scenery, white-box content, lower Meeting Life Well copy, CSS, assets, navigation, or other screen content changed.

@@ -1,0 +1,8 @@
+V29 — Desktop refinement candidate built from V28.
+Approved changes only:
+- My Philosophy: Inward Clarity definition text size now matches the opening "Life changes..." premise size on desktop.
+- Welcome: BOOK A CONVERSATION live button made visually more compact while preserving/covering the embedded legacy button area in the locked artwork.
+- Life Doesn't Stand Still: BOOK A CONVERSATION button made more compact on desktop.
+- Meeting Life Well: existing Inward Clarity box made slightly narrower with modestly reduced padding; copy explicitly remains left aligned.
+- Mobile intentionally unchanged pending desktop approval/testing.
+No copy, scenery, imagery, navigation, or other screen changes.
