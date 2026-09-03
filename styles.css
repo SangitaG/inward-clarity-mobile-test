@@ -5220,3 +5220,685 @@ body.screen12-open .screen12{
     display:none !important;
   }
 }
+
+
+/* V17 — locked My Philosophy overview; replaces former public Screens 3–7 */
+.my-philosophy-overview{background:#FFFCEF;width:100%;margin:0;padding:0;}
+.my-philosophy-frame{width:100%;margin:0 auto;background:#FFFCEF;}
+.my-philosophy-art{display:block;width:100%;height:auto;margin:0 auto;}
+@media (min-width:901px){
+  .my-philosophy-overview{min-height:calc(100vh - 58px);display:flex;align-items:center;justify-content:center;}
+  .my-philosophy-art{max-height:calc(100vh - 58px);width:auto;max-width:100%;object-fit:contain;}
+}
+@media (max-width:900px){
+  .my-philosophy-overview{padding:18px 0;}
+  .my-philosophy-art{width:100%;height:auto;}
+}
+
+/* =========================================================
+   MY PHILOSOPHY — v18 full-screen HTML implementation
+   Locked visual reference translated into scenery + live type.
+   ========================================================= */
+.my-philosophy-merge-breathing{width:100%;height:20px;background:#fff;}
+.my-philosophy-overview{
+  position:relative;
+  width:100%;
+  min-height:calc(100vh - 58px);
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  background:#FFFCEF url('assets/my-philosophy/my-philosophy-scenery.jpg') center bottom/cover no-repeat;
+  color:#15385D;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.my-philosophy-overview::before{
+  content:"";
+  position:absolute;
+  inset:46% 0 0;
+  pointer-events:none;
+  background:radial-gradient(ellipse at 50% 72%, rgba(255,252,239,.99) 0%, rgba(255,252,239,.97) 58%, rgba(255,252,239,.78) 76%, rgba(255,252,239,0) 96%);
+  z-index:0;
+}
+.my-philosophy-inner{
+  width:min(94vw,1460px);
+  min-height:calc(100vh - 58px);
+  margin:0 auto;
+  padding:24px 0 22px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  position:relative;
+  z-index:1;
+}
+.my-philosophy-eyebrow{
+  font-family:Arial,Helvetica,sans-serif;
+  color:#B87918;
+  font-size:20px;
+  line-height:1.15;
+  letter-spacing:.28em;
+  font-weight:500;
+}
+.my-philosophy-top-rule,.my-philosophy-bottom-rule{
+  display:flex;align-items:center;justify-content:center;gap:10px;width:150px;margin:9px auto 9px;color:#B87918;
+}
+.my-philosophy-top-rule span,.my-philosophy-bottom-rule span{height:1px;flex:1;background:#cda865;}
+.my-philosophy-top-rule b,.my-philosophy-bottom-rule b{width:8px;height:8px;transform:rotate(45deg);background:#B87918;display:block;}
+.my-philosophy-title{
+  margin:0;
+  font-family:Baskerville,Georgia,"Times New Roman",serif;
+  font-size:clamp(46px,4.35vw,70px);
+  line-height:1.03;
+  font-weight:400;
+  letter-spacing:-.02em;
+  color:#15385D;
+}
+.my-philosophy-premise{
+  margin:10px 0 19px;
+  font-family:Baskerville,Georgia,"Times New Roman",serif;
+  font-size:clamp(20px,1.7vw,27px);
+  line-height:1.2;
+  color:#15385D;
+}
+.my-philosophy-journey{
+  width:100%;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 34px minmax(0,1fr) 34px minmax(0,1fr) 34px minmax(0,1fr) 34px minmax(0,1fr);
+  align-items:start;
+  gap:6px;
+}
+.my-philosophy-stage{min-width:0;}
+.my-philosophy-stage img{
+  width:min(100%,205px);
+  aspect-ratio:1/1;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+  margin:0 auto 8px;
+  mix-blend-mode:multiply;
+}
+.my-philosophy-stage h3{
+  margin:0;
+  min-height:25px;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:clamp(14px,1.15vw,19px);
+  line-height:1.1;
+  letter-spacing:.035em;
+  font-weight:600;
+  color:#15385D;
+  white-space:nowrap;
+}
+.my-philosophy-stage > i{display:block;width:55px;height:1px;background:#B87918;margin:10px auto 11px;}
+.my-philosophy-stage p{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:clamp(13px,.95vw,16px);
+  line-height:1.42;
+  color:#15385D;
+}
+.my-philosophy-arrow{
+  color:#B87918;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:38px;
+  line-height:1;
+  padding-top:87px;
+  font-weight:400;
+}
+.my-philosophy-inward-line{
+  position:relative;
+  width:74%;
+  height:24px;
+  margin:4px auto 0;
+  border-bottom:1.5px solid #B87918;
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+}
+.my-philosophy-inward-line::before,.my-philosophy-inward-line::after{
+  content:"";position:absolute;bottom:0;width:22px;height:21px;border-bottom:1.5px solid #B87918;
+}
+.my-philosophy-inward-line::before{left:0;border-left:1.5px solid #B87918;border-bottom-left-radius:18px;transform:translateX(-21px);}
+.my-philosophy-inward-line::after{right:0;border-right:1.5px solid #B87918;border-bottom-right-radius:18px;transform:translateX(21px);}
+.my-philosophy-line-dot,.my-philosophy-line-end{width:8px;height:8px;border-radius:50%;background:#B87918;transform:translateY(4.5px);}
+.my-philosophy-line-end{width:9px;height:9px;}
+.my-philosophy-inward-label{
+  margin-top:9px;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:clamp(17px,1.35vw,22px);
+  letter-spacing:.24em;
+  color:#B87918;
+  font-weight:500;
+}
+.my-philosophy-definition{
+  margin:3px 0 6px;
+  font-family:Baskerville,Georgia,"Times New Roman",serif;
+  font-size:clamp(18px,1.4vw,22px);
+  line-height:1.22;
+  color:#15385D;
+  white-space:nowrap;
+}
+.my-philosophy-bottom-rule{width:165px;margin-top:5px;margin-bottom:7px;}
+.my-philosophy-closing{
+  margin:0;
+  font-family:Baskerville,Georgia,"Times New Roman",serif;
+  font-size:clamp(19px,1.55vw,25px);
+  line-height:1.2;
+  color:#15385D;
+}
+.my-philosophy-closing-final{margin-top:5px;}
+.my-philosophy-closing-final em{color:#B87918;}
+
+@media (max-width:900px){
+  .my-philosophy-overview{min-height:auto;background-size:auto 100%;background-position:center bottom;}
+  .my-philosophy-inner{min-height:auto;width:92vw;padding:48px 0 56px;}
+  .my-philosophy-eyebrow{font-size:15px;}
+  .my-philosophy-title{font-size:clamp(38px,10vw,58px);}
+  .my-philosophy-premise{font-size:19px;margin-bottom:28px;max-width:90%;}
+  .my-philosophy-journey{display:flex;flex-direction:column;align-items:center;gap:12px;}
+  .my-philosophy-stage{width:min(86vw,420px);}
+  .my-philosophy-stage img{width:210px;}
+  .my-philosophy-stage h3{white-space:normal;font-size:17px;min-height:0;}
+  .my-philosophy-stage p{font-size:15px;}
+  .my-philosophy-arrow{padding:0;font-size:34px;transform:rotate(90deg);margin:-3px 0;}
+  .my-philosophy-inward-line{width:72%;margin-top:20px;}
+  .my-philosophy-inward-label{font-size:17px;}
+  .my-philosophy-definition{font-size:17px;white-space:normal;}
+  .my-philosophy-closing-final br{display:none;}
+  .my-philosophy-closing{font-size:20px;max-width:90%;}
+}
+
+/* =========================================================
+   V20 — APPROVED HOMEPAGE REFINEMENTS (DESKTOP ONLY)
+   1) My Philosophy: clean ivory field; no landscape scenery.
+   2) Meeting Life Well: reduce excess vertical height only.
+   3) From My Philosophy onward, normalize primary headline scale
+      to Begin Where You Are and use the refined Philosophy serif voice.
+   Mobile remains unchanged.
+   ========================================================= */
+@media (min-width:901px){
+  .my-philosophy-overview{
+    background:#FFFCEF !important;
+  }
+  .my-philosophy-overview::before{
+    display:none !important;
+  }
+
+  .screen8,
+  .screen8-inner{
+    min-height:1050px !important;
+  }
+
+  .my-philosophy-title,
+  .screen8-title,
+  .screen9-title,
+  .screen10-title,
+  .screen11-title,
+  .s13 h2,
+  .s14 h2{
+    font-family:Baskerville,Georgia,"Times New Roman",serif !important;
+    font-size:59px !important;
+    font-weight:400 !important;
+    line-height:1.03 !important;
+    letter-spacing:-.02em !important;
+  }
+}
+
+
+/* =========================================================
+   V22 — APPROVED REMAINING FIXES FROM V21
+   - Standardize complimentary-conversation CTA wording/treatment.
+   - Header BOOK A CONVERSATION remains compact and unchanged.
+   - Paid One-to-One BOOK buttons remain unchanged.
+   - Remove decorative circles from non-clickable continuation cues.
+   - Preserve V20 clean Philosophy / shorter Meeting Life Well /
+     heading consistency exactly as inherited from V21.
+   ========================================================= */
+
+/* Shared small descriptor beneath complimentary-conversation CTAs. */
+.conversation-cta-note{
+  margin-top:7px;
+  color:#15385D;
+  font-family:Baskerville,Georgia,"Times New Roman",serif;
+  font-size:14px;
+  line-height:1.2;
+  text-align:center;
+}
+.conversation-cta-note em{font-style:italic;}
+
+/* Welcome desktop artwork contains the former button wording.
+   Cover only that button area with the approved live CTA; do not alter the
+   locked artwork elsewhere. */
+@media (min-width:701px){
+  .desktop-cta-hotspot{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(#c88e3d,#b87926);
+    color:#fff;
+    font:500 clamp(12px,1.05vw,17px)/1 Arial,Helvetica,sans-serif;
+    letter-spacing:.6px;
+    text-decoration:none;
+    z-index:2;
+    overflow:visible;
+  }
+  .desktop-cta-hotspot::before{
+    content:"BOOK A CONVERSATION  →";
+    white-space:nowrap;
+  }
+  .desktop-cta-hotspot::after{
+    content:"15-minute complimentary conversation";
+    position:absolute;
+    top:calc(100% + 7px);
+    left:50%;
+    transform:translateX(-50%);
+    width:100%;
+    color:#15385D;
+    font:italic clamp(11px,.9vw,14px)/1.2 Baskerville,Georgia,"Times New Roman",serif;
+    letter-spacing:0;
+    text-align:center;
+    white-space:nowrap;
+  }
+}
+
+/* Welcome mobile descriptor. */
+.welcome-mobile-cta-note{margin-top:8px;}
+
+/* Screen 2: keep existing button location/size; descriptor sits immediately below. */
+.life-module .screen2-cta-note{
+  position:relative;
+  z-index:2;
+  margin-top:7px;
+  color:#15385D;
+}
+@media (min-width:901px){
+  .life-module .screen2-cta-note{
+    font-size:14px;
+    flex:none;
+  }
+}
+@media (max-width:900px){
+  .life-module .screen2-cta-note{
+    order:19;
+    width:100%;
+    font-size:3.5vw;
+    margin-top:2.1vw;
+  }
+}
+
+/* Final complimentary-conversation screen descriptor. */
+.s14-cta-note{
+  margin-top:8px;
+  text-align:left;
+  color:#15385D !important;
+}
+@media (max-width:700px){
+  .s14-cta-note{text-align:center;font-size:14px;}
+}
+
+/* Work With Me: Executive, Workshops/Speaking, and bottom invitation now use
+   the same conversation language and show the same duration descriptor. */
+.screen12-conversation-action{
+  margin-top:auto;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.screen12-conversation-action .screen12-bottom-btn{
+  margin-top:22px !important;
+  color:#fff !important;
+  background:linear-gradient(180deg,#c88a2d 0%,#b87918 58%,#a86914 100%) !important;
+  border:0 !important;
+  min-width:0 !important;
+  box-shadow:0 2px 6px rgba(84,55,16,.14) !important;
+}
+.screen12-conversation-action .conversation-cta-note{
+  margin-top:7px;
+  font-size:13px;
+}
+.screen12-conversation-copy .conversation-cta-note{
+  margin-top:7px;
+  font-size:13px;
+}
+@media (max-width:700px){
+  .screen12-conversation-action .conversation-cta-note,
+  .screen12-conversation-copy .conversation-cta-note{font-size:14px;}
+}
+
+/* Meeting Life Well: simple downward continuation cue, no decorative circle. */
+.screen8-continue-circle{
+  width:auto !important;
+  height:auto !important;
+  border:0 !important;
+  border-radius:0 !important;
+  margin-bottom:8px !important;
+  display:block !important;
+  color:var(--s8-gold) !important;
+  font-size:39px !important;
+  line-height:1 !important;
+}
+
+/* What Is It Like to Work Together?: simple arrow, no decorative circle. */
+.screen10-arrow-circle{
+  width:auto !important;
+  height:auto !important;
+  border:0 !important;
+  border-radius:0 !important;
+  display:block !important;
+  color:var(--gold) !important;
+  font-size:38px !important;
+  line-height:1 !important;
+}
+
+
+/* =========================================================
+   V23 — MEETING LIFE WELL CONTENT REFINEMENT
+   Approved scope only: replace the four seasonal rows with the
+   personal/professional changing-demands line; preserve the
+   existing Inward Clarity statement box and scenery; update the
+   first lower statement.
+   ========================================================= */
+.screen8-scope-line{
+  width:760px;
+  max-width:92%;
+  margin:0 auto 44px;
+}
+.screen8-scope-line p{
+  margin:0;
+  color:var(--s8-navy);
+  font-size:25px;
+  line-height:1.35;
+}
+@media (min-width:901px){
+  .screen8-title{margin-bottom:30px !important;}
+}
+@media (max-width:900px){
+  .screen8-scope-line{margin:0 auto 34px;}
+  .screen8-scope-line p{font-size:18px;line-height:1.4;}
+}
+
+/* =========================================================
+   V26 — MEETING LIFE WELL BREATHING SPACE ONLY
+   Restore vertical breathing room around the approved v25 copy,
+   existing Inward Clarity statement box, and lower capability copy.
+   No color, scenery, typography, copy, or other-screen changes.
+   ========================================================= */
+@media (min-width:901px){
+  .screen8,
+  .screen8-inner{
+    min-height:1180px !important;
+  }
+  .screen8-title{
+    margin-bottom:42px !important;
+  }
+  .screen8-scope-line{
+    margin-bottom:58px !important;
+  }
+  .screen8-statement-wrap{
+    margin-bottom:46px !important;
+  }
+  .screen8-spark-rule{
+    margin-bottom:24px !important;
+  }
+  .screen8-lower-row + .screen8-lower-row{
+    margin-top:18px !important;
+  }
+  .screen8-bottom-rule{
+    margin-top:30px !important;
+  }
+}
+
+@media (max-width:900px){
+  .screen8-title{
+    margin-bottom:34px !important;
+  }
+  .screen8-scope-line{
+    margin-bottom:44px !important;
+  }
+  .screen8-statement-wrap{
+    margin-bottom:36px !important;
+  }
+  .screen8-spark-rule{
+    margin-bottom:20px !important;
+  }
+  .screen8-lower-row + .screen8-lower-row{
+    margin-top:14px !important;
+  }
+  .screen8-bottom-rule{
+    margin-top:26px !important;
+  }
+}
+
+/* =========================================================
+   V27 — MY PHILOSOPHY BREATHING SPACE ONLY
+   Preserve approved copy, imagery, arrows, colors and typography.
+   Increase vertical separation between the major conceptual groups.
+   ========================================================= */
+@media (min-width:901px){
+  .my-philosophy-overview,
+  .my-philosophy-inner{
+    min-height:1120px !important;
+  }
+  .my-philosophy-inner{
+    padding:48px 0 56px !important;
+  }
+  .my-philosophy-title{
+    margin-top:8px !important;
+  }
+  .my-philosophy-premise{
+    margin-top:18px !important;
+    margin-bottom:42px !important;
+  }
+  .my-philosophy-stage img{
+    margin-bottom:14px !important;
+  }
+  .my-philosophy-stage > i{
+    margin-top:14px !important;
+    margin-bottom:15px !important;
+  }
+  .my-philosophy-inward-line{
+    margin-top:42px !important;
+  }
+  .my-philosophy-inward-label{
+    margin-top:14px !important;
+  }
+  .my-philosophy-definition{
+    margin-top:8px !important;
+    margin-bottom:20px !important;
+  }
+}
+
+/* =========================================================
+   V28 — INTERNAL BREATHING-SPACE CORRECTION ONLY
+   Redistribute space between content groups on My Philosophy and
+   Meeting Life Well. Remove the artificial desktop height/padding
+   expansion introduced in V27/V26. No copy, color, imagery,
+   typography, scenery, navigation, or other-screen changes.
+   ========================================================= */
+@media (min-width:901px){
+  /* My Philosophy: restore compact outer frame; breathe within content. */
+  .my-philosophy-overview,
+  .my-philosophy-inner{
+    min-height:calc(100vh - 58px) !important;
+  }
+  .my-philosophy-inner{
+    padding:24px 0 22px !important;
+  }
+  .my-philosophy-title{
+    margin-top:0 !important;
+  }
+  .my-philosophy-premise{
+    margin-top:24px !important;
+    margin-bottom:52px !important;
+  }
+  .my-philosophy-stage img{
+    margin-bottom:18px !important;
+  }
+  .my-philosophy-stage > i{
+    margin-top:17px !important;
+    margin-bottom:18px !important;
+  }
+  .my-philosophy-inward-line{
+    margin-top:58px !important;
+  }
+  .my-philosophy-inward-label{
+    margin-top:16px !important;
+  }
+  .my-philosophy-definition{
+    margin-top:10px !important;
+    margin-bottom:12px !important;
+  }
+
+  /* Meeting Life Well: remove added outer height; preserve and refine
+     separation between the approved conceptual groups. */
+  .screen8,
+  .screen8-inner{
+    min-height:1050px !important;
+  }
+  .screen8-title{
+    margin-bottom:44px !important;
+  }
+  .screen8-scope-line{
+    margin-bottom:54px !important;
+  }
+  .screen8-statement-wrap{
+    margin-bottom:44px !important;
+  }
+  .screen8-spark-rule{
+    margin-bottom:26px !important;
+  }
+  .screen8-lower-row + .screen8-lower-row{
+    margin-top:24px !important;
+  }
+  .screen8-bottom-rule{
+    margin-top:28px !important;
+  }
+}
+
+/* =========================================================
+   V29 — APPROVED DESKTOP REFINEMENTS ONLY
+   1) Philosophy definition matches opening premise text size.
+   2) Welcome + Life Doesn't Stand Still conversation CTAs are
+      visually more compact without changing wording.
+   3) Meeting Life Well Inward Clarity box is slightly more compact;
+      explanatory copy remains left aligned.
+   Mobile intentionally unchanged pending user testing.
+   ========================================================= */
+@media (min-width:901px){
+  .my-philosophy-definition{
+    font-size:clamp(20px,1.7vw,27px) !important;
+  }
+
+  /* Preserve the locked Welcome artwork footprint while covering its
+     embedded legacy button; render the live CTA as a smaller inner button. */
+  .desktop-cta-hotspot{
+    background:rgb(248,238,227) !important;
+    border-radius:0 !important;
+  }
+  .desktop-cta-hotspot::before{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:auto;
+    height:auto;
+    padding:13px 20px;
+    border-radius:7px;
+    background:linear-gradient(#c88e3d,#b87926);
+    color:#fff;
+  }
+
+  .life-module .cta{
+    width:340px !important;
+    height:46px !important;
+  }
+
+  .screen8-statement-wrap{
+    width:625px !important;
+  }
+  .screen8-statement{
+    padding:38px 42px 34px !important;
+    text-align:left !important;
+  }
+  .screen8-statement p{
+    text-align:left !important;
+  }
+}
+
+/* =========================================================
+   V30 — DESCRIPTOR SYSTEM + WELCOME CTA CLEANUP (DESKTOP ONLY)
+   Approved scope:
+   1) Standardize the six section descriptors from My Philosophy onward
+      to one gold, uppercase typographic treatment.
+   2) Keep the approved compact Welcome CTA size while softening the
+      cover over the legacy embedded CTA so no hard rectangular remnant
+      reads around the live button.
+   Mobile intentionally unchanged pending user testing.
+   ========================================================= */
+@media (min-width:901px){
+  .my-philosophy-eyebrow,
+  .screen8-eyebrow,
+  .screen9-kicker,
+  .screen11-kicker,
+  .s13 .eyebrow,
+  .s14 .eyebrow{
+    color:#B87918 !important;
+    font-family:Arial,Helvetica,sans-serif !important;
+    font-size:18px !important;
+    line-height:1.1 !important;
+    font-weight:500 !important;
+    letter-spacing:.18em !important;
+  }
+
+  /* Feather the legacy-button cover into the Welcome artwork while
+     preserving the already-approved compact live CTA. */
+  .desktop-cta-hotspot{
+    background:radial-gradient(ellipse at center,
+      rgba(248,238,227,1) 0%,
+      rgba(248,238,227,1) 68%,
+      rgba(248,238,227,.96) 78%,
+      rgba(248,238,227,.62) 89%,
+      rgba(248,238,227,0) 100%) !important;
+    overflow:visible !important;
+  }
+}
+
+/* =========================================================
+   V32 — MEETING LIFE WELL EMPHASIS ONLY
+   Approved scope: make only the words "freedom" and "well"
+   in the opening copy gold. No other changes.
+   ========================================================= */
+.screen8-scope-line em{
+  color:#B87918 !important;
+}
+
+
+/* =========================================================
+   V33 — THREE APPROVED REFINEMENTS ONLY
+   1) Meeting Life Well key thought: same size, slightly stronger
+      weight and more breathing room; existing gold freedom/well retained.
+   2) Work With Me conversation CTAs: keep solid gold/white on hover.
+   3) Begin Where You Are CTA: tighter desktop footprint, same type/treatment.
+   ========================================================= */
+@media (min-width:901px){
+  .screen8-key-thought{
+    display:block;
+    margin-top:8px;
+    padding:8px 0 6px;
+    font-weight:500;
+  }
+
+  .screen11-cta{
+    min-width:0 !important;
+    width:auto !important;
+    padding:11px 18px 10px !important;
+  }
+}
+
+.screen12 .screen12-conversation-action .screen12-bottom-btn:hover{
+  color:#fff !important;
+  background:linear-gradient(180deg,#bd7f25 0%,#ad7016 58%,#99600f 100%) !important;
+  border:0 !important;
+  box-shadow:0 3px 8px rgba(84,55,16,.18) !important;
+}
