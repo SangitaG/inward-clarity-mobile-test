@@ -7123,3 +7123,15 @@ body.screen12-open .screen12{
     transform:translateX(30px);
   }
 }
+
+
+/* =========================================================
+   V67 — CLIENT VALUE MOBILE CLOSING TEXT FIXES ONLY
+   Preserve locked desktop. On mobile, crop the baked-in text
+   residue from the scenery asset while keeping the scenery.
+   ========================================================= */
+@media (max-width:900px){
+  .client-value-v63::after{
+    background-size:auto 116%;
+  }
+}
