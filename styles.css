@@ -5902,3 +5902,1224 @@ body.screen12-open .screen12{
   border:0 !important;
   box-shadow:0 3px 8px rgba(84,55,16,.18) !important;
 }
+
+/* =========================================================
+   V35 — MY PHILOSOPHY VERTICAL BREATHING ROOM ONLY (DESKTOP)
+   Approved scope only:
+   - Give the section a little more overall height.
+   - Match the top and bottom breathing rhythm around the section.
+   - Add genuine internal vertical space above and below the five-stage
+     horizontal philosophy flow and before the Inward Clarity definition.
+   - No typography, copy, color, imagery, arrow, width, navigation,
+     mobile, or other-screen changes.
+   ========================================================= */
+@media (min-width:901px){
+  .my-philosophy-overview,
+  .my-philosophy-inner{
+    min-height:1160px !important;
+  }
+
+  .my-philosophy-inner{
+    padding-top:58px !important;
+    padding-bottom:58px !important;
+  }
+
+  /* Preserve the approved title/premise relationship, then give the
+     horizontal flow a clearer arrival. */
+  .my-philosophy-premise{
+    margin-bottom:68px !important;
+  }
+
+  /* Give the five-stage horizontal flow room to breathe as a unit. */
+  .my-philosophy-journey{
+    margin-top:0 !important;
+    margin-bottom:76px !important;
+  }
+
+  /* Separate the Inward Clarity line/definition from the flow above. */
+  .my-philosophy-inward-line{
+    margin-top:0 !important;
+  }
+
+  .my-philosophy-definition{
+    margin-bottom:34px !important;
+  }
+}
+
+/* =========================================================
+   V37 — LOCKED REDESIGN IMPLEMENTATION: MY PHILOSOPHY + MEETING LIFE WELL
+   Base: v35. Scope intentionally limited to these two public sections
+   plus their newly-added image assets under assets/redesign-v37/.
+   ========================================================= */
+
+/* Shared master colors / rhythm */
+.my-philosophy-overview,
+.screen8{
+  --ic-ivory:#FFFCEF;
+  --ic-navy:#15385D;
+  --ic-gold:#B87918;
+}
+
+@media (min-width:901px){
+  /* ---------- MY PHILOSOPHY ---------- */
+  .my-philosophy-overview{
+    min-height:1120px !important;
+    background-color:var(--ic-ivory) !important;
+    background-image:url('assets/redesign-v37/philosophy-scenery.png') !important;
+    background-repeat:no-repeat !important;
+    background-size:100% auto !important;
+    background-position:center bottom !important;
+    display:flex !important;
+    align-items:flex-start !important;
+    overflow:hidden !important;
+  }
+  .my-philosophy-overview::before{display:none !important;}
+  .my-philosophy-inner{
+    width:min(94vw,1460px) !important;
+    min-height:1120px !important;
+    padding:66px 0 86px !important;
+    justify-content:flex-start !important;
+    box-sizing:border-box !important;
+  }
+  .my-philosophy-eyebrow{
+    position:relative !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    width:min(740px,64vw) !important;
+    gap:26px !important;
+    color:var(--ic-gold) !important;
+    font-size:18px !important;
+    letter-spacing:.24em !important;
+    margin:0 auto 26px !important;
+  }
+  .my-philosophy-eyebrow::before,
+  .my-philosophy-eyebrow::after{
+    content:"";
+    height:1px;
+    flex:1;
+    background:rgba(184,121,24,.62);
+  }
+  .my-philosophy-top-rule,.my-philosophy-bottom-rule{display:none !important;}
+  .my-philosophy-title{
+    margin:0 !important;
+    font-family:Baskerville,Georgia,"Times New Roman",serif !important;
+    font-size:59px !important;
+    line-height:1.03 !important;
+    font-weight:400 !important;
+    color:var(--ic-navy) !important;
+  }
+  .my-philosophy-title-rule,
+  .my-philosophy-thought-rule,
+  .screen8-title-rule{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:292px;
+    gap:9px;
+    margin:28px auto 24px;
+  }
+  .my-philosophy-title-rule span,
+  .my-philosophy-thought-rule span,
+  .screen8-title-rule span{height:1px;flex:1;background:rgba(184,121,24,.62);}
+  .my-philosophy-title-rule b,
+  .my-philosophy-thought-rule b,
+  .screen8-title-rule b{width:8px;height:8px;border-radius:50%;background:var(--ic-gold);}
+  .my-philosophy-premise{
+    margin:0 !important;
+    font-family:Baskerville,Georgia,"Times New Roman",serif !important;
+    font-style:normal !important;
+    font-size:24px !important;
+    line-height:1.43 !important;
+    color:var(--ic-navy) !important;
+  }
+  .my-philosophy-thought-rule{margin:26px auto 22px !important;}
+  .my-philosophy-insight{
+    margin:0 auto 38px !important;
+    font-family:Arial,Helvetica,sans-serif !important;
+    font-size:18px !important;
+    line-height:1.45 !important;
+    color:var(--ic-navy) !important;
+    font-weight:400 !important;
+  }
+  .my-philosophy-journey{
+    width:100% !important;
+    display:grid !important;
+    grid-template-columns:minmax(0,1fr) 38px minmax(0,1fr) 38px minmax(0,1fr) 38px minmax(0,1fr) 38px minmax(0,1fr) !important;
+    align-items:start !important;
+    gap:4px !important;
+    margin:0 0 44px !important;
+  }
+  .my-philosophy-stage{
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:center !important;
+    min-width:0 !important;
+  }
+  .my-philosophy-stage h3{
+    order:0 !important;
+    min-height:50px !important;
+    margin:0 0 10px !important;
+    color:var(--ic-gold) !important;
+    font-family:Arial,Helvetica,sans-serif !important;
+    font-size:16px !important;
+    line-height:1.35 !important;
+    font-weight:600 !important;
+    letter-spacing:.035em !important;
+    white-space:normal !important;
+  }
+  .my-philosophy-stage img{
+    order:1 !important;
+    width:132px !important;
+    height:132px !important;
+    aspect-ratio:1 / 1 !important;
+    object-fit:cover !important;
+    border-radius:50% !important;
+    margin:0 auto 14px !important;
+    mix-blend-mode:normal !important;
+  }
+  .my-philosophy-stage > i{display:none !important;}
+  .my-philosophy-stage p{
+    order:2 !important;
+    margin:0 !important;
+    min-height:92px !important;
+    font-family:Arial,Helvetica,sans-serif !important;
+    font-size:14px !important;
+    line-height:1.45 !important;
+    color:var(--ic-navy) !important;
+  }
+  .my-philosophy-arrow{
+    padding-top:106px !important;
+    color:var(--ic-gold) !important;
+    font-size:34px !important;
+    line-height:1 !important;
+  }
+  .my-philosophy-inward-line{display:none !important;}
+  .my-philosophy-inward-card{
+    width:min(720px,62vw) !important;
+    min-height:160px !important;
+    display:grid !important;
+    grid-template-columns:180px 1fr !important;
+    align-items:center !important;
+    background:rgba(255,252,239,.93) !important;
+    border:1px solid rgba(184,121,24,.42) !important;
+    border-radius:18px !important;
+    box-shadow:0 3px 10px rgba(96,66,24,.10) !important;
+    overflow:hidden !important;
+    margin:0 auto !important;
+    text-align:left !important;
+  }
+  .my-philosophy-inward-icon{
+    height:118px !important;
+    border-right:1px solid rgba(184,121,24,.60) !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+  }
+  .my-philosophy-inward-icon img{
+    width:138px !important;
+    height:138px !important;
+    object-fit:contain !important;
+    display:block !important;
+  }
+  .my-philosophy-inward-copy{padding:18px 30px !important;}
+  .my-philosophy-inward-label{
+    margin:0 0 14px !important;
+    color:var(--ic-navy) !important;
+    font-size:18px !important;
+    letter-spacing:.22em !important;
+    font-weight:600 !important;
+  }
+  .my-philosophy-definition{
+    margin:0 !important;
+    font-family:Arial,Helvetica,sans-serif !important;
+    font-size:17px !important;
+    line-height:1.52 !important;
+    font-style:normal !important;
+    white-space:normal !important;
+    color:var(--ic-navy) !important;
+  }
+  .my-philosophy-definition em{
+    color:var(--ic-gold) !important;
+    font-family:Baskerville,Georgia,"Times New Roman",serif !important;
+    font-style:italic !important;
+  }
+
+  /* ---------- MEETING LIFE WELL ---------- */
+  .screen8{
+    min-height:1080px !important;
+    background-color:var(--ic-ivory) !important;
+    background-image:url('assets/redesign-v37/meeting-life-well-scenery.png') !important;
+    background-repeat:no-repeat !important;
+    background-size:100% auto !important;
+    background-position:center bottom !important;
+    overflow:hidden !important;
+    display:flex !important;
+    align-items:flex-start !important;
+  }
+  .screen8-inner{
+    width:min(94vw,1460px) !important;
+    min-height:1080px !important;
+    padding:66px 0 88px !important;
+    box-sizing:border-box !important;
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:center !important;
+    justify-content:flex-start !important;
+    position:relative !important;
+    z-index:1 !important;
+  }
+  .screen8-eyebrow{
+    position:relative !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    width:min(860px,72vw) !important;
+    gap:28px !important;
+    margin:0 auto 24px !important;
+    color:var(--ic-gold) !important;
+    font-size:18px !important;
+    letter-spacing:.20em !important;
+  }
+  .screen8-eyebrow::before,
+  .screen8-eyebrow::after{
+    content:"";
+    height:1px;
+    flex:1;
+    background:rgba(184,121,24,.62);
+  }
+  .screen8-lotus-rule{display:none !important;}
+  .screen8-title{
+    margin:0 !important;
+    font-family:Baskerville,Georgia,"Times New Roman",serif !important;
+    font-size:59px !important;
+    line-height:1.03 !important;
+    font-weight:400 !important;
+    color:var(--ic-navy) !important;
+  }
+  .screen8-title-rule{margin:30px auto 28px !important;}
+  .screen8-scope-line{
+    width:min(900px,78vw) !important;
+    margin:0 auto !important;
+    color:var(--ic-navy) !important;
+  }
+  .screen8-scope-line p{
+    margin:0 !important;
+    font-family:Arial,Helvetica,sans-serif !important;
+    font-size:18px !important;
+    line-height:1.48 !important;
+    color:var(--ic-navy) !important;
+    font-weight:400 !important;
+  }
+  .screen8-key-thought{
+    display:block !important;
+    margin:20px 0 0 !important;
+    padding:0 !important;
+    font-weight:400 !important;
+  }
+  .screen8-key-thought em{color:var(--ic-gold) !important;font-style:normal !important;font-weight:600 !important;}
+  .screen8-inward-card{
+    width:min(780px,66vw) !important;
+    min-height:190px !important;
+    display:grid !important;
+    grid-template-columns:230px 1fr !important;
+    align-items:center !important;
+    margin:58px auto 64px !important;
+    background:rgba(255,252,239,.94) !important;
+    border:1px solid rgba(184,121,24,.45) !important;
+    border-radius:18px !important;
+    box-shadow:0 3px 12px rgba(96,66,24,.11) !important;
+    overflow:hidden !important;
+    text-align:left !important;
+  }
+  .screen8-inward-icon{
+    height:140px !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    border-right:1px solid rgba(184,121,24,.62) !important;
+  }
+  .screen8-inward-icon img{
+    width:178px !important;
+    height:178px !important;
+    object-fit:contain !important;
+    display:block !important;
+  }
+  .screen8-inward-copy{padding:22px 36px !important;}
+  .screen8-inward-label{
+    font-family:Arial,Helvetica,sans-serif !important;
+    font-size:19px !important;
+    line-height:1 !important;
+    font-weight:600 !important;
+    letter-spacing:.22em !important;
+    color:var(--ic-navy) !important;
+    margin:0 0 18px !important;
+  }
+  .screen8-inward-copy p{
+    margin:0 !important;
+    font-family:Arial,Helvetica,sans-serif !important;
+    font-size:18px !important;
+    line-height:1.56 !important;
+    color:var(--ic-navy) !important;
+  }
+  .screen8-inward-copy em{
+    color:var(--ic-gold) !important;
+    font-family:Baskerville,Georgia,"Times New Roman",serif !important;
+    font-size:20px !important;
+    font-style:italic !important;
+  }
+  .screen8-lower-grid{
+    width:min(960px,82vw) !important;
+    display:grid !important;
+    grid-template-columns:1fr 1.2fr 1fr !important;
+    align-items:center !important;
+    margin:0 auto !important;
+  }
+  .screen8-lower-block{
+    min-height:132px !important;
+    display:flex !important;
+    flex-direction:column !important;
+    justify-content:center !important;
+    padding:0 32px !important;
+    text-align:center !important;
+    color:var(--ic-navy) !important;
+  }
+  .screen8-lower-block + .screen8-lower-block{border-left:1px solid rgba(184,121,24,.52) !important;}
+  .screen8-lower-block p{
+    margin:0 !important;
+    font-family:Arial,Helvetica,sans-serif !important;
+    font-size:18px !important;
+    line-height:1.42 !important;
+    color:var(--ic-navy) !important;
+  }
+  .screen8-lower-block strong{color:var(--ic-gold) !important;font-weight:600 !important;}
+  .screen8-self-leadership h3{
+    margin:0 0 10px !important;
+    color:var(--ic-gold) !important;
+    font-family:Baskerville,Georgia,"Times New Roman",serif !important;
+    font-size:34px !important;
+    line-height:1 !important;
+    font-weight:400 !important;
+    font-style:italic !important;
+  }
+  .screen8-self-leadership p{
+    font-family:Baskerville,Georgia,"Times New Roman",serif !important;
+    font-style:italic !important;
+    font-size:18px !important;
+    line-height:1.45 !important;
+  }
+  /* Retired legacy elements are absent in V37 markup; hide defensively. */
+  .screen8-statement-wrap,.screen8-spark-rule,.screen8-lower,.screen8-bottom-rule,.screen8-continue{display:none !important;}
+}
+
+/* Mobile: preserve content and asset meaning in a clean stacked layout. */
+@media (max-width:900px){
+  .my-philosophy-overview,
+  .screen8{
+    background-color:#FFFCEF !important;
+    background-repeat:no-repeat !important;
+    background-size:auto 46% !important;
+    background-position:center bottom !important;
+  }
+  .my-philosophy-overview{background-image:url('assets/redesign-v37/philosophy-scenery.png') !important;}
+  .screen8{background-image:url('assets/redesign-v37/meeting-life-well-scenery.png') !important;}
+  .my-philosophy-inner,.screen8-inner{padding:50px 22px 72px !important;}
+  .my-philosophy-eyebrow,.screen8-eyebrow{margin-bottom:22px !important;text-align:center !important;}
+  .my-philosophy-title,.screen8-title{font-size:46px !important;line-height:1.04 !important;}
+  .my-philosophy-title-rule,.my-philosophy-thought-rule,.screen8-title-rule{display:flex;width:190px;gap:8px;margin:24px auto;align-items:center;}
+  .my-philosophy-title-rule span,.my-philosophy-thought-rule span,.screen8-title-rule span{height:1px;flex:1;background:rgba(184,121,24,.62);}
+  .my-philosophy-title-rule b,.my-philosophy-thought-rule b,.screen8-title-rule b{width:7px;height:7px;border-radius:50%;background:#B87918;}
+  .my-philosophy-premise{font-style:normal !important;}
+  .my-philosophy-insight{font-size:17px;line-height:1.5;margin:0 auto 30px;text-align:center;}
+  .my-philosophy-journey{display:flex !important;flex-direction:column !important;gap:14px !important;}
+  .my-philosophy-stage{display:flex;flex-direction:column;align-items:center;}
+  .my-philosophy-stage h3{order:0;color:#B87918 !important;margin:0 0 9px !important;min-height:0 !important;}
+  .my-philosophy-stage img{order:1;width:148px !important;height:148px !important;border-radius:50%;mix-blend-mode:normal !important;margin:0 auto 12px !important;}
+  .my-philosophy-stage p{order:2;min-height:0 !important;}
+  .my-philosophy-arrow{transform:rotate(90deg);padding:0 !important;margin:2px 0 !important;}
+  .my-philosophy-inward-line,.my-philosophy-top-rule,.my-philosophy-bottom-rule{display:none !important;}
+  .my-philosophy-inward-card,.screen8-inward-card{width:min(92vw,560px) !important;display:grid !important;grid-template-columns:1fr !important;margin:36px auto 46px !important;text-align:center !important;background:rgba(255,252,239,.95) !important;border:1px solid rgba(184,121,24,.42) !important;border-radius:16px !important;}
+  .my-philosophy-inward-icon,.screen8-inward-icon{border-right:0 !important;border-bottom:1px solid rgba(184,121,24,.45) !important;height:130px !important;}
+  .my-philosophy-inward-icon img,.screen8-inward-icon img{width:145px !important;height:145px !important;object-fit:contain !important;}
+  .my-philosophy-inward-copy,.screen8-inward-copy{padding:24px 22px !important;text-align:center !important;}
+  .my-philosophy-definition{white-space:normal !important;font-size:17px !important;}
+  .screen8-scope-line{width:100% !important;margin:0 auto !important;}
+  .screen8-scope-line p{font-size:18px !important;line-height:1.5 !important;}
+  .screen8-key-thought{margin-top:18px !important;}
+  .screen8-lower-grid{display:grid !important;grid-template-columns:1fr !important;width:min(92vw,560px) !important;gap:0 !important;}
+  .screen8-lower-block{padding:24px 10px !important;min-height:0 !important;}
+  .screen8-lower-block + .screen8-lower-block{border-left:0 !important;border-top:1px solid rgba(184,121,24,.45) !important;}
+  .screen8-self-leadership h3{font-size:31px !important;}
+}
+
+/* V40 — approved typography normalization + modest Meeting Life Well height trim (desktop only) */
+@media (min-width:901px){
+  .my-philosophy-definition em{
+    color:var(--ic-navy) !important;
+    font-family:Arial,Helvetica,sans-serif !important;
+    font-size:17px !important;
+    font-style:normal !important;
+    font-weight:400 !important;
+  }
+
+  .screen8-inward-copy em{
+    color:var(--ic-gold) !important;
+    font-family:Arial,Helvetica,sans-serif !important;
+    font-size:18px !important;
+    font-style:normal !important;
+    font-weight:400 !important;
+  }
+
+  .screen8-self-leadership p{
+    font-family:Arial,Helvetica,sans-serif !important;
+    font-size:18px !important;
+    line-height:1.42 !important;
+    font-style:normal !important;
+    font-weight:400 !important;
+  }
+
+  .screen8,
+  .screen8-inner{
+    min-height:980px !important;
+  }
+  .screen8-inner{
+    padding-bottom:52px !important;
+  }
+}
+
+
+/* =========================================================
+   V41 — APPROVED WORK WITH ME REDESIGN + COPY UPDATES
+   Desktop v40 remains locked outside explicitly approved copy.
+   ========================================================= */
+.work-with-me-redesign{background:#FFFCEF !important;color:#15385D;}
+.work-with-me-redesign .work-page-home{background:#FFFCEF !important;padding-top:22px;}
+.wwm-page{background:#FFFCEF;max-width:1440px;margin:0 auto;padding:38px 64px 0;}
+.wwm-intro{max-width:1220px;margin:0 auto 38px;display:grid;grid-template-columns:1.15fr .85fr;gap:72px;align-items:end;}
+.wwm-eyebrow{margin:0 0 14px;color:#B87918;font:500 16px/1.1 Arial,Helvetica,sans-serif;letter-spacing:.18em;}
+.wwm-intro h1{margin:0;font:400 54px/1.04 Baskerville,Georgia,"Times New Roman",serif;color:#15385D;}
+.wwm-intro h1 em{font-weight:400;color:#B87918;}
+.wwm-intro-copy{margin:0 0 3px;font:17px/1.65 Arial,Helvetica,sans-serif;color:#15385D;}
+.wwm-columns{max-width:1220px;margin:0 auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:start;}
+.wwm-column{border:1px solid rgba(21,56,93,.14);border-radius:10px;overflow:hidden;background:rgba(255,252,239,.72);box-shadow:0 4px 15px rgba(75,56,33,.06);}
+.wwm-image{height:148px;background-image:linear-gradient(to bottom,rgba(255,252,239,.02),rgba(255,252,239,.08)),url("assets/screen12/screen12-work-with-me-scenery.jpg");background-size:cover;background-repeat:no-repeat;}
+.wwm-image-personal{background-position:left 78%;}.wwm-image-professional{background-position:center 67%;}.wwm-image-speaking{background-position:right 76%;}
+.wwm-column-body{padding:25px 27px 30px;}
+.wwm-column h2{min-height:58px;margin:0;text-align:center;font:400 25px/1.15 Baskerville,Georgia,"Times New Roman",serif;color:#15385D;}
+.wwm-column-sub{min-height:48px;margin:8px auto 20px;text-align:center;color:#B87918;font:italic 15.5px/1.45 Georgia,"Times New Roman",serif;}
+.wwm-offer{border-top:1px solid rgba(184,121,24,.28);padding:22px 0 23px;}
+.wwm-offer h3{margin:0 0 6px;text-align:left;text-transform:uppercase;color:#15385D;font:600 15px/1.35 Arial,Helvetica,sans-serif;letter-spacing:.025em;}
+.wwm-meta{margin:0 0 13px !important;color:#B87918;font-weight:600 !important;}
+.wwm-offer p{margin:0 0 11px;font:14.5px/1.58 Arial,Helvetica,sans-serif;color:#15385D;}
+.wwm-themes{font-style:italic !important;color:rgba(21,56,93,.88) !important;}
+.wwm-book,.wwm-conversation{display:inline-block;margin-top:5px;text-decoration:none;text-align:center;border-radius:4px;font:600 11px/1 Arial,Helvetica,sans-serif;letter-spacing:.06em;}
+.wwm-book{padding:9px 21px;background:#B87918;color:#fff;}
+.wwm-conversation{padding:9px 15px;border:1px solid #B87918;color:#B87918;background:transparent;}
+.wwm-pending{cursor:default;opacity:.72;}
+.wwm-closing{max-width:1220px;margin:38px auto 0;padding:62px 20px 100px;text-align:center;background:linear-gradient(to bottom,rgba(255,252,239,1) 0%,rgba(255,252,239,.78) 42%,rgba(255,252,239,.88) 100%),url("assets/screen12/screen12-work-with-me-scenery.jpg") center bottom/100% auto no-repeat;}
+.wwm-closing h2{margin:0 0 10px;font:400 38px/1.1 Baskerville,Georgia,"Times New Roman",serif;color:#15385D;}
+.wwm-closing p{margin:0;color:#B87918;font:italic 18px/1.4 Georgia,"Times New Roman",serif;}
+@media(max-width:900px){
+ .wwm-page{padding:32px 24px 0}.wwm-intro{grid-template-columns:1fr;gap:20px}.wwm-intro h1{font-size:43px}.wwm-columns{grid-template-columns:1fr;max-width:520px}.wwm-column h2,.wwm-column-sub{min-height:0}.wwm-image{height:135px}.wwm-closing{padding-bottom:72px}.wwm-closing h2{font-size:32px}
+}
+
+
+/* =========================================================
+   V42 — LOCKED WORK WITH ME VISUAL REFINEMENT
+   Approved: centered descriptor/statement, gold rule below descriptor,
+   original Begin icons, no card scenery, increased vertical breathing room,
+   compact left-aligned workshop CTAs, simplified 4-session labels.
+   ========================================================= */
+.work-with-me-redesign .wwm-page{background:#FFFCEF !important;max-width:1440px !important;padding:44px 56px 0 !important;}
+.work-with-me-redesign .wwm-intro{max-width:1160px !important;margin:0 auto 68px !important;display:block !important;text-align:center !important;}
+.work-with-me-redesign .wwm-eyebrow{margin:0 0 18px !important;text-align:center !important;color:#B87918 !important;font:500 17px/1.1 Arial,Helvetica,sans-serif !important;letter-spacing:.18em !important;}
+.work-with-me-redesign .wwm-top-rule{display:flex !important;width:220px !important;gap:10px !important;margin:0 auto 24px !important;align-items:center !important;}
+.work-with-me-redesign .wwm-top-rule span{height:1px !important;flex:1 !important;background:rgba(184,121,24,.72) !important;}
+.work-with-me-redesign .wwm-top-rule b{width:8px !important;height:8px !important;border-radius:50% !important;background:#B87918 !important;}
+.work-with-me-redesign .wwm-intro h1{margin:0 !important;text-align:center !important;font:400 54px/1.08 Baskerville,Georgia,"Times New Roman",serif !important;}
+.work-with-me-redesign .wwm-intro h1 em{display:inline-block !important;margin-top:8px !important;color:#B87918 !important;}
+.work-with-me-redesign .wwm-intro-copy{max-width:900px !important;margin:26px auto 0 !important;text-align:center !important;font:17px/1.65 Arial,Helvetica,sans-serif !important;}
+.work-with-me-redesign .wwm-columns{max-width:1280px !important;margin:0 auto 76px !important;gap:24px !important;align-items:stretch !important;}
+.work-with-me-redesign .wwm-column{background:rgba(255,252,239,.82) !important;overflow:visible !important;}
+.work-with-me-redesign .wwm-card-icon{height:88px !important;padding-top:30px !important;display:flex !important;align-items:flex-start !important;justify-content:center !important;}
+.work-with-me-redesign .wwm-card-icon svg{width:58px !important;height:58px !important;fill:none !important;stroke:#15385D !important;stroke-width:1.7 !important;stroke-linecap:round !important;stroke-linejoin:round !important;}
+.work-with-me-redesign .wwm-card-icon svg circle:nth-of-type(1){stroke:#B87918 !important;}
+.work-with-me-redesign .wwm-column-body{padding:28px 34px 38px !important;}
+.work-with-me-redesign .wwm-column h2{min-height:58px !important;margin:0 0 14px !important;display:flex !important;align-items:center !important;justify-content:center !important;font-size:25px !important;}
+.work-with-me-redesign .wwm-column-sub{min-height:52px !important;margin:0 auto 34px !important;font-size:16px !important;line-height:1.5 !important;}
+.work-with-me-redesign .wwm-offer{padding:30px 0 31px !important;}
+.work-with-me-redesign .wwm-offer h3{margin-bottom:8px !important;}
+.work-with-me-redesign .wwm-offer p{margin-bottom:14px !important;line-height:1.62 !important;}
+.work-with-me-redesign .wwm-book,.work-with-me-redesign .wwm-conversation{width:auto !important;max-width:max-content !important;display:inline-block !important;margin-top:10px !important;}
+.work-with-me-redesign .wwm-conversation{padding:10px 16px !important;text-align:left !important;}
+.work-with-me-redesign .wwm-closing{max-width:1220px !important;margin:0 auto !important;padding:62px 20px 108px !important;}
+@media(max-width:900px){
+ .work-with-me-redesign .wwm-page{padding:34px 22px 0 !important;}
+ .work-with-me-redesign .wwm-intro{margin-bottom:48px !important;}
+ .work-with-me-redesign .wwm-columns{margin-bottom:48px !important;}
+ .work-with-me-redesign .wwm-card-icon{height:78px !important;padding-top:24px !important;}
+ .work-with-me-redesign .wwm-column-body{padding:24px 25px 32px !important;}
+ .work-with-me-redesign .wwm-column-sub{min-height:0 !important;margin-bottom:28px !important;}
+}
+
+/* =========================================================
+   V43 — LOCKED WORK WITH ME FINAL SPACING + CTA CONSISTENCY
+   Approved scope only: solid-gold CTAs, balanced space around
+   cards/closing rule, preserve card breathing room.
+   ========================================================= */
+@media (min-width:901px){
+  .work-with-me-redesign .wwm-book,
+  .work-with-me-redesign .wwm-conversation{
+    display:inline-block !important;
+    width:auto !important;
+    max-width:max-content !important;
+    padding:10px 16px !important;
+    background:#B87918 !important;
+    border:1px solid #B87918 !important;
+    color:#fff !important;
+    opacity:1 !important;
+    text-align:left !important;
+  }
+  .work-with-me-redesign .wwm-columns{
+    margin-bottom:68px !important;
+  }
+  .work-with-me-redesign .wwm-closing{
+    position:relative !important;
+    margin:0 auto !important;
+    padding:0 20px 88px !important;
+    background:linear-gradient(to bottom,rgba(255,252,239,1) 0%,rgba(255,252,239,.78) 42%,rgba(255,252,239,.88) 100%),url("assets/screen12/screen12-work-with-me-scenery.jpg") center bottom/100% auto no-repeat !important;
+  }
+  .work-with-me-redesign .wwm-closing::before{
+    content:"" !important;
+    display:block !important;
+    width:220px !important;
+    height:9px !important;
+    margin:0 auto 28px !important;
+    background:
+      radial-gradient(circle at center,#B87918 0 4px,transparent 4.5px),
+      linear-gradient(to right,rgba(184,121,24,.72),rgba(184,121,24,.72)) left center/96px 1px no-repeat,
+      linear-gradient(to right,rgba(184,121,24,.72),rgba(184,121,24,.72)) right center/96px 1px no-repeat !important;
+  }
+}
+
+
+/* =========================================================
+   V44 — MEETING LIFE WELL LOCKED REDESIGN + WORK WITH ME
+   intro simplification. Explicitly approved scope only.
+   ========================================================= */
+
+/* Meeting Life Well — desktop locked design */
+.screen8.screen8-v44{
+  background:#FFFCEF !important;
+  min-height:0 !important;
+  height:auto !important;
+  background-image:none !important;
+  color:#15385D !important;
+}
+.screen8-v44-inner{
+  width:min(1180px,92vw);
+  margin:0 auto;
+  padding:70px 0 82px;
+  text-align:center;
+  background:#FFFCEF;
+}
+.screen8-v44-eyebrow{
+  margin:0;
+  color:#B87918;
+  font:500 18px/1.15 Arial,Helvetica,sans-serif;
+  letter-spacing:.18em;
+}
+.screen8-v44-rule,.screen8-v44-mini-rule,.screen8-v44-bottom-rule{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.screen8-v44-rule{width:100%;margin-top:24px;margin-bottom:34px;}
+.screen8-v44-mini-rule{width:178px;margin-top:26px;margin-bottom:26px;}
+.screen8-v44-bottom-rule{width:100%;margin-top:34px;margin-bottom:30px;}
+.screen8-v44-rule span,.screen8-v44-mini-rule span,.screen8-v44-bottom-rule span{height:1px;flex:1;background:rgba(184,121,24,.72);}
+.screen8-v44-rule b,.screen8-v44-mini-rule b,.screen8-v44-bottom-rule b{width:8px;height:8px;border-radius:50%;background:#B87918;display:block;flex:0 0 auto;}
+.screen8-v44-title{
+  margin:0 0 48px;
+  color:#15385D;
+  font:400 64px/1.02 Baskerville,Georgia,"Times New Roman",serif;
+}
+.screen8-v44-promise{display:grid;gap:8px;margin:0 auto;}
+.screen8-v44-promise strong{font:600 20px/1.35 Arial,Helvetica,sans-serif;color:#15385D;}
+.screen8-v44-core{
+  max-width:1000px;
+  margin:0 auto 40px;
+  color:#15385D;
+  font:400 28px/1.42 Baskerville,Georgia,"Times New Roman",serif;
+}
+.screen8-v44-core em{color:#B87918;font-style:italic;}
+.screen8-v44-capability-heading{display:flex;align-items:center;gap:24px;width:100%;margin:0 auto 34px;}
+.screen8-v44-capability-heading span{height:1px;background:rgba(184,121,24,.62);flex:1;}
+.screen8-v44-capability-heading b{font:500 16px/1 Arial,Helvetica,sans-serif;letter-spacing:.16em;color:#B87918;white-space:nowrap;}
+.screen8-v44-capability-layout{
+  display:grid;
+  grid-template-columns:1fr minmax(390px,1.35fr) 1fr;
+  gap:34px;
+  align-items:center;
+  margin:0 auto 42px;
+}
+.screen8-v44-side{display:flex;flex-direction:column;justify-content:space-around;gap:76px;min-height:490px;}
+.screen8-v44-left{text-align:right;align-items:flex-end;}
+.screen8-v44-right{text-align:left;align-items:flex-start;}
+.screen8-v44-capability{color:#15385D;}
+.screen8-v44-side .screen8-v44-capability{display:grid;grid-template-columns:auto 1fr;column-gap:14px;align-items:start;max-width:260px;}
+.screen8-v44-left .screen8-v44-capability{grid-template-columns:1fr auto;}
+.screen8-v44-left .screen8-v44-cap-icon{grid-column:2;grid-row:1 / span 2;}
+.screen8-v44-right .screen8-v44-cap-icon{grid-column:1;grid-row:1 / span 2;}
+.screen8-v44-left h3,.screen8-v44-left p{grid-column:1;}
+.screen8-v44-right h3,.screen8-v44-right p{grid-column:2;}
+.screen8-v44-cap-icon{
+  width:58px;height:58px;border:1.5px solid #B87918;border-radius:50%;
+  display:grid;place-items:center;color:#B87918;font:400 28px/1 Georgia,serif;
+}
+.screen8-v44-capability h3{margin:2px 0 7px;font:600 15px/1.35 Arial,Helvetica,sans-serif;letter-spacing:.08em;color:#15385D;}
+.screen8-v44-capability p{margin:0;font:16px/1.45 Arial,Helvetica,sans-serif;color:#15385D;}
+.screen8-v44-center{display:flex;flex-direction:column;align-items:center;}
+.screen8-v44-human-visual{
+  width:420px;height:420px;border-radius:50%;overflow:hidden;
+  background-image:url("assets/redesign-v50/meeting-life-well-human-development-clean.png");
+  background-size:100% 100%;background-position:center center;background-repeat:no-repeat;
+  box-shadow:none;
+}
+.screen8-v44-intentional{margin-top:24px;text-align:center;}
+.screen8-v44-intentional .screen8-v44-cap-icon{margin:0 auto 12px;}
+.screen8-v44-intentional h3{margin-bottom:6px;}
+.screen8-v44-travel-card{
+  position:relative;
+  margin:12px auto 0;
+  padding:30px 52px 32px;
+  border:1px solid rgba(184,121,24,.34);
+  border-radius:10px;
+  background:rgba(255,252,239,.95);
+}
+.screen8-v44-travel-card p{margin:0;color:#15385D;font:400 25px/1.35 Baskerville,Georgia,"Times New Roman",serif;}
+.screen8-v44-travel-card p+p{margin-top:8px;}
+.screen8-v44-travel-card em{color:#B87918;font-style:italic;font-size:28px;}
+.screen8-v44-closing-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;}
+.screen8-v44-closing-block{padding:4px 40px;}
+.screen8-v44-closing-block + .screen8-v44-closing-block{border-left:1px solid rgba(184,121,24,.48);}
+.screen8-v44-closing-block p{margin:0;color:#15385D;font:18px/1.5 Arial,Helvetica,sans-serif;}
+.screen8-v44-closing-block strong{color:#B87918;font-weight:600;}
+.screen8-v44-selflead p{font:400 22px/1.42 Baskerville,Georgia,"Times New Roman",serif;}
+.screen8-v44-selflead em{color:#B87918;font-style:italic;}
+
+/* Work With Me — title only, gold rule above and below, then breathing room */
+.work-with-me-redesign .wwm-intro.wwm-intro-v44{
+  max-width:1160px !important;
+  margin:0 auto 72px !important;
+  display:block !important;
+  text-align:center !important;
+}
+.work-with-me-redesign .wwm-intro-v44 .wwm-top-rule,
+.work-with-me-redesign .wwm-intro-v44 .wwm-bottom-rule{
+  display:flex !important;
+  width:220px !important;
+  gap:10px !important;
+  align-items:center !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+}
+.work-with-me-redesign .wwm-intro-v44 .wwm-top-rule{margin-top:8px !important;margin-bottom:20px !important;}
+.work-with-me-redesign .wwm-intro-v44 .wwm-bottom-rule{margin-top:20px !important;margin-bottom:0 !important;}
+.work-with-me-redesign .wwm-intro-v44 .wwm-top-rule span,
+.work-with-me-redesign .wwm-intro-v44 .wwm-bottom-rule span{height:1px !important;flex:1 !important;background:rgba(184,121,24,.72) !important;}
+.work-with-me-redesign .wwm-intro-v44 .wwm-top-rule b,
+.work-with-me-redesign .wwm-intro-v44 .wwm-bottom-rule b{width:8px !important;height:8px !important;border-radius:50% !important;background:#B87918 !important;}
+.work-with-me-redesign .wwm-intro-v44 .wwm-eyebrow{
+  margin:0 !important;
+  font:500 18px/1.1 Arial,Helvetica,sans-serif !important;
+  letter-spacing:.20em !important;
+  color:#15385D !important;
+}
+
+@media(max-width:900px){
+  .screen8-v44-inner{width:min(92vw,620px);padding:52px 0 66px;}
+  .screen8-v44-eyebrow{font-size:14px;}
+  .screen8-v44-title{font-size:48px;margin-bottom:36px;}
+  .screen8-v44-promise strong{font-size:17px;}
+  .screen8-v44-core{font-size:24px;line-height:1.38;}
+  .screen8-v44-core br{display:none;}
+  .screen8-v44-capability-heading{gap:12px;}
+  .screen8-v44-capability-heading b{font-size:13px;letter-spacing:.12em;}
+  .screen8-v44-capability-layout{grid-template-columns:1fr;gap:26px;}
+  .screen8-v44-center{order:1;}
+  .screen8-v44-left{order:2;}.screen8-v44-right{order:3;}
+  .screen8-v44-side{min-height:0;gap:24px;width:100%;align-items:stretch;}
+  .screen8-v44-side .screen8-v44-capability,
+  .screen8-v44-left .screen8-v44-capability{max-width:none;display:grid;grid-template-columns:64px 1fr;text-align:left;}
+  .screen8-v44-left .screen8-v44-cap-icon,.screen8-v44-right .screen8-v44-cap-icon{grid-column:1;grid-row:1 / span 2;}
+  .screen8-v44-left h3,.screen8-v44-left p,.screen8-v44-right h3,.screen8-v44-right p{grid-column:2;}
+  .screen8-v44-human-visual{width:min(82vw,410px);height:min(82vw,410px);}
+  .screen8-v44-travel-card{padding:26px 20px;}
+  .screen8-v44-travel-card p{font-size:21px;}.screen8-v44-travel-card em{font-size:23px;}
+  .screen8-v44-closing-grid{grid-template-columns:1fr;gap:20px;}
+  .screen8-v44-closing-block{padding:0 10px;}
+  .screen8-v44-closing-block + .screen8-v44-closing-block{border-left:0;border-top:1px solid rgba(184,121,24,.4);padding-top:22px;}
+  .work-with-me-redesign .wwm-intro.wwm-intro-v44{margin-bottom:52px !important;}
+}
+
+/* V45 — Meeting Life Well exact approved capability icons + two copy/style corrections */
+.screen8-v44-cap-icon{
+  border:0 !important;
+  background:transparent !important;
+  overflow:hidden;
+}
+.screen8-v44-cap-icon img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+}
+.screen8-v44-selflead span{
+  color:#15385D;
+  font-style:normal;
+}
+
+/* =========================================================
+   V46 — Meeting Life Well icon fidelity + self-leadership emphasis ONLY
+   - Use the approved capability icon artwork at its intended size without a second CSS circle.
+   - Keep the self-leadership definition non-italic; highlight only the defining phrase in gold.
+   ========================================================= */
+.screen8-v44-cap-icon{
+  width:84px !important;
+  height:84px !important;
+  border:0 !important;
+  border-radius:0 !important;
+  display:grid !important;
+  place-items:center !important;
+  overflow:visible !important;
+  background:transparent !important;
+}
+.screen8-v44-cap-icon img{
+  display:block !important;
+  width:84px !important;
+  height:84px !important;
+  max-width:none !important;
+  object-fit:contain !important;
+}
+.screen8-v44-intentional .screen8-v44-cap-icon{
+  width:88px !important;
+  height:88px !important;
+  margin:0 auto 12px !important;
+}
+.screen8-v44-intentional .screen8-v44-cap-icon img{
+  width:88px !important;
+  height:88px !important;
+}
+.screen8-v44-selflead p,
+.screen8-v44-selflead span{
+  font-style:normal !important;
+}
+.screen8-v44-selflead span{
+  color:#B87918 !important;
+}
+
+@media(max-width:900px){
+  .screen8-v44-cap-icon,
+  .screen8-v44-cap-icon img{
+    width:72px !important;
+    height:72px !important;
+  }
+  .screen8-v44-intentional .screen8-v44-cap-icon,
+  .screen8-v44-intentional .screen8-v44-cap-icon img{
+    width:76px !important;
+    height:76px !important;
+  }
+}
+
+/* =========================================================
+   V47 — Meeting Life Well clean icon assets + closing phrase typography ONLY
+   - Capability PNGs are now transparent gold line-art assets with all raster backdrop/residue removed.
+   - Match the left gold closing phrase to the self-leadership gold phrase typography.
+   ========================================================= */
+.screen8-v44-closing-grid > .screen8-v44-closing-block:first-child strong{
+  color:#B87918 !important;
+  font-family:Baskerville,Georgia,"Times New Roman",serif !important;
+  font-size:22px !important;
+  line-height:1.42 !important;
+  font-weight:400 !important;
+  font-style:normal !important;
+}
+
+/* =========================================================
+   V52 — Meeting Life Well travel-card width ONLY
+   - Narrow and center the transferable-capabilities takeaway box on desktop.
+   - No changes to divider, typography, copy, spacing, or any other section.
+   ========================================================= */
+@media (min-width:901px){
+  .screen8-v44-travel-card{
+    width:min(960px, calc(100% - 80px)) !important;
+    box-sizing:border-box !important;
+  }
+}
+
+
+/* =========================================================
+   V53 — Meeting Life Well closing simplification ONLY
+   - Remove repeated self-leadership definition from the bottom.
+   - Center the remaining final thought.
+   ========================================================= */
+.screen8-v53-closing-single{
+  grid-template-columns:1fr !important;
+  justify-items:center !important;
+  text-align:center !important;
+}
+.screen8-v53-closing-single .screen8-v44-closing-block{
+  width:100% !important;
+  padding:4px 40px !important;
+  text-align:center !important;
+}
+
+/* =========================================================
+   V54 — CLIENT VALUE + MEETING LIFE WELL APPROVED REDESIGNS
+   Exact approved content/layout; all prior sections untouched.
+   ========================================================= */
+.client-value-merge-breathing{height:20px;background:#fff;}
+.client-value-v54{position:relative;background:#FFFCEF;color:#15385D;overflow:hidden;}
+.client-value-v54::after{content:"";position:absolute;z-index:0;left:0;right:0;bottom:0;height:31%;background:linear-gradient(to bottom,rgba(255,252,239,1) 0%,rgba(255,252,239,.12) 30%,rgba(255,252,239,0) 100%),url("assets/redesign-v54/client-value-scenery.jpg") center bottom/cover no-repeat;filter:saturate(.72);}
+.client-value-v54-inner{position:relative;z-index:1;width:min(1420px,94vw);margin:auto;padding:62px 0 255px;text-align:center;}
+.client-value-v54-eyebrow,.screen8-v54-eyebrow{color:#B87918;font:500 18px/1.1 Arial,Helvetica,sans-serif;letter-spacing:.20em;}
+.client-value-v54-rule,.client-value-v54-bottom-rule,.screen8-v54-rule,.screen8-v54-bottom-rule{display:flex;align-items:center;gap:12px;width:430px;margin:26px auto 32px;}
+.client-value-v54-rule span,.client-value-v54-bottom-rule span,.screen8-v54-rule span,.screen8-v54-bottom-rule span{height:1px;flex:1;background:rgba(184,121,24,.72)}
+.client-value-v54-rule b,.client-value-v54-bottom-rule b,.screen8-v54-rule b,.screen8-v54-bottom-rule b{width:8px;height:8px;border-radius:50%;background:#B87918;}
+.client-value-v54-title{margin:0 auto 38px;font:400 59px/1.16 Baskerville,Georgia,"Times New Roman",serif;color:#15385D;letter-spacing:-.015em;}
+.client-value-v54-journey{display:grid;grid-template-columns:1fr 74px 1fr 74px 1fr 74px 1fr;align-items:start;gap:10px;margin:0 auto 50px;}
+.client-value-v54-journey article{display:flex;flex-direction:column;align-items:center;}
+.client-value-v54-circle{width:210px;height:210px;border:1.5px solid #B87918;border-radius:50%;display:grid;place-items:center;padding:22px;color:#15385D;font:600 24px/1.18 Baskerville,Georgia,"Times New Roman",serif;letter-spacing:.03em;}
+.client-value-v54-journey p{margin:12px 0 0;font:400 20px/1.38 Baskerville,Georgia,"Times New Roman",serif;color:#15385D;}
+.client-value-v54-arrow{align-self:center;margin-top:80px;color:#B87918;font:400 44px/1 Georgia,serif;}
+.client-value-v54-closing{margin:0 auto;color:#15385D;font:400 34px/1.35 Baskerville,Georgia,"Times New Roman",serif;}
+.client-value-v54-bottom-rule{width:490px;margin-top:22px;margin-bottom:0;}
+
+.screen8.screen8-v54{position:relative;background:#FFFCEF!important;color:#15385D!important;overflow:hidden;min-height:0!important;height:auto!important;}
+.screen8-v54-inner{width:min(1180px,92vw);margin:auto;padding:66px 0 74px;text-align:center;}
+.screen8-v54-rule{width:440px;margin:24px auto 30px;}
+.screen8-v54-title{margin:0 0 18px;font:400 64px/1.03 Baskerville,Georgia,"Times New Roman",serif;color:#15385D;}
+.screen8-v54-promise{margin:0 0 26px;font:400 31px/1.3 Baskerville,Georgia,"Times New Roman",serif;color:#15385D;}
+.screen8-v54-core{margin:0 auto 22px;font:400 24px/1.36 Baskerville,Georgia,"Times New Roman",serif;color:#15385D;}
+.screen8-v54-capability-layout{position:relative;width:650px;height:440px;margin:0 auto 18px;}
+.screen8-v54-human{position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:390px;height:260px;background:url("assets/redesign-v50/meeting-life-well-human-development-clean.png") center 54%/112% auto no-repeat;clip-path:ellipse(49% 44% at 50% 55%);filter:saturate(.58) brightness(1.04);}
+.screen8-v54-cap{position:absolute;z-index:2;display:flex;flex-direction:column;align-items:center;gap:7px;color:#15385D;font:600 13px/1.15 Arial,Helvetica,sans-serif;letter-spacing:.07em;}
+.screen8-v54-cap img{width:54px;height:54px;border-radius:50%;background:rgba(255,247,226,.9);padding:9px;box-sizing:border-box;}
+.cap-top{left:50%;top:0;transform:translateX(-50%)}.cap-left-top{left:92px;top:86px}.cap-right-top{right:70px;top:86px}.cap-left-bottom{left:72px;top:250px}.cap-right-bottom{right:52px;top:250px}
+.screen8-v54-inward-box{margin:0 auto 26px;padding:24px 28px;width:min(860px,88%);border:1px solid rgba(184,121,24,.7);border-radius:10px;color:#15385D;font:400 26px/1.38 Baskerville,Georgia,"Times New Roman",serif;background:rgba(255,252,239,.92);}
+.screen8-v54-travel{margin:0 auto 22px;color:#15385D;font:400 22px/1.38 Baskerville,Georgia,"Times New Roman",serif;}
+.screen8-v54-bottom-rule{width:440px;margin:20px auto 22px;}
+.screen8-v54-closing{margin:0;color:#15385D;font:400 27px/1.32 Baskerville,Georgia,"Times New Roman",serif;}.screen8-v54-closing strong{font-weight:400;}
+@media(max-width:900px){
+ .client-value-v54-inner{width:min(92vw,620px);padding:50px 0 180px}.client-value-v54-title{font-size:43px}.client-value-v54-rule,.client-value-v54-bottom-rule,.screen8-v54-rule,.screen8-v54-bottom-rule{width:min(72vw,360px)}
+ .client-value-v54-journey{grid-template-columns:1fr;gap:18px}.client-value-v54-arrow{margin:0;transform:rotate(90deg)}.client-value-v54-circle{width:180px;height:180px}.client-value-v54-closing{font-size:27px}.client-value-v54-closing br{display:none}
+ .screen8-v54-inner{width:min(92vw,620px);padding:52px 0 64px}.screen8-v54-title{font-size:48px}.screen8-v54-promise{font-size:26px}.screen8-v54-core{font-size:21px}.screen8-v54-core br{display:none}.screen8-v54-capability-layout{transform:scale(.82);transform-origin:top center;margin-bottom:-55px}.screen8-v54-inward-box{font-size:22px}.screen8-v54-travel{font-size:20px}.screen8-v54-closing{font-size:24px}
+}
+
+/* =========================================================
+   V55 — EXACT APPROVED CLIENT VALUE + MEETING LIFE WELL
+   References supplied by user on 2026-09-05.
+   Typography normalized to established site system.
+   ========================================================= */
+@media (min-width:901px){
+  .client-value-v54-eyebrow,.screen8-v54-eyebrow{
+    font-family:Arial,Helvetica,sans-serif!important;font-size:18px!important;
+    line-height:1.1!important;font-weight:500!important;letter-spacing:.18em!important;color:#B87918!important;
+  }
+  .client-value-v54-title,.screen8-v54-title{
+    font-family:Baskerville,Georgia,"Times New Roman",serif!important;font-size:59px!important;
+    font-weight:400!important;color:#15385D!important;
+  }
+}
+.client-value-v54{scroll-margin-top:92px!important;}
+.client-value-v54-inner{padding-top:76px!important;padding-bottom:250px!important;}
+.client-value-v54::after{
+  height:24%!important;
+  background:linear-gradient(to bottom,#FFFCEF 0%,rgba(255,252,239,.34) 25%,rgba(255,252,239,0) 58%),url("assets/redesign-v55/client-value-scenery-approved.jpg") center bottom/100% 100% no-repeat!important;
+  filter:none!important;
+}
+.client-value-v54-title{line-height:1.15!important;margin-bottom:34px!important;}
+.client-value-v54-circle{width:210px!important;height:210px!important;border-width:1px!important;font-size:23px!important;}
+.client-value-v54-journey{margin-bottom:48px!important;}
+.client-value-v54-closing{font-size:34px!important;line-height:1.34!important;}
+
+.screen8.screen8-v54{scroll-margin-top:92px!important;}
+.screen8-v54-inner{position:relative;z-index:1;width:min(1180px,92vw)!important;padding:66px 0 330px!important;}
+.screen8.screen8-v54::after{
+  content:"";position:absolute;z-index:0;left:0;right:0;bottom:0;height:285px;
+  background:linear-gradient(to bottom,#FFFCEF 0%,rgba(255,252,239,.2) 28%,rgba(255,252,239,0) 55%),url("assets/redesign-v55/meeting-life-well-bottom-scenery-approved.jpg") center bottom/100% 100% no-repeat;
+  pointer-events:none;
+}
+.screen8-v54-title{font-size:59px!important;line-height:1.05!important;margin-bottom:18px!important;}
+.screen8-v54-promise{font-size:31px!important;margin-bottom:25px!important;}
+.screen8-v54-core{font-size:24px!important;line-height:1.36!important;margin-bottom:20px!important;}
+.screen8-v55-capability-approved{
+  width:615px;height:485px;margin:0 auto 6px;
+  background:url("assets/redesign-v55/meeting-life-well-capability-woman-approved.jpg") center center/contain no-repeat;
+}
+.screen8-v54-inward-box{margin-top:0!important;width:min(860px,88%)!important;padding:24px 28px!important;font-size:26px!important;}
+.screen8-v54-travel{font-size:22px!important;}
+.screen8-v54-closing{font-size:27px!important;}
+@media(max-width:900px){
+ .client-value-v54-inner{padding-top:56px!important;padding-bottom:170px!important}
+ .screen8-v55-capability-approved{width:min(92vw,615px);height:auto;aspect-ratio:615/485;background-size:contain}
+ .screen8-v54-inner{padding-bottom:220px!important}
+ .screen8.screen8-v54::after{height:190px}
+}
+
+/* =========================================================
+   V56 — APPROVED REFERENCE CORRECTION PASS ONLY
+   Scope: My Philosophy circles, Client Value, Meeting Life Well.
+   No other sections changed.
+   ========================================================= */
+@media (min-width:901px){
+  /* Client Value: closer to approved reference height while preserving composition. */
+  .client-value-v54-inner{padding-top:62px!important;padding-bottom:190px!important;}
+  .client-value-v54::after{
+    height:25%!important;
+    background:linear-gradient(to bottom,#FFFCEF 0%,rgba(255,252,239,.42) 24%,rgba(255,252,239,0) 58%),url("assets/redesign-v56/client-value-scenery-clean.jpg") center bottom/100% 100% no-repeat!important;
+  }
+
+  /* Meeting Life Well: reduce excess vertical extension and use clean muted scenery. */
+  .screen8-v54-inner{padding-top:58px!important;padding-bottom:270px!important;}
+  .screen8.screen8-v54::after{
+    height:250px!important;
+    background:linear-gradient(to bottom,#FFFCEF 0%,rgba(255,252,239,.28) 28%,rgba(255,252,239,0) 58%),url("assets/redesign-v56/meeting-life-well-bottom-scenery-clean.jpg") center bottom/100% 100% no-repeat!important;
+  }
+}
+
+/* =========================================================
+   V57 — MOBILE-ONLY POLISH
+   Scope: center My Philosophy Inward Clarity illustration and
+   preserve word spacing when desktop line breaks are hidden.
+   ========================================================= */
+@media (max-width:900px){
+  .my-philosophy-inward-icon{
+    height:176px !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+  }
+  .my-philosophy-inward-icon img{
+    width:145px !important;
+    height:145px !important;
+    margin:0 auto !important;
+    display:block !important;
+  }
+}
+
+/* =========================================================
+   V58 — MOBILE-ONLY MY PHILOSOPHY CARD WIDTH CORRECTION
+   Scope: keep the Inward Clarity card fully inside the padded
+   mobile content area with equal left/right inset. Nothing else.
+   ========================================================= */
+@media (max-width:900px){
+  .my-philosophy-inward-card{
+    width:100% !important;
+    max-width:560px !important;
+    box-sizing:border-box !important;
+  }
+}
+
+/* =========================================================
+   V59 — MOBILE-ONLY MY PHILOSOPHY CARD COPY SCALING
+   Scope: scale only the text inside the corrected Inward Clarity
+   card so it fits proportionally on mobile. No other changes.
+   ========================================================= */
+@media (max-width:900px){
+  .my-philosophy-inward-copy{
+    padding:22px 18px 26px !important;
+  }
+  .my-philosophy-inward-label{
+    font-size:16px !important;
+    letter-spacing:.18em !important;
+    line-height:1.25 !important;
+    margin-bottom:12px !important;
+  }
+  .my-philosophy-definition{
+    max-width:440px !important;
+    margin:0 auto !important;
+    font-size:15.5px !important;
+    line-height:1.45 !important;
+  }
+  .my-philosophy-definition br{
+    display:none !important;
+  }
+}
+
+/* =========================================================
+   V61 — CLIENT VALUE DESKTOP SCALE REFINEMENT ONLY
+   Scope: modestly reduce opening statement and journey circles.
+   Mobile and all other sections remain unchanged.
+   ========================================================= */
+@media (min-width:901px){
+  .client-value-v54-title{
+    font-size:52px !important;
+  }
+  .client-value-v54-circle{
+    width:190px !important;
+    height:190px !important;
+  }
+}
+
+/* =========================================================
+   V62 — WORK WITH ME MOBILE CONVERSATION CTA COLOR ONLY
+   Scope: mobile-only BOOK A CONVERSATION buttons use the same
+   solid gold/white treatment as BOOK. No layout or desktop changes.
+   ========================================================= */
+@media (max-width:900px){
+  .work-with-me-redesign .wwm-conversation{
+    background:#B87918 !important;
+    border-color:#B87918 !important;
+    color:#fff !important;
+    opacity:1 !important;
+  }
+}
+
+
+/* =========================================================
+   V63 — APPROVED CLIENT VALUE + ONE WORK-TOGETHER SENTENCE
+   Scope only: Client Value redesign, Work Together sentence placement.
+   ========================================================= */
+
+/* Work Together: exact v62 design retained; only approved sentence added. */
+.screen10-resourcefulness{
+  margin:18px 0 -10px;
+  color:#B87918;
+  font:400 20px/1.35 Georgia,"Times New Roman",serif;
+  text-align:center;
+}
+
+/* Client Value v63 approved design */
+.client-value-v63{
+  --cv-navy:#15385D;
+  --cv-gold:#B87918;
+  position:relative;
+  overflow:hidden;
+  background:#FFFCEF;
+  color:var(--cv-navy);
+  scroll-margin-top:92px;
+}
+.client-value-v63::after{
+  content:"";
+  position:absolute;
+  z-index:0;
+  left:0;right:0;bottom:0;
+  height:15.5%;
+  background:
+    linear-gradient(to bottom,rgba(255,252,239,1) 0%,rgba(255,252,239,.46) 24%,rgba(255,252,239,.03) 70%),
+    url("assets/redesign-v63/client-value-pastel-scenery.jpg") center bottom/cover no-repeat;
+}
+.client-value-v63-inner{
+  position:relative;
+  z-index:1;
+  width:min(1180px,90vw);
+  min-height:1440px;
+  margin:0 auto;
+  padding:74px 0 270px;
+  text-align:center;
+}
+.client-value-v63-heading{
+  margin:0;
+  color:var(--cv-navy);
+  font:400 50px/1.08 Baskerville,Georgia,"Times New Roman",serif;
+  letter-spacing:-.015em;
+}
+.client-value-v63-rule{
+  display:flex;align-items:center;justify-content:center;gap:11px;margin-left:auto;margin-right:auto;
+}
+.client-value-v63-rule span{height:1px;flex:1;background:rgba(184,121,24,.58)}
+.client-value-v63-rule b{width:8px;height:8px;border-radius:50%;background:var(--cv-gold);flex:0 0 8px}
+.client-value-v63-rule-short{width:278px;margin-top:27px;margin-bottom:35px}
+.client-value-v63-rule-wide{width:min(900px,82vw);margin-top:42px;margin-bottom:31px}
+.client-value-v63-opening{
+  margin:0;
+  color:#8A5C12;
+  font:400 34px/1.26 Baskerville,Georgia,"Times New Roman",serif;
+}
+.client-value-v63-automatic{margin:61px auto 0;color:var(--cv-navy);font:400 21px/1.52 Arial,Helvetica,sans-serif}
+.client-value-v63-automatic p{margin:0}
+.client-value-v63-automatic p+p{margin-top:20px}
+.client-value-v63-principle{
+  margin:0;
+  color:#8A5C12;
+  font:400 29px/1.34 Baskerville,Georgia,"Times New Roman",serif;
+}
+.client-value-v63-choice{
+  margin:45px auto 0;
+  color:var(--cv-navy);
+  font:400 42px/1.18 Baskerville,Georgia,"Times New Roman",serif;
+  letter-spacing:-.01em;
+}
+.client-value-v63-friction{
+  margin:37px auto 0;
+  color:var(--cv-gold);
+  font:400 20px/1.55 Arial,Helvetica,sans-serif;
+}
+.client-value-v63-capabilities{
+  width:min(860px,80vw);
+  margin:36px auto 0;
+  padding:0;
+  list-style:none;
+  text-align:left;
+  color:var(--cv-navy);
+  font:400 20px/1.45 Arial,Helvetica,sans-serif;
+}
+.client-value-v63-capabilities li{position:relative;padding-left:42px;margin:0}
+.client-value-v63-capabilities li+li{margin-top:19px}
+.client-value-v63-capabilities li::before{
+  content:"";position:absolute;left:8px;top:.60em;width:9px;height:9px;border-radius:50%;background:var(--cv-gold);
+}
+.client-value-v63-capabilities strong{font-weight:700}
+.client-value-v63-closing-rule{margin-top:52px;margin-bottom:35px}
+.client-value-v63-closing{
+  margin:0 auto;
+  color:#8A5C12;
+  font:400 29px/1.34 Baskerville,Georgia,"Times New Roman",serif;
+}
+
+@media (max-width:900px){
+  .screen10-resourcefulness{margin:15px 0 -6px;font-size:18px;line-height:1.4}
+  .client-value-v63::after{height:12.5%;background-size:auto 100%;}
+  .client-value-v63-inner{width:min(88vw,620px);min-height:0;padding:58px 0 190px}
+  .client-value-v63-heading{font-size:42px;line-height:1.08}
+  .client-value-v63-rule-short{width:min(62vw,260px);margin-top:22px;margin-bottom:30px}
+  .client-value-v63-rule-wide{width:min(82vw,520px);margin-top:34px;margin-bottom:26px}
+  .client-value-v63-opening{font-size:29px;line-height:1.3}
+  .client-value-v63-automatic{margin-top:46px;font-size:18px;line-height:1.5}
+  .client-value-v63-desktop-br{display:none}
+  .client-value-v63-principle{font-size:25px;line-height:1.35}
+  .client-value-v63-choice{margin-top:38px;font-size:34px;line-height:1.2}
+  .client-value-v63-friction{margin-top:30px;font-size:18px;line-height:1.5}
+  .client-value-v63-capabilities{width:min(86vw,560px);margin-top:30px;font-size:18px;line-height:1.5}
+  .client-value-v63-capabilities li{padding-left:30px}
+  .client-value-v63-capabilities li::before{left:2px;width:8px;height:8px}
+  .client-value-v63-closing-rule{margin-top:43px;margin-bottom:28px}
+  .client-value-v63-closing{font-size:25px;line-height:1.37}
+  .client-value-v63-closing br{display:none}
+}
+
+@media (max-width:520px){
+  .client-value-v63-inner{width:88vw;padding-top:50px;padding-bottom:165px}
+  .client-value-v63-heading{font-size:37px}
+  .client-value-v63-opening{font-size:26px}
+  .client-value-v63-automatic{font-size:17px}
+  .client-value-v63-principle{font-size:23px}
+  .client-value-v63-choice{font-size:31px}
+  .client-value-v63-friction,.client-value-v63-capabilities{font-size:17px}
+  .client-value-v63-closing{font-size:23px}
+}
+
+/* =========================================================
+   V66 — CLIENT VALUE DESKTOP BULLET BLOCK ALIGNMENT ONLY
+   Align the bullet dots with the left edge of “With greater…”
+   while preserving the existing left-aligned list and mobile layout.
+   ========================================================= */
+@media (min-width:901px){
+  .client-value-v63-capabilities{
+    transform:translateX(30px);
+  }
+}
